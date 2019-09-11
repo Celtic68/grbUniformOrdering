@@ -33,6 +33,7 @@ services.
 #### Tasks Completed:
 * Finished the Text Application Screen Flow document
 * Created the initial project structure in IntelliJ and got it pushed to GitHub
+* Transformed all the documents to markdown language and pushed them all to Github
 
 I started the week by finishing off the text document for the screen flow – this is a really helpful document as it 
 provides more of a detailed flow than the visual in my opinion.
@@ -41,3 +42,6 @@ I got into Activity 4 in week 2, and it seemed like the perfect time to get all 
 The readMe, Time Log and Weekly Reflection have all been changed to markdown files and push to the remote repository.
 For good measure, I also changed and pushed all the remaining design documents as well and signed up for a final 
 presentation slot in week 16.
+
+Paula suggested a website https://www.programmableweb.com to search for APIs.  She also suggested maybe a sports ticker,
+or an API that validates a zip code for an address.

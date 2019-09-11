@@ -20,3 +20,4 @@
 | 9/10/19 | Watched all week 2 videos and follow-up videos | 2.5 hours |
 | 9/10/19 | Completed Activity 2, 3, and started Activity 4 | 1 hour |
 | 9/10/19 | Completed Activity 4, pushed all my design documents, Project Plan, Time Log, Weekly Reflection and Read Me file to my individual project.  Also added my project information to the individual project file and signed up for a presentation slot | 1.5 hours |
+| 9/11/19 | Changed Exercise 1 based on the feedback posted on GitHub from Paula | 1 hour |
