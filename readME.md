@@ -19,4 +19,4 @@ Some initial screen designs:
 
 ![GRB Uniform Ordering Sign Up Page](images/signUp.png)
 
-![GRB Uniform Ordering Login Page](images/loginPag.png)
+![GRB Uniform Ordering Login Page](images/loginPage.png)
