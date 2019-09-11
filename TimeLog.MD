@@ -1,7 +1,7 @@
 # Time Log
 
 | Date | Task | Hours / Minutes |
-|------|------|-------|------|
+|------|------|-------|
 | 8/31/19 | Watch Intro Videos and set up Windows laptop for use in class | 2.5 hours |
 | 9/1/19 | Watch week 1 videos – Overview and Activity 4   | 30 mins  |
 | 9/1/19 | Completed Activity 4 from the screen shots | 10 mins |
