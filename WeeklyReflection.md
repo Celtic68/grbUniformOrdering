@@ -1,8 +1,8 @@
-#GRB Uniform Ordering
-##Weekly Reflection
+# GRB Uniform Ordering
+## Weekly Reflection
 
-###Week 1 – 9/1/19 through 9/8/19
-####Tasks Completed:
+### Week 1 – 9/1/19 through 9/8/19
+#### Tasks Completed:
 * Decided on a Project Concept
 * Created the Problem Statement
 * Documented the User Stories
@@ -23,14 +23,14 @@ As far as services this application might consume, I have not really researched 
 seems straightforward so I will likely need to determine how to meet the project criteria of adding these types of 
 services.
 
-####Potential API / Service ideas:
+#### Potential API / Service ideas:
 * Could I add map functionality for the travel day?
 * What about closest amenities? Can I do in application adds to such places as Subway, etc?
 * Does the uniform ordering place have an API to submit a mass order? Have to find out who they use for uniforms…
 * How about captcha?
 
-###Week 2 – 9/9/19 through 9/15/19
-####Tasks Completed:
+### Week 2 – 9/9/19 through 9/15/19
+#### Tasks Completed:
 * Finished the Text Application Screen Flow document
 * Created the initial project structure in IntelliJ and got it pushed to GitHub
 I started the week by finishing off the text document for the screen flow – this is a really helpful document as it 
