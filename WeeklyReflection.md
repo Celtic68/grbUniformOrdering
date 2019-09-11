@@ -33,7 +33,9 @@ services.
 #### Tasks Completed:
 * Finished the Text Application Screen Flow document
 * Created the initial project structure in IntelliJ and got it pushed to GitHub
+
 I started the week by finishing off the text document for the screen flow – this is a really helpful document as it 
 provides more of a detailed flow than the visual in my opinion.
 
 I got into Activity 4 in week 2, and it seemed like the perfect time to get all my documents added to the repository.
+The readMe, Time Log and Weekly Reflection have all been changed to markdown files and push to the remote repository.
