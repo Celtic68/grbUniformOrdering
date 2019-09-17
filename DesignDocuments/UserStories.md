@@ -9,6 +9,9 @@ As an Admin or User, I will initially land on this page.
 As a new user, I want to create an account. If I am a user, I want to be able to add my player, order his uniforms, and 
 view my previous orders. If I am an Admin, I want to be able to add or drop players, add, edit or delete uniform orders,
  make a user an Admin, send email confirmations, and generate reports.
+ 
+### Log Out (MVP)
+As an Admin or User, I want the ability to be able to log my account out.
 
 ### Sign In (MVP)
 As a returning Admin or User, I want to be able to log in. If I am a user, I want to be able to add my player, order his

@@ -45,3 +45,14 @@ presentation slot in week 16.
 
 Paula suggested a website https://www.programmableweb.com to search for APIs.  She also suggested maybe a sports ticker,
 or an API that validates a zip code for an address.
+
+### Week 3 – 9/16/19 through 9/22/19
+#### Tasks Completed:
+
+* Made changes to Project Plan to push database work back to allow for Hibernate training
+
+Long week last week with other classes, so I did not get as far ahead as I had hoped. This week will likely be a EJ
+focus week.
+
+I updated the Project Plan to push database stuff later and move some jsp work earlier to allow for us to get into
+Hibernate concepts to reduce the amount of project refactoring.

@@ -22,24 +22,24 @@
 * Define application flow – is a diagram sufficient (find a application flow software package) or should I do text as
  well? 
 * Make sure all pieces for Checkpoint 1 are complete and pushed to GitHub
-* Create Database Diagram
-* Create SQL for database and table creation
-* Use SQL to create all tables
-* Create SQL to insert initial data (an admin user, available sizes, etc)
-* Use SQL to insert initial data
-* Start creating DAOs for all tables
-
-#### Week 4
-* Create Weekly Reflection entry
-* Ensure all time this week has been added to the Time Log
-* Prepare for Week 5 peer design / code review
-* Finish DAO creation
-* Add logging using Log4J
 * Create jsp templates for use with all jsps – Use Bootstrap 4
 * Add jsp for Index
 * Add jsp for Sign In
 * Add jsp for Sign Up
 * Add jsp for Edit User
+* Create Database Diagram
+* Create SQL for database and table creation
+
+#### Week 4
+* Create Weekly Reflection entry
+* Ensure all time this week has been added to the Time Log
+* Prepare for Week 5 peer design / code review
+* Use SQL to create all tables
+* Create SQL to insert initial data (an admin user, available sizes, etc)
+* Use SQL to insert initial data
+* Start creating DAOs for all tables
+* Finish DAO creation
+* Add logging using Log4J
 
 #### Week 5
 * Create Weekly Reflection entry
