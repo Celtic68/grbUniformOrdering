@@ -26,3 +26,6 @@
 | 9/17/19 | Did all the reading for week 3 Custom Tags | 2 hours |
 | 9/18/19 | Watched all videos and did Activity 1 - have an issue to resolve in class | 1.5 hours |
 | 9/18/19 | Worked with Paula in class to resolve the issue with Activity 1 | 50 minutes |
+| 9/18/19 | Worked in class to start Exercise 1 for week 3 | 1 hour |
+| 9/19/19 | Finished Exercise 1 and pushed it to GitHub | 1 hour |
+| 9/19/19 | Started creation of the SQL Table creation file | 1.25 hours |
