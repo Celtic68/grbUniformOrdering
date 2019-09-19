@@ -1,0 +1,2 @@
+DROP TABLE IF EXISTS grb_user;
+CREATE TABLE grb_user

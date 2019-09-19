@@ -25,3 +25,4 @@
 | 9/17/19 | Updated Project Plan, User Stories and started Week 3 reflections and Time Log entries | 10 minutes |
 | 9/17/19 | Did all the reading for week 3 Custom Tags | 2 hours |
 | 9/18/19 | Watched all videos and did Activity 1 - have an issue to resolve in class | 1.5 hours |
+| 9/18/19 | Worked with Paula in class to resolve the issue with Activity 1 | 50 minutes |
