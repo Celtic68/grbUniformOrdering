@@ -50,9 +50,15 @@ or an API that validates a zip code for an address.
 #### Tasks Completed:
 
 * Made changes to Project Plan to push database work back to allow for Hibernate training
+* Created the SQL files to create tables and insert data
+* Created the tables and populated them with initial data
+* Generated an ER Diagram for the database
 
 Long week last week with other classes, so I did not get as far ahead as I had hoped. This week will likely be a EJ
 focus week.
 
 I updated the Project Plan to push database stuff later and move some jsp work earlier to allow for us to get into
 Hibernate concepts to reduce the amount of project refactoring.
+
+All the database design work and table creation is complete with just some small modifications that will be needed based
+on what we do in class for Hibernate. I created the SQL in files to make it easier to drop and recreate them quickly.

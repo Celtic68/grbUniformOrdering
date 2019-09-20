@@ -29,3 +29,4 @@
 | 9/18/19 | Worked in class to start Exercise 1 for week 3 | 1 hour |
 | 9/19/19 | Finished Exercise 1 and pushed it to GitHub | 1 hour |
 | 9/19/19 | Started creation of the SQL Table creation file | 1.25 hours |
+| 9/19/19 | Finished the SQL creation file, created the SQL data insertion file, and generated the ER Diagram | 2.5 hours |
