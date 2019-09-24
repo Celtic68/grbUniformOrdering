@@ -30,3 +30,8 @@
 | 9/19/19 | Finished Exercise 1 and pushed it to GitHub | 1 hour |
 | 9/19/19 | Started creation of the SQL Table creation file | 1.25 hours |
 | 9/19/19 | Finished the SQL creation file, created the SQL data insertion file, and generated the ER Diagram | 2.5 hours |
+| 9/20/19 | Made modifications to the Uniform Order table and created a role table | 30 minutes |
+| 9/23/19 | Did the reading for week 4 | 1.2 hours |
+| 9/24/19 | Create the POJOs for User, Player, UniformOrder, and Role | 20 minutes |
+| 9/24/19 | Watched week 4 videos | | 
+| | Total Hours | 39.9  |
