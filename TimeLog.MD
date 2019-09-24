@@ -33,5 +33,5 @@
 | 9/20/19 | Made modifications to the Uniform Order table and created a role table | 30 minutes |
 | 9/23/19 | Did the reading for week 4 | 1.2 hours |
 | 9/24/19 | Create the POJOs for User, Player, UniformOrder, and Role | 20 minutes |
-| 9/24/19 | Watched week 4 videos | | 
+| 9/24/19 | Watched week 4 videos, implemented Hibernate in the week 1 exercise | 3 hours | 
 | | Total Hours | 39.9  |

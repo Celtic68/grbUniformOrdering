@@ -9,5 +9,8 @@
         <module name="grbUniformOrdering" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="grbUniformOrdering" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>

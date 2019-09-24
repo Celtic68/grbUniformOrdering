@@ -62,3 +62,12 @@ Hibernate concepts to reduce the amount of project refactoring.
 
 All the database design work and table creation is complete with just some small modifications that will be needed based
 on what we do in class for Hibernate. I created the SQL in files to make it easier to drop and recreate them quickly.
+
+### Week 4 – 9/23/19 through 9/29/19
+#### Tasks Completed:
+
+* Created the POJOs for User, Player, UniformOrder and Role
+
+Again, trying to get projects done in other classes has taken time.  This week will be all EJ as the other projects are
+ahead of schedule and I need to put the petal to the metal for this class. On tap for this week will be to get Hibernate 
+completely set up and try to get all the jsps created.
