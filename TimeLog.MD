@@ -33,5 +33,7 @@
 | 9/20/19 | Made modifications to the Uniform Order table and created a role table | 30 minutes |
 | 9/23/19 | Did the reading for week 4 | 1.2 hours |
 | 9/24/19 | Create the POJOs for User, Player, UniformOrder, and Role | 20 minutes |
-| 9/24/19 | Watched week 4 videos, implemented Hibernate in the week 1 exercise | 6.3 hours | 
-| | Total Hours | 43.2  |
+| 9/24/19 | Watched week 4 videos, implemented Hibernate in the week 1 exercise | 6.3 hours |
+| 9/25/19 | Set up the Hibernate config files, the log4j properties file, created the test database, and created the classes / files to manage the test database for unit testing | 1.5 hours |
+| 9/25/19 | Set up Hibernate in the Player, Role, UniformOrder, and User models | 30 minutes | 
+| | Total Hours | 45.0  |

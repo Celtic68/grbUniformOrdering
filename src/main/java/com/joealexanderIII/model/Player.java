@@ -1,15 +1,34 @@
 package com.joealexanderIII.model;
 
+import org.hibernate.annotations.GenericGenerator;
+
+import javax.persistence.*;
+
 /**
  * A class to represent a Player.
  */
+@Entity(name = "Player")
+@Table(name = "grb_player")
 public class Player {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
+    @GenericGenerator(name="native", strategy = "native")
     private int id;
+
+    @Column(name = "USER_ID")
     private int userId;
+
+    @Column(name = "PLAYER_FIRST_NAME")
     private String playerFirstName;
+
+    @Column(name = "PLAYER_LAST_NAME")
     private String playerLastName;
+
+    @Column(name = "SITE_LOCATION")
     private int playerSiteLocation;
+
+    @Column(name = "AGE_GROUP")
     private String playerAgeGroup;
 
     /**

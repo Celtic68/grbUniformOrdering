@@ -1,23 +1,54 @@
 package com.joealexanderIII.model;
 
+import org.hibernate.annotations.GenericGenerator;
+
+import javax.persistence.*;
 import java.time.LocalDateTime;
 
 /**
  * A class to represent a Uniform Order.
  */
+@Entity(name = "UniformOrder")
+@Table(name = "grb_uniform_order")
 public class UniformOrder {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
+    @GenericGenerator(name="native", strategy = "native")
+    @Column(name = "ORDER_ID")
     private int orderId;
+
+    @Column(name = "PLAYER_ID")
     private int playerId;
+
+    @Column(name = "JERSEY_SIZE")
     private int jerseySize;
+
+    @Column(name = "JERSEY_NUMBER")
     private int jerseyNumber;
+
+    @Column(name = "PANTS_SIZE")
     private int pantsSize;
+
+    @Column(name = "PANTS_STYLE")
     private int pantsStyle;
+
+    @Column(name = "HAT_SIZE")
     private int hatSize;
+
+    @Column(name = "SHOE_SIZE")
     private int shoeSize;
+
+    @Column(name = "TSHIRT_SIZE")
     private int tShirtSize;
+
+    @Column(name = "SHORTS_SIZE")
     private int shortsSize;
+
+    @Column(name = "SEASON")
     private int season;
+
+    @Column(name = "DATE_CREATED")
     private LocalDateTime dateCreated;
 
     /**

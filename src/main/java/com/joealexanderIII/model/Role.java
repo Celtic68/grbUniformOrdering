@@ -1,12 +1,25 @@
 package com.joealexanderIII.model;
 
+import org.hibernate.annotations.GenericGenerator;
+
+import javax.persistence.*;
+
 /**
  * A class to represent a User Role.
  */
+@Entity(name = "Role")
+@Table(name = "grb_user_roles")
 public class Role {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
+    @GenericGenerator(name="native", strategy = "native")
     private int id;
+
+    @Column(name = "USER_NAME")
     private String userName;
+
+    @Column(name = "USER_ROLE")
     private String userRole;
 
     /**

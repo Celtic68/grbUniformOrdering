@@ -1,24 +1,56 @@
 package com.joealexanderIII.model;
 
+import org.hibernate.annotations.GenericGenerator;
+
+import javax.persistence.*;
 import java.time.LocalDateTime;
 
 /**
  * A class to represent a User.
  */
+@Entity(name = "User")
+@Table(name = "grb_user")
 public class User {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
+    @GenericGenerator(name="native", strategy = "native")
     private int id;
+
+    @Column(name = "USER_NAME")
     private String userName;
+
+    @Column(name = "USER_PASSWORD")
     private String userPassword;
+
+    @Column(name = "USER_FIRST_NAME")
     private String userFirstName;
+
+    @Column(name = "USER_LAST_NAME")
     private String userLastName;
+
+    @Column(name = "USER_ADDRESS_1")
     private String userAddress1;
+
+    @Column(name = "USER_ADDRESS_2")
     private String userAddress2;
+
+    @Column(name = "USER_CITY")
     private String userCity;
+
+    @Column(name = "USER_STATE")
     private String userState;
+
+    @Column(name = "USER_ZIP")
     private String userZip;
+
+    @Column(name = "USER_PHONE")
     private int userPhone;
+
+    @Column(name = "USER_EMAIL")
     private String userEmail;
+
+    @Column(name = "DATE_CREATED")
     private LocalDateTime dateCreated;
 
     /**
