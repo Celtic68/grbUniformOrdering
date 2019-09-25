@@ -71,3 +71,6 @@ on what we do in class for Hibernate. I created the SQL in files to make it easi
 Again, trying to get projects done in other classes has taken time.  This week will be all EJ as the other projects are
 ahead of schedule and I need to put the petal to the metal for this class. On tap for this week will be to get Hibernate 
 completely set up and try to get all the jsps created.
+
+Make sure to ask Paula about the hibernate config file when it comes to running unit tests - I had to change the file
+to point to the test_sample database to get the tests to run.
