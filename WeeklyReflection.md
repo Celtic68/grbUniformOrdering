@@ -67,6 +67,9 @@ on what we do in class for Hibernate. I created the SQL in files to make it easi
 #### Tasks Completed:
 
 * Created the POJOs for User, Player, UniformOrder and Role
+* Created the log4j and hibernate properties files
+* Set up the unit test directory and added the resource files (hibernate, test database, and sql to clean the database)
+* Question answered about hibernate - set up a hibernate config file in the test resources root
 
 Again, trying to get projects done in other classes has taken time.  This week will be all EJ as the other projects are
 ahead of schedule and I need to put the petal to the metal for this class. On tap for this week will be to get Hibernate 
@@ -74,3 +77,6 @@ completely set up and try to get all the jsps created.
 
 Make sure to ask Paula about the hibernate config file when it comes to running unit tests - I had to change the file
 to point to the test_sample database to get the tests to run.
+
+I got underway on 9/25 with adding Hibernate to the project after muddling through the week exercise. I am planning to
+get it done 9/26 so I can plow through some jsp work starting 9/27.

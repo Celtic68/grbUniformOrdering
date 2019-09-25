@@ -14,6 +14,7 @@ DROP TABLE IF EXISTS grb_tshirt_sizes;
 DROP TABLE IF EXISTS grb_shorts_sizes;
 DROP TABLE IF EXISTS grb_seasons;
 DROP TABLE IF EXISTS grb_locations;
+DROP TABLE IF EXISTS grb_user_roles;
 
 UNLOCK TABLES;
 

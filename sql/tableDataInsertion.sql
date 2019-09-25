@@ -152,4 +152,11 @@ INSERT INTO grb_uniform_order VALUES (1,1,7,NULL,6,2,3,13,9,9,2,'2018-12-10 15:5
 
 UNLOCK TABLES;
 
+LOCK TABLES grb_user_roles WRITE;
+
+INSERT INTO grb_user_roles VALUES (1,'almfamily','admin')
+            ,(2,'jleitl','user');
+
+UNLOCK TABLES;
+
 SET FOREIGN_KEY_CHECKS = 1;
