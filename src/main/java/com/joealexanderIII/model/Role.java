@@ -42,6 +42,17 @@ public class Role {
     }
 
     /**
+     * Instantiates a new Role.
+     *
+     * @param userName the user name
+     * @param userRole the user role
+     */
+    public Role(String userName, String userRole) {
+        this.userName = userName;
+        this.userRole = userRole;
+    }
+
+    /**
      * Gets id.
      *
      * @return the id

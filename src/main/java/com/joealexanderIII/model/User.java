@@ -3,6 +3,7 @@ package com.joealexanderIII.model;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.math.BigInteger;
 import java.time.LocalDateTime;
 
 /**
@@ -45,7 +46,7 @@ public class User {
     private String userZip;
 
     @Column(name = "USER_PHONE")
-    private int userPhone;
+    private long userPhone;
 
     @Column(name = "USER_EMAIL")
     private String userEmail;
@@ -78,8 +79,41 @@ public class User {
      */
     public User(int id, String userName, String userPassword, String userFirstName, String userLastName,
                 String userAddress1, String userAddress2, String userCity, String userState,
-                String userZip, int userPhone, String userEmail, LocalDateTime dateCreated) {
+                String userZip, long userPhone, String userEmail, LocalDateTime dateCreated) {
         this.id = id;
+        this.userName = userName;
+        this.userPassword = userPassword;
+        this.userFirstName = userFirstName;
+        this.userLastName = userLastName;
+        this.userAddress1 = userAddress1;
+        this.userAddress2 = userAddress2;
+        this.userCity = userCity;
+        this.userState = userState;
+        this.userZip = userZip;
+        this.userPhone = userPhone;
+        this.userEmail = userEmail;
+        this.dateCreated = dateCreated;
+    }
+
+    /**
+     * Instantiates a new User.
+     *
+     * @param userName      the user name
+     * @param userPassword  the user password
+     * @param userFirstName the user first name
+     * @param userLastName  the user last name
+     * @param userAddress1  the user address 1
+     * @param userAddress2  the user address 2
+     * @param userCity      the user city
+     * @param userState     the user state
+     * @param userZip       the user zip
+     * @param userPhone     the user phone
+     * @param userEmail     the user email
+     * @param dateCreated   the date created
+     */
+    public User(String userName, String userPassword, String userFirstName, String userLastName,
+                String userAddress1, String userAddress2, String userCity, String userState,
+                String userZip, long userPhone, String userEmail, LocalDateTime dateCreated) {
         this.userName = userName;
         this.userPassword = userPassword;
         this.userFirstName = userFirstName;
@@ -279,7 +313,7 @@ public class User {
      *
      * @return the user phone
      */
-    public int getUserPhone() {
+    public long getUserPhone() {
         return userPhone;
     }
 
@@ -288,7 +322,7 @@ public class User {
      *
      * @param userPhone the user phone
      */
-    public void setUserPhone(int userPhone) {
+    public void setUserPhone(long userPhone) {
         this.userPhone = userPhone;
     }
 

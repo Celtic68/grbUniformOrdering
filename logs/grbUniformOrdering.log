@@ -1,0 +1,105 @@
+[ERROR] 2019-09-25 16:51:02.999 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-09-25 16:52:56.163 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-09-25 17:01:25.019 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-09-25 17:09:09.229 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-09-25 17:09:09.473 [main] RoleDao - Searching for user name: { } 
+[ERROR] 2019-09-25 17:10:02.510 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-09-25 17:10:02.758 [main] RoleDao - Searching for user name: { } 
+[ERROR] 2019-09-25 17:10:29.446 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-09-25 17:10:29.699 [main] RoleDao - Searching for user name: { } 
+[ERROR] 2019-09-25 17:11:22.775 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-09-25 17:11:23.019 [main] RoleDao - Searching for user name: { } 
+[ERROR] 2019-09-25 17:11:23.042 [main] Database - java.sql.SQLException: Can not issue empty query.
+[DEBUG] 2019-09-25 17:11:23.046 [main] RoleDao - Searching for user name: { } 
+[ERROR] 2019-09-25 17:25:12.961 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-09-25 17:27:19.773 [main] Database - java.sql.SQLException: Can not issue empty query.
+[ERROR] 2019-09-25 17:31:53.271 [main] Database - java.lang.NullPointerException
+[INFO ] 2019-09-25 17:55:00.904 [main] Database - sql file: { }
+[ERROR] 2019-09-25 17:55:00.924 [main] Database - java.sql.SQLException: Can not issue empty query.
+[INFO ] 2019-09-25 17:57:09.002 [main] Database - cleanTestDB.sql
+[ERROR] 2019-09-25 17:57:09.022 [main] Database - java.sql.SQLException: Can not issue empty query.
+[INFO ] 2019-09-25 18:00:19.153 [main] Database - cleanTestDB.sql
+[INFO ] 2019-09-25 18:00:19.164 [main] Database - SET FOREIGN_KEY_CHECKS = 0;
+[INFO ] 2019-09-25 18:00:19.167 [main] Database - 
+[ERROR] 2019-09-25 18:00:19.170 [main] Database - java.sql.SQLException: Can not issue empty query.
+[INFO ] 2019-09-25 18:02:29.761 [main] Database - cleanTestDB.sql
+[INFO ] 2019-09-25 18:02:29.774 [main] Database - SET FOREIGN_KEY_CHECKS = 0;
+[INFO ] 2019-09-25 18:02:29.776 [main] Database - delete from grb_locations;
+[INFO ] 2019-09-25 18:02:29.780 [main] Database - delete from grb_hat_sizes;
+[INFO ] 2019-09-25 18:02:29.780 [main] Database - delete from grb_jersey_sizes;
+[INFO ] 2019-09-25 18:02:29.782 [main] Database - delete from grb_pants_sizes;
+[INFO ] 2019-09-25 18:02:29.783 [main] Database - delete from grb_pants_styles;
+[INFO ] 2019-09-25 18:02:29.784 [main] Database - delete from grb_player;
+[INFO ] 2019-09-25 18:02:29.787 [main] Database - delete from grb_seasons;
+[INFO ] 2019-09-25 18:02:29.788 [main] Database - delete from grb_shoe_sizes;
+[INFO ] 2019-09-25 18:02:29.789 [main] Database - delete from grb_shorts_sizes;
+[INFO ] 2019-09-25 18:02:29.791 [main] Database - delete from grb_tshirt_sizes;
+[INFO ] 2019-09-25 18:02:29.792 [main] Database - delete from grb_uniform_order;
+[INFO ] 2019-09-25 18:02:29.795 [main] Database - delete from grb_user;
+[INFO ] 2019-09-25 18:02:29.797 [main] Database - delete from grb_user_roles;
+[INFO ] 2019-09-25 18:02:29.797 [main] Database - LOCK TABLES grb_user WRITE;
+[INFO ] 2019-09-25 18:02:29.798 [main] Database - INSERT INTO grb_user VALUES (1,'almfamily','$2y$10$Z0k7T2ZWYJsI8z9WEzH5Bu5lOps/ph7MNNSwgeuJ8rilaTxxz6QBe','Joseph','Alexander','2764 Olin Way','','Sun Prairie','WI','53590',6087720366,'cambo7131@gmail.com','2018-12-02 20:31:10'),(2,'jleitl','$2y$10$7YGOGnOTnf.u5E13W7IIWegcVDNGdCYGYlHv939SzmqZpMwd7ydRS','Jill','Leitl','2764 Olin Way','','Sun Prairie','WI','53590',6087720782,'cambo7131@gmail.com','2018-12-02 22:15:25');
+[INFO ] 2019-09-25 18:02:29.802 [main] Database - UNLOCK TABLES;
+[INFO ] 2019-09-25 18:02:29.803 [main] Database - LOCK TABLES grb_player WRITE;
+[INFO ] 2019-09-25 18:02:29.803 [main] Database - INSERT INTO grb_player VALUES (1,2,'Jenkin','Alexander',1,'15u'),(2,2,'Jordan','Alexander',1,'12u');
+[INFO ] 2019-09-25 18:02:29.809 [main] Database - UNLOCK TABLES;
+[INFO ] 2019-09-25 18:02:29.809 [main] Database - LOCK TABLES grb_pants_styles WRITE;
+[INFO ] 2019-09-25 18:02:29.810 [main] Database - INSERT INTO grb_pants_styles VALUES (1,'Traditional'),(2,'Stirrup');
+[INFO ] 2019-09-25 18:02:29.814 [main] Database - UNLOCK TABLES;
+[INFO ] 2019-09-25 18:02:29.814 [main] Database - LOCK TABLES grb_pants_sizes WRITE;
+[INFO ] 2019-09-25 18:02:29.814 [main] Database - INSERT INTO grb_pants_sizes VALUES (1,'Youth XS'),(2,'Youth SM'),(3,'Youth MED'),(4,'Youth LG'),(5,'Adult XS'),(6,'Adult SM'),(7,'Adult MED'),(8,'Adult LG'),(9,'Adult XLG');
+[INFO ] 2019-09-25 18:02:29.817 [main] Database - UNLOCK TABLES;
+[INFO ] 2019-09-25 18:02:29.818 [main] Database - LOCK TABLES grb_jersey_sizes WRITE;
+[INFO ] 2019-09-25 18:02:29.818 [main] Database - INSERT INTO grb_jersey_sizes VALUES (1,'Youth XS'),(2,'Youth SM'),(3,'Youth MED'),(4,'Youth LG'),(5,'Adult XS'),(6,'Adult SM'),(7,'Adult MED'),(8,'Adult LG'),(9,'Adult XLG'),(10,'Adult XXLG');
+[INFO ] 2019-09-25 18:02:29.821 [main] Database - UNLOCK TABLES;
+[INFO ] 2019-09-25 18:02:29.822 [main] Database - LOCK TABLES grb_hat_sizes WRITE;
+[INFO ] 2019-09-25 18:02:29.822 [main] Database - INSERT INTO grb_hat_sizes VALUES (1,'Youth'),(2,'Small'),(3,'Medium'),(4,'Large');
+[INFO ] 2019-09-25 18:02:29.826 [main] Database - UNLOCK TABLES;
+[INFO ] 2019-09-25 18:02:29.827 [main] Database - LOCK TABLES grb_shoe_sizes WRITE;
+[INFO ] 2019-09-25 18:02:29.827 [main] Database - INSERT INTO grb_shoe_sizes VALUES (1,'1.0'),(2,'1.5'),(3,'2.0'),(4,'2.5'),(5,'3.0'),(6,'3.5'),(7,'4.0'),(8,'4.5'),(9,'5.0'),(10,'5.5'),(11,'6.0'),(12,'6.5'),(13,'7.0'),(14,'7.5'),(15,'8.0'),(16,'8.5'),(17,'9.0'),(18,'9.5'),(19,'10.0'),(20,'10.5'),(21,'11.0'),(22,'11.5'),(23,'12.0'),(24,'12.5'),(25,'13.0'),(26,'13.5'),(27,'14.0'),(28,'14.5'),(29,'15.0'),(30,'15.5'),(31,'16.0'),(32,'16.5'),(33,'17.0');
+[INFO ] 2019-09-25 18:02:29.830 [main] Database - UNLOCK TABLES;
+[INFO ] 2019-09-25 18:02:29.831 [main] Database - LOCK TABLES grb_tshirt_sizes WRITE;
+[INFO ] 2019-09-25 18:02:29.831 [main] Database - INSERT INTO grb_tshirt_sizes VALUES (1,'Youth XS'),(2,'Youth SM'),(3,'Youth MED'),(4,'Youth LG'),(5,'Adult XS'),(6,'Adult SM'),(7,'Adult MED'),(8,'Adult LG'),(9,'Adult XLG'),(10,'Adult XXLG');
+[INFO ] 2019-09-25 18:02:29.835 [main] Database - UNLOCK TABLES;
+[INFO ] 2019-09-25 18:02:29.835 [main] Database - LOCK TABLES grb_shorts_sizes WRITE;
+[INFO ] 2019-09-25 18:02:29.836 [main] Database - INSERT INTO grb_shorts_sizes VALUES (1,'Youth XS'),(2,'Youth SM'),(3,'Youth MED'),(4,'Youth LG'),(5,'Adult XS'),(6,'Adult SM'),(7,'Adult MED'),(8,'Adult LG'),(9,'Adult XLG'),(10,'Adult XXLG');
+[INFO ] 2019-09-25 18:02:29.839 [main] Database - UNLOCK TABLES;
+[INFO ] 2019-09-25 18:02:29.839 [main] Database - LOCK TABLES grb_seasons WRITE;
+[INFO ] 2019-09-25 18:02:29.840 [main] Database - INSERT INTO grb_seasons VALUES (1,'Spring'),(2,'Summer'),(3,'Fall');
+[INFO ] 2019-09-25 18:02:29.844 [main] Database - UNLOCK TABLES;
+[INFO ] 2019-09-25 18:02:29.844 [main] Database - LOCK TABLES grb_locations WRITE;
+[INFO ] 2019-09-25 18:02:29.845 [main] Database - INSERT INTO grb_locations VALUES (1,'Madison'),(2,'Milwaukee'),(3,'Eau Claire');
+[INFO ] 2019-09-25 18:02:29.848 [main] Database - UNLOCK TABLES;
+[INFO ] 2019-09-25 18:02:29.849 [main] Database - LOCK TABLES grb_uniform_order WRITE;
+[INFO ] 2019-09-25 18:02:29.850 [main] Database - INSERT INTO grb_uniform_order VALUES (1,1,7,NULL,6,2,3,13,9,9,2,'2018-12-10 15:54:39'),(2,2,3,34,3,1,1,6,NULL,NULL,3,'2018-12-10 15:56:04');
+[INFO ] 2019-09-25 18:02:29.853 [main] Database - UNLOCK TABLES;
+[INFO ] 2019-09-25 18:02:29.854 [main] Database - LOCK TABLES grb_user_roles WRITE;
+[INFO ] 2019-09-25 18:02:29.855 [main] Database - INSERT INTO grb_user_roles VALUES (1,'almfamily','admin'),(2,'jleitl','user');
+[INFO ] 2019-09-25 18:02:29.857 [main] Database - UNLOCK TABLES;
+[INFO ] 2019-09-25 18:02:29.858 [main] Database - SET FOREIGN_KEY_CHECKS = 1;
+[INFO ] 2019-09-25 18:02:29.858 [main] Database - null
+[DEBUG] 2019-09-25 18:02:30.123 [main] RoleDao - Searching for user name: { } 
+[DEBUG] 2019-09-25 18:04:30.355 [main] RoleDao - Searching for user name: { } 
+[DEBUG] 2019-09-25 18:04:30.501 [main] RoleDao - Searching for user name: { } 
+[INFO ] 2019-09-25 18:37:59.029 [main] UserDao - All users retrieved
+[DEBUG] 2019-09-25 18:40:23.046 [main] UserDao - Searching for: almfamily
+[INFO ] 2019-09-25 18:40:23.298 [main] UserDao - Searched for a specific user: { }
+[DEBUG] 2019-09-25 18:40:45.488 [main] UserDao - Searching for: almfamily
+[INFO ] 2019-09-25 18:40:45.726 [main] UserDao - Searched for a specific user: { }
+[INFO ] 2019-09-25 18:46:18.721 [main] UserDao - Search Criteria is: l for the userLastName field
+[INFO ] 2019-09-25 18:47:11.752 [main] UserDao - Search Criteria is: i for the userFirstName field
+[DEBUG] 2019-09-25 19:45:16.190 [main] RoleDao - Searching for user name: { } 
+[DEBUG] 2019-09-25 19:45:16.329 [main] RoleDao - Searching for user name: { } 
+[DEBUG] 2019-09-25 19:45:31.907 [main] UserDao - Searching for: almfamily
+[INFO ] 2019-09-25 19:45:32.048 [main] UserDao - Searched for a specific user: { }
+[INFO ] 2019-09-25 19:45:32.173 [main] UserDao - Search Criteria is: i for the userFirstName field
+[INFO ] 2019-09-25 19:45:32.296 [main] UserDao - Search Criteria is: l for the userLastName field
+[INFO ] 2019-09-25 19:45:32.589 [main] UserDao - All users retrieved
+[DEBUG] 2019-09-25 19:56:15.395 [main] UserDao - Searching for: almfamily
+[INFO ] 2019-09-25 19:56:15.546 [main] UserDao - Searched for a specific user: { }
+[INFO ] 2019-09-25 19:56:15.671 [main] UserDao - Search Criteria is: i for the userFirstName field
+[INFO ] 2019-09-25 19:56:15.787 [main] UserDao - Search Criteria is: l for the userLastName field
+[INFO ] 2019-09-25 19:56:16.033 [main] UserDao - All users retrieved
+[DEBUG] 2019-09-25 19:56:53.972 [main] RoleDao - Searching for user name: { } 
+[DEBUG] 2019-09-25 19:56:54.096 [main] RoleDao - Searching for user name: { } 
+[DEBUG] 2019-09-25 20:14:49.397 [main] RoleDao - Searching for user name: { } 

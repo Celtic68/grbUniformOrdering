@@ -35,5 +35,7 @@
 | 9/24/19 | Create the POJOs for User, Player, UniformOrder, and Role | 20 minutes |
 | 9/24/19 | Watched week 4 videos, implemented Hibernate in the week 1 exercise | 6.3 hours |
 | 9/25/19 | Set up the Hibernate config files, the log4j properties file, created the test database, and created the classes / files to manage the test database for unit testing | 1.5 hours |
-| 9/25/19 | Set up Hibernate in the Player, Role, UniformOrder, and User models | 30 minutes | 
-| | Total Hours | 45.0  |
+| 9/25/19 | Set up Hibernate in the Player, Role, UniformOrder, and User models | 30 minutes |
+| 9/25/19 | Create unit test class for Role and start test cases, and created initial version of the RoleDao | 30 minutes |
+| 9/25/19 | Finished unit test class for Role and ran all test cases to success, created the dao for the User class and all the test cases which ran to success | 2.5 hours | 
+| | Total Hours | 48.0  |
