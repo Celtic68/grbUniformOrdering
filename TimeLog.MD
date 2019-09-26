@@ -37,5 +37,6 @@
 | 9/25/19 | Set up the Hibernate config files, the log4j properties file, created the test database, and created the classes / files to manage the test database for unit testing | 1.5 hours |
 | 9/25/19 | Set up Hibernate in the Player, Role, UniformOrder, and User models | 30 minutes |
 | 9/25/19 | Create unit test class for Role and start test cases, and created initial version of the RoleDao | 30 minutes |
-| 9/25/19 | Finished unit test class for Role and ran all test cases to success, created the dao for the User class and all the test cases which ran to success | 2.5 hours | 
-| | Total Hours | 48.0  |
+| 9/25/19 | Finished unit test class for Role and ran all test cases to success, created the dao for the User class and all the test cases which ran to success | 2.5 hours |
+| 9/26/19 | Created initial versions of the base jsps and the index page | 1 hour | 
+| | Total Hours | 49.0  |

@@ -73,6 +73,8 @@ on what we do in class for Hibernate. I created the SQL in files to make it easi
 * Created the Daos for the User and Role classes
 * Set up the test database
 * Created all the unit tests for The UserDao and RoleDao classes and ran them all to success with 100% coverage
+* Created initial versions of the base jsps and the index page
+* Created initial version of the Application StartUp class
 
 Again, trying to get projects done in other classes has taken time.  This week will be all EJ as the other projects are
 ahead of schedule and I need to put the petal to the metal for this class. On tap for this week will be to get Hibernate 
@@ -87,3 +89,10 @@ insertion, but it was due to some blank lines in the file.
 
 The Daos are all set to go and the week 4 exercise has been handed in as part of the project.  All the units tests for
 those two classes are also set to go. 9/26 will actually begin jsp work.
+
+On 9/26, I started the creation of the jsps.  I began with some base stuff like the head, header, and footer which will
+be re-used.  I also did an initial version of the index page as well as the master CSS file.  Lots more to do here...
+
+I also created an ApplicationStartUp class - right now, the only thing it does is set up a singleton for the 
+SessionFactoryProvider and sets it to the session. Not used yet, but as I start creating servlets, it will come in
+handy.
