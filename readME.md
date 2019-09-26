@@ -15,8 +15,8 @@ The administrative interface will allow the user to add / delete players, view /
 
 Some initial screen designs:
 
-![GRB Uniform Ordering Landing Page](images/landingPage.png)
+![GRB Uniform Ordering Landing Page](src/main/webapp/images/landingPage.png)
 
-![GRB Uniform Ordering Sign Up Page](images/signUp.png)
+![GRB Uniform Ordering Sign Up Page](src/main/webapp/images/signUp.png)
 
-![GRB Uniform Ordering Login Page](images/loginPage.png)
+![GRB Uniform Ordering Login Page](src/main/webapp/images/loginPage.png)
