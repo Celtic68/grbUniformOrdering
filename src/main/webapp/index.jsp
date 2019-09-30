@@ -11,6 +11,9 @@
 
     <c:import url="header.jsp" />
 
+    <c:set var="userType" value="" scope="session"  />
+    <c:import url="menu.jsp" />
+
     <div id="body">
 
 

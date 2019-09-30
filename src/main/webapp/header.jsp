@@ -1,4 +1,3 @@
 <header>
-    <h1><a href="/">GRB Academy</a></h1>
-    <h2>Uniform Ordering</h2>
+    <h1>GRB Uniform Ordering Page - Go Rays!</h1>
 </header>

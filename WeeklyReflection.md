@@ -96,3 +96,7 @@ be re-used.  I also did an initial version of the index page as well as the mast
 I also created an ApplicationStartUp class - right now, the only thing it does is set up a singleton for the 
 SessionFactoryProvider and sets it to the session. Not used yet, but as I start creating servlets, it will come in
 handy.
+
+On 9/28, I attended the GDG DevFest 2019 conference for my professional development task. It was a wonderful experience
+that I look forward to doing again next year. On 9/29, I used all my notes to create my presentation which I will be 
+doing this upcoming week in class.
