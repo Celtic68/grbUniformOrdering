@@ -51,6 +51,9 @@ public class UniformOrder {
     @Column(name = "DATE_CREATED")
     private LocalDateTime dateCreated;
 
+    @ManyToOne
+    private Player player;
+
     /**
      * Instantiates a new Uniform order.
      */
@@ -304,5 +307,23 @@ public class UniformOrder {
      */
     public void setDateCreated(LocalDateTime dateCreated) {
         this.dateCreated = dateCreated;
+    }
+
+    /**
+     * Gets player.
+     *
+     * @return the player
+     */
+    public Player getPlayer() {
+        return player;
+    }
+
+    /**
+     * Sets player.
+     *
+     * @param player the player
+     */
+    public void setPlayer(Player player) {
+        this.player = player;
     }
 }

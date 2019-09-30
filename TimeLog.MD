@@ -40,5 +40,6 @@
 | 9/25/19 | Finished unit test class for Role and ran all test cases to success, created the dao for the User class and all the test cases which ran to success | 2.5 hours |
 | 9/26/19 | Created initial versions of the base jsps and the index page | 1 hour |
 | 9/27/19 | Attended the GDG DevFest 2019 conference for my professional development task | 9 hours |
-| 9/28/19 | Created my professional development presentation | 5 hours | 
-| | Total Hours | 64.0  |
+| 9/28/19 | Created my professional development presentation | 5 hours |
+| 9/30/19 | Added Hibernate one to many and many to one annotations to the User, Player, and UniformOrder tables | 20 minutes | 
+| | Total Hours | 64.3  |

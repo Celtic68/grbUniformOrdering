@@ -3,6 +3,8 @@ package com.joealexanderIII.model;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * A class to represent a Player.
@@ -30,6 +32,12 @@ public class Player {
 
     @Column(name = "AGE_GROUP")
     private String playerAgeGroup;
+
+    @ManyToOne
+    private User user;
+
+    @OneToMany(mappedBy = "player", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<UniformOrder> orders = new HashSet<>();
 
     /**
      * Instantiates a new Player.
@@ -163,5 +171,41 @@ public class Player {
      */
     public void setPlayerAgeGroup(String playerAgeGroup) {
         this.playerAgeGroup = playerAgeGroup;
+    }
+
+    /**
+     * Gets user.
+     *
+     * @return the user
+     */
+    public User getUser() {
+        return user;
+    }
+
+    /**
+     * Sets user.
+     *
+     * @param user the user
+     */
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    /**
+     * Gets orders.
+     *
+     * @return the orders
+     */
+    public Set<UniformOrder> getOrders() {
+        return orders;
+    }
+
+    /**
+     * Sets orders.
+     *
+     * @param orders the orders
+     */
+    public void setOrders(Set<UniformOrder> orders) {
+        this.orders = orders;
     }
 }

@@ -100,3 +100,12 @@ handy.
 On 9/28, I attended the GDG DevFest 2019 conference for my professional development task. It was a wonderful experience
 that I look forward to doing again next year. On 9/29, I used all my notes to create my presentation which I will be 
 doing this upcoming week in class.
+
+### Week 5 – 9/30/19 through 10/6/19
+#### Tasks Completed:
+
+* Added Hibernate one to many and many to one annotations to models
+
+On 9/30, I used the week 1 example to add the annotations for one to many and many to one to the User, Player, and 
+UniformOrder models. I still need to add the one to one annotations for User to Role, but I need to research more to see 
+how to do that for fields that are not the key.

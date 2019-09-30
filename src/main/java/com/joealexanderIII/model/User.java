@@ -5,6 +5,8 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 import java.math.BigInteger;
 import java.time.LocalDateTime;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * A class to represent a User.
@@ -53,6 +55,9 @@ public class User {
 
     @Column(name = "DATE_CREATED")
     private LocalDateTime dateCreated;
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<Player> players = new HashSet<>();
 
     /**
      * Instantiates a new User.
@@ -361,4 +366,24 @@ public class User {
     public void setDateCreated(LocalDateTime dateCreated) {
         this.dateCreated = dateCreated;
     }
+
+    /**
+     * Gets players.
+     *
+     * @return the players
+     */
+    public Set<Player> getPlayers() {
+        return players;
+    }
+
+    /**
+     * Sets players.
+     *
+     * @param players the players
+     */
+    public void setPlayers(Set<Player> players) {
+        this.players = players;
+    }
+
+
 }
