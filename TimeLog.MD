@@ -41,5 +41,7 @@
 | 9/26/19 | Created initial versions of the base jsps and the index page | 1 hour |
 | 9/27/19 | Attended the GDG DevFest 2019 conference for my professional development task | 9 hours |
 | 9/28/19 | Created my professional development presentation | 5 hours |
-| 9/30/19 | Added Hibernate one to many and many to one annotations to the User, Player, and UniformOrder tables | 20 minutes | 
-| | Total Hours | 64.3  |
+| 9/30/19 | Added Hibernate one to many and many to one annotations to the User, Player, and UniformOrder tables | 20 minutes |
+| 9/30/19 | Completed week 5 reading and completed week 5 videos and demo through video 2 | 3.5 hours |
+| 10/1/19 | Finished week 5 videos and demo, and added the generic Dao functionality to the demo | 2.5 hours | 
+| | Total Hours | 70.2  |
