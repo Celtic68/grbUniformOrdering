@@ -54,7 +54,7 @@ public class RoleDaoTest {
     @Test
     void insert() {
 
-        Role newRole = new Role("bevans","user");
+        Role newRole = new Role("bevans", "$2y$10$Z0k7T2ZWYJsI8z9WEzH5Bu5lOps/ph7MNNSwgeuJ8rilaTxxz6QBe","user");
         int id = genericDao.insert(newRole);
         assertNotEquals(0,id);
         Role insertedRole = (Role)genericDao.getByPropertyUniqueEqual("userName", newRole.getUserName());

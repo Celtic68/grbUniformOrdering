@@ -20,6 +20,9 @@ public class Role {
     @Column(name = "USER_NAME")
     private String userName;
 
+    @Column(name = "USER_PASSWORD")
+    private String userPassword;
+
     @Column(name = "USER_ROLE")
     private String userRole;
 
@@ -29,27 +32,9 @@ public class Role {
     public Role() {
     }
 
-    /**
-     * Instantiates a new Role.
-     *
-     * @param id       the id
-     * @param userName the user name
-     * @param userRole the user role
-     */
-    public Role(int id, String userName, String userRole) {
-        this.id = id;
+    public Role(String userName, String userPassword, String userRole) {
         this.userName = userName;
-        this.userRole = userRole;
-    }
-
-    /**
-     * Instantiates a new Role.
-     *
-     * @param userName the user name
-     * @param userRole the user role
-     */
-    public Role(String userName, String userRole) {
-        this.userName = userName;
+        this.userPassword = userPassword;
         this.userRole = userRole;
     }
 
@@ -90,6 +75,24 @@ public class Role {
     }
 
     /**
+     * Gets user password.
+     *
+     * @return the user password
+     */
+    public String getUserPassword() {
+        return userPassword;
+    }
+
+    /**
+     * Sets user password.
+     *
+     * @param userPassword the user password
+     */
+    public void setUserPassword(String userPassword) {
+        this.userPassword = userPassword;
+    }
+
+    /**
      * Gets user role.
      *
      * @return the user role
@@ -114,11 +117,12 @@ public class Role {
         Role role = (Role) o;
         return id == role.id &&
                 Objects.equals(userName, role.userName) &&
+                Objects.equals(userPassword, role.userPassword) &&
                 Objects.equals(userRole, role.userRole);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, userName, userRole);
+        return Objects.hash(id, userName, userPassword, userRole);
     }
 }

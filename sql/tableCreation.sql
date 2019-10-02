@@ -68,8 +68,7 @@ CREATE TABLE grb_uniform_order (
 
 CREATE TABLE grb_user (
     ID int(11) NOT NULL AUTO_INCREMENT,
-    USER_NAME varchar(50) DEFAULT NULL,
-    USER_PASSWORD varchar(160) DEFAULT NULL,
+    USER_NAME_ID int(11) NOT NULL,
     USER_FIRST_NAME varchar(20) DEFAULT NULL,
     USER_LAST_NAME varchar(30) DEFAULT NULL,
     USER_ADDRESS_1 varchar(30) DEFAULT NULL,
@@ -80,7 +79,9 @@ CREATE TABLE grb_user (
     USER_PHONE bigint(20) DEFAULT NULL,
     USER_EMAIL varchar(50) DEFAULT NULL,
     DATE_CREATED timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    PRIMARY KEY (ID)
+    PRIMARY KEY (ID),
+    KEY fk_grb_user_user_name_id (USER_NAME_ID),
+    CONSTRAINT grb_user_ibfk_1 FOREIGN KEY (USER_NAME_ID) REFERENCES grb_user_roles (ID)
 );
 
 CREATE TABLE grb_pants_styles (
@@ -140,6 +141,7 @@ CREATE TABLE grb_locations (
 CREATE TABLE grb_user_roles (
     ID int(11) NOT NULL AUTO_INCREMENT,
     USER_NAME varchar(50) NOT NULL,
+    USER_PASSWORD varchar(160) NOT NULL,
     USER_ROLE varchar(20) NOT NULL,
     PRIMARY KEY (ID)
 );

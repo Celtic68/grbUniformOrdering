@@ -2,8 +2,8 @@ SET FOREIGN_KEY_CHECKS = 0;
 
 LOCK TABLES grb_user WRITE;
 
-INSERT INTO grb_user VALUES (1,'almfamily','$2y$10$Z0k7T2ZWYJsI8z9WEzH5Bu5lOps/ph7MNNSwgeuJ8rilaTxxz6QBe','Joseph','Alexander','2764 Olin Way','','Sun Prairie','WI','53590',6087720366,'cambo7131@gmail.com','2018-12-02 20:31:10')
-,(2,'jleitl','$2y$10$7YGOGnOTnf.u5E13W7IIWegcVDNGdCYGYlHv939SzmqZpMwd7ydRS','Jill','Leitl','2764 Olin Way','','Sun Prairie','WI','53590',6087720782,'cambo7131@gmail.com','2018-12-02 22:15:25')
+INSERT INTO grb_user VALUES (1, 1, 'Joseph','Alexander','2764 Olin Way','','Sun Prairie','WI','53590',6087720366,'cambo7131@gmail.com','2018-12-02 20:31:10')
+,(2, 2, 'Jill','Leitl','2764 Olin Way','','Sun Prairie','WI','53590',6087720782,'cambo7131@gmail.com','2018-12-02 22:15:25')
 ;
 UNLOCK TABLES;
 
@@ -154,8 +154,8 @@ UNLOCK TABLES;
 
 LOCK TABLES grb_user_roles WRITE;
 
-INSERT INTO grb_user_roles VALUES (1,'almfamily','admin')
-            ,(2,'jleitl','user');
+INSERT INTO grb_user_roles VALUES (1,'almfamily','$2y$10$Z0k7T2ZWYJsI8z9WEzH5Bu5lOps/ph7MNNSwgeuJ8rilaTxxz6QBe', 'admin')
+            ,(2,'jleitl','$2y$10$7YGOGnOTnf.u5E13W7IIWegcVDNGdCYGYlHv939SzmqZpMwd7ydRS', 'user');
 
 UNLOCK TABLES;
 

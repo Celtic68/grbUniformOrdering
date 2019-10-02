@@ -1,5 +1,6 @@
 package com.joealexanderIII.dao;
 
+import com.joealexanderIII.model.Role;
 import com.joealexanderIII.model.User;
 import com.joealexanderIII.util.Database;
 import org.junit.jupiter.api.BeforeEach;
@@ -33,14 +34,15 @@ class UserDaoTest {
         assertEquals(2, allUsers.size());
     }
 
-    @Test
-    void getUserByUserNameSuccess() {
-
-        User specificUser = (User)genericDao.getByPropertyUniqueEqual("userName", "almfamily");
-        assertEquals("Joseph", specificUser.getUserFirstName());
-        assertEquals("Alexander", specificUser.getUserLastName());
-
-    }
+    // TODO
+//    @Test
+//    void getUserByUserNameIDSuccess() {
+//
+//        User specificUser = (User)genericDao.getByPropertyUniqueEqual("userNameID", 1);
+//        assertEquals("Joseph", specificUser.getUserFirstName());
+//        assertEquals("Alexander", specificUser.getUserLastName());
+//
+//    }
 
     @Test
     void getUserByIdSuccess() {
@@ -94,13 +96,17 @@ class UserDaoTest {
     @Test
     void insert() {
 
-        LocalDateTime date = LocalDateTime.now();
-        User newUser = new User("bevans","$2y$10$Z0k7T2ZWYJsI8z9WEzH5Bu5lOps/ph7MNNSwgeuJ8rilaTxxz6QBe","Bob","Evans","1234 Main St","","Beloit","WI","53590",6087720366L,"bevans@gmail.com", date);
-
-        int id = genericDao.insert(newUser);
-
+        Role newRole = new Role("bevans", "$2y$10$Z0k7T2ZWYJsI8z9WEzH5Bu5lOps/ph7MNNSwgeuJ8rilaTxxz6QBe","user");
+        int id = genericDao.insert(newRole);
         assertNotEquals(0,id);
-        User insertedUser = (User)genericDao.getById(id);
+
+        LocalDateTime date = LocalDateTime.now();
+        User newUser = new User(id,"Bob","Evans","1234 Main St","","Beloit","WI","53590",6087720366L,"bevans@gmail.com", date);
+
+        int userId = genericDao.insert(newUser);
+
+        assertNotEquals(0,userId);
+        User insertedUser = (User)genericDao.getById(userId);
 
         assertEquals(newUser, insertedUser);
 

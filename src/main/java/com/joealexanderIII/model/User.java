@@ -3,7 +3,6 @@ package com.joealexanderIII.model;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.math.BigInteger;
 import java.time.LocalDateTime;
 import java.util.HashSet;
 import java.util.Objects;
@@ -21,11 +20,8 @@ public class User {
     @GenericGenerator(name="native", strategy = "native")
     private int id;
 
-    @Column(name = "USER_NAME")
-    private String userName;
-
-    @Column(name = "USER_PASSWORD")
-    private String userPassword;
+    @Column(name = "USER_NAME_ID")
+    private int userNameID;
 
     @Column(name = "USER_FIRST_NAME")
     private String userFirstName;
@@ -70,8 +66,7 @@ public class User {
      * Instantiates a new User.
      *
      * @param id            the id
-     * @param userName      the user name
-     * @param userPassword  the user password
+     * @param userNameID    the user name ID
      * @param userFirstName the user first name
      * @param userLastName  the user last name
      * @param userAddress1  the user address 1
@@ -83,12 +78,11 @@ public class User {
      * @param userEmail     the user email
      * @param dateCreated   the date created
      */
-    public User(int id, String userName, String userPassword, String userFirstName, String userLastName,
+    public User(int id, int userNameID, String userFirstName, String userLastName,
                 String userAddress1, String userAddress2, String userCity, String userState,
                 String userZip, long userPhone, String userEmail, LocalDateTime dateCreated) {
         this.id = id;
-        this.userName = userName;
-        this.userPassword = userPassword;
+        this.userNameID = userNameID;
         this.userFirstName = userFirstName;
         this.userLastName = userLastName;
         this.userAddress1 = userAddress1;
@@ -104,8 +98,7 @@ public class User {
     /**
      * Instantiates a new User.
      *
-     * @param userName      the user name
-     * @param userPassword  the user password
+     * @param userNameID    the user name ID
      * @param userFirstName the user first name
      * @param userLastName  the user last name
      * @param userAddress1  the user address 1
@@ -117,11 +110,10 @@ public class User {
      * @param userEmail     the user email
      * @param dateCreated   the date created
      */
-    public User(String userName, String userPassword, String userFirstName, String userLastName,
+    public User(int userNameID, String userFirstName, String userLastName,
                 String userAddress1, String userAddress2, String userCity, String userState,
                 String userZip, long userPhone, String userEmail, LocalDateTime dateCreated) {
-        this.userName = userName;
-        this.userPassword = userPassword;
+        this.userNameID = userNameID;
         this.userFirstName = userFirstName;
         this.userLastName = userLastName;
         this.userAddress1 = userAddress1;
@@ -157,35 +149,17 @@ public class User {
      *
      * @return the user name
      */
-    public String getUserName() {
-        return userName;
+    public int getUserNameID() {
+        return userNameID;
     }
 
     /**
      * Sets user name.
      *
-     * @param userName the user name
+     * @param userNameID the user name ID
      */
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
-    /**
-     * Gets user password.
-     *
-     * @return the user password
-     */
-    public String getUserPassword() {
-        return userPassword;
-    }
-
-    /**
-     * Sets user password.
-     *
-     * @param userPassword the user password
-     */
-    public void setUserPassword(String userPassword) {
-        this.userPassword = userPassword;
+    public void setUserNameID(int userNameID) {
+        this.userNameID = userNameID;
     }
 
     /**
@@ -390,8 +364,7 @@ public class User {
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", userName='" + userName + '\'' +
-                ", userPassword='" + userPassword + '\'' +
+                ", userName='" + userNameID + '\'' +
                 ", userFirstName='" + userFirstName + '\'' +
                 ", userLastName='" + userLastName + '\'' +
                 ", userAddress1='" + userAddress1 + '\'' +
@@ -413,8 +386,7 @@ public class User {
         User user = (User) o;
         return id == user.id &&
                 userPhone == user.userPhone &&
-                Objects.equals(userName, user.userName) &&
-                Objects.equals(userPassword, user.userPassword) &&
+                Objects.equals(userNameID, user.userNameID) &&
                 Objects.equals(userFirstName, user.userFirstName) &&
                 Objects.equals(userLastName, user.userLastName) &&
                 Objects.equals(userAddress1, user.userAddress1) &&
@@ -427,6 +399,6 @@ public class User {
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, userName, userPassword, userFirstName, userLastName, userAddress1, userAddress2, userCity, userState, userZip, userPhone, userEmail, dateCreated);
+        return Objects.hash(id, userNameID, userFirstName, userLastName, userAddress1, userAddress2, userCity, userState, userZip, userPhone, userEmail, dateCreated);
     }
 }
