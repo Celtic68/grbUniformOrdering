@@ -6,6 +6,7 @@ import javax.persistence.*;
 import java.math.BigInteger;
 import java.time.LocalDateTime;
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 /**
@@ -385,5 +386,47 @@ public class User {
         this.players = players;
     }
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", userName='" + userName + '\'' +
+                ", userPassword='" + userPassword + '\'' +
+                ", userFirstName='" + userFirstName + '\'' +
+                ", userLastName='" + userLastName + '\'' +
+                ", userAddress1='" + userAddress1 + '\'' +
+                ", userAddress2='" + userAddress2 + '\'' +
+                ", userCity='" + userCity + '\'' +
+                ", userState='" + userState + '\'' +
+                ", userZip='" + userZip + '\'' +
+                ", userPhone=" + userPhone +
+                ", userEmail='" + userEmail + '\'' +
+                ", dateCreated=" + dateCreated +
+                ", players=" + players +
+                '}';
+    }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return id == user.id &&
+                userPhone == user.userPhone &&
+                Objects.equals(userName, user.userName) &&
+                Objects.equals(userPassword, user.userPassword) &&
+                Objects.equals(userFirstName, user.userFirstName) &&
+                Objects.equals(userLastName, user.userLastName) &&
+                Objects.equals(userAddress1, user.userAddress1) &&
+                Objects.equals(userAddress2, user.userAddress2) &&
+                Objects.equals(userCity, user.userCity) &&
+                Objects.equals(userState, user.userState) &&
+                Objects.equals(userZip, user.userZip) &&
+                Objects.equals(userEmail, user.userEmail);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, userName, userPassword, userFirstName, userLastName, userAddress1, userAddress2, userCity, userState, userZip, userPhone, userEmail, dateCreated);
+    }
 }
