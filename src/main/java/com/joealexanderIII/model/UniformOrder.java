@@ -22,31 +22,31 @@ public class UniformOrder {
     private int playerId;
 
     @Column(name = "JERSEY_SIZE")
-    private int jerseySize;
+    private Integer jerseySize;
 
     @Column(name = "JERSEY_NUMBER")
-    private int jerseyNumber;
+    private Integer jerseyNumber;
 
     @Column(name = "PANTS_SIZE")
-    private int pantsSize;
+    private Integer pantsSize;
 
     @Column(name = "PANTS_STYLE")
-    private int pantsStyle;
+    private Integer pantsStyle;
 
     @Column(name = "HAT_SIZE")
-    private int hatSize;
+    private Integer hatSize;
 
     @Column(name = "SHOE_SIZE")
-    private int shoeSize;
+    private Integer shoeSize;
 
     @Column(name = "TSHIRT_SIZE")
-    private int tShirtSize;
+    private Integer tShirtSize;
 
     @Column(name = "SHORTS_SIZE")
-    private int shortsSize;
+    private Integer shortsSize;
 
     @Column(name = "SEASON")
-    private int season;
+    private Integer season;
 
     @Column(name = "DATE_CREATED")
     private LocalDateTime dateCreated;
@@ -76,9 +76,9 @@ public class UniformOrder {
      * @param season       the season
      * @param dateCreated  the date created
      */
-    public UniformOrder(int orderId, int playerId, int jerseySize, int jerseyNumber,
-                        int pantsSize, int pantsStyle, int hatSize, int shoeSize, int tShirtSize,
-                        int shortsSize, int season, LocalDateTime dateCreated) {
+    public UniformOrder(int orderId, int playerId, Integer jerseySize, Integer jerseyNumber,
+                        Integer pantsSize, Integer pantsStyle, Integer hatSize, Integer shoeSize, Integer tShirtSize,
+                        Integer shortsSize, Integer season, LocalDateTime dateCreated) {
         this.orderId = orderId;
         this.playerId = playerId;
         this.jerseySize = jerseySize;
@@ -134,7 +134,7 @@ public class UniformOrder {
      *
      * @return the jersey size
      */
-    public int getJerseySize() {
+    public Integer getJerseySize() {
         return jerseySize;
     }
 
@@ -143,7 +143,7 @@ public class UniformOrder {
      *
      * @param jerseySize the jersey size
      */
-    public void setJerseySize(int jerseySize) {
+    public void setJerseySize(Integer jerseySize) {
         this.jerseySize = jerseySize;
     }
 
@@ -152,7 +152,7 @@ public class UniformOrder {
      *
      * @return the jersey number
      */
-    public int getJerseyNumber() {
+    public Integer getJerseyNumber() {
         return jerseyNumber;
     }
 
@@ -161,7 +161,7 @@ public class UniformOrder {
      *
      * @param jerseyNumber the jersey number
      */
-    public void setJerseyNumber(int jerseyNumber) {
+    public void setJerseyNumber(Integer jerseyNumber) {
         this.jerseyNumber = jerseyNumber;
     }
 
@@ -170,7 +170,7 @@ public class UniformOrder {
      *
      * @return the pants size
      */
-    public int getPantsSize() {
+    public Integer getPantsSize() {
         return pantsSize;
     }
 
@@ -179,7 +179,7 @@ public class UniformOrder {
      *
      * @param pantsSize the pants size
      */
-    public void setPantsSize(int pantsSize) {
+    public void setPantsSize(Integer pantsSize) {
         this.pantsSize = pantsSize;
     }
 
@@ -188,7 +188,7 @@ public class UniformOrder {
      *
      * @return the pants style
      */
-    public int getPantsStyle() {
+    public Integer getPantsStyle() {
         return pantsStyle;
     }
 
@@ -197,7 +197,7 @@ public class UniformOrder {
      *
      * @param pantsStyle the pants style
      */
-    public void setPantsStyle(int pantsStyle) {
+    public void setPantsStyle(Integer pantsStyle) {
         this.pantsStyle = pantsStyle;
     }
 
@@ -206,7 +206,7 @@ public class UniformOrder {
      *
      * @return the hat size
      */
-    public int getHatSize() {
+    public Integer getHatSize() {
         return hatSize;
     }
 
@@ -215,7 +215,7 @@ public class UniformOrder {
      *
      * @param hatSize the hat size
      */
-    public void setHatSize(int hatSize) {
+    public void setHatSize(Integer hatSize) {
         this.hatSize = hatSize;
     }
 
@@ -224,7 +224,7 @@ public class UniformOrder {
      *
      * @return the shoe size
      */
-    public int getShoeSize() {
+    public Integer getShoeSize() {
         return shoeSize;
     }
 
@@ -233,7 +233,7 @@ public class UniformOrder {
      *
      * @param shoeSize the shoe size
      */
-    public void setShoeSize(int shoeSize) {
+    public void setShoeSize(Integer shoeSize) {
         this.shoeSize = shoeSize;
     }
 
@@ -242,7 +242,7 @@ public class UniformOrder {
      *
      * @return the shirt size
      */
-    public int gettShirtSize() {
+    public Integer gettShirtSize() {
         return tShirtSize;
     }
 
@@ -251,7 +251,7 @@ public class UniformOrder {
      *
      * @param tShirtSize the t shirt size
      */
-    public void settShirtSize(int tShirtSize) {
+    public void settShirtSize(Integer tShirtSize) {
         this.tShirtSize = tShirtSize;
     }
 
@@ -260,7 +260,7 @@ public class UniformOrder {
      *
      * @return the shorts size
      */
-    public int getShortsSize() {
+    public Integer getShortsSize() {
         return shortsSize;
     }
 
@@ -269,7 +269,7 @@ public class UniformOrder {
      *
      * @param shortsSize the shorts size
      */
-    public void setShortsSize(int shortsSize) {
+    public void setShortsSize(Integer shortsSize) {
         this.shortsSize = shortsSize;
     }
 
@@ -278,7 +278,7 @@ public class UniformOrder {
      *
      * @return the season
      */
-    public int getSeason() {
+    public Integer getSeason() {
         return season;
     }
 
@@ -287,7 +287,7 @@ public class UniformOrder {
      *
      * @param season the season
      */
-    public void setSeason(int season) {
+    public void setSeason(Integer season) {
         this.season = season;
     }
 

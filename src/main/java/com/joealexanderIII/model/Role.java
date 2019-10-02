@@ -3,6 +3,7 @@ package com.joealexanderIII.model;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.Objects;
 
 /**
  * A class to represent a User Role.
@@ -104,5 +105,20 @@ public class Role {
      */
     public void setUserRole(String userRole) {
         this.userRole = userRole;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Role role = (Role) o;
+        return id == role.id &&
+                Objects.equals(userName, role.userName) &&
+                Objects.equals(userRole, role.userRole);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, userName, userRole);
     }
 }
