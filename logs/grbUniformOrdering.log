@@ -205,3 +205,12 @@
 [DEBUG] 2019-10-03 12:48:45.143 [main] GenericDao - Searching for entity with userFirstName = i
 [DEBUG] 2019-10-03 12:48:45.261 [main] GenericDao - Searching for entity with userLastName = l
 [INFO ] 2019-10-03 12:48:45.541 [main] GenericDao - All entities retrieved
+[DEBUG] 2019-10-03 13:19:25.485 [main] GenericDao - Searching for entity with role = 1
+[DEBUG] 2019-10-03 13:19:26.321 [main] GenericDao - Searching for entity with userEmail = cambo7131@gmail.com
+[DEBUG] 2019-10-03 13:19:26.497 [main] GenericDao - Searching for entity with userFirstName = i
+[DEBUG] 2019-10-03 13:19:26.667 [main] GenericDao - Searching for entity with userLastName = l
+[INFO ] 2019-10-03 13:19:26.994 [main] GenericDao - All entities retrieved
+[DEBUG] 2019-10-03 13:19:27.101 [main] GenericDao - Searching for entity with userName = jleitl
+[DEBUG] 2019-10-03 13:19:27.369 [main] GenericDao - Searching for entity with userName = almfamily
+[DEBUG] 2019-10-03 13:19:27.498 [main] GenericDao - Searching for entity with userName = almfamily
+[DEBUG] 2019-10-03 13:19:27.514 [main] GenericDao - Searching for entity with userName = scoobyDoo
