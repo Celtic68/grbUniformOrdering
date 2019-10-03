@@ -15,6 +15,8 @@ import java.util.List;
 
 /**
  * A Generic Dao that will accept any type
+ *
+ * @param <T> the type parameter
  */
 public class GenericDao<T> {
 
@@ -30,6 +32,11 @@ public class GenericDao<T> {
         this.type = type;
     }
 
+    /**
+     * Gets all entities
+     *
+     * @return all the entities
+     */
     public List<T> getAll() {
 
         Session session = getSession();
@@ -46,13 +53,14 @@ public class GenericDao<T> {
 
     }
 
-    /** Get entity by property (exact match) and only one matches
+    /**
+     * Get entity by property (exact match) and only one matches
      *
      * @param propertyName entity property to search by
-     * @param value value of the property to search for
+     * @param value        numeric value of the property to search for
      * @return list of entities meeting the criteria search
      */
-    public T getByPropertyUniqueEqual(String propertyName, String value) {
+    public T getByPropertyWithNumberUniqueEqual(String propertyName, int value) {
 
         Session session = getSession();
 
@@ -66,12 +74,38 @@ public class GenericDao<T> {
 
         session.close();
         return entity;
+
     }
 
-    /** Get entity by property (exact match with multiple matches)
+    /**
+     * Get entity by property (exact match) and only one matches
      *
      * @param propertyName entity property to search by
-     * @param value value of the property to search for
+     * @param value        string value of the property to search for
+     * @return list of entities meeting the criteria search
+     */
+    public T getByPropertyWithStringUniqueEqual(String propertyName, String value) {
+
+        Session session = getSession();
+
+        logger.debug("Searching for entity with " + propertyName + " = " + value);
+
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<T> query = builder.createQuery( type );
+        Root<T> root = query.from(type );
+        query.select(root).where(builder.equal(root.get(propertyName), value));
+        T entity = session.createQuery( query ).getSingleResult();
+
+        session.close();
+        return entity;
+
+    }
+
+    /**
+     * Get entity by property (exact match with multiple matches)
+     *
+     * @param propertyName entity property to search by
+     * @param value        value of the property to search for
      * @return list of entities meeting the criteria search
      */
     public List<T> getByPropertyListEqual(String propertyName, String value) {
@@ -95,10 +129,9 @@ public class GenericDao<T> {
      * Get entity by property (like)
      *
      * @param propertyName entity property to search by
-     * @param value value of the property to search for
+     * @param value        value of the property to search for
      * @return list of entities meeting the criteria search
      */
-
     public List<T> getByPropertyLike(String propertyName, String value) {
 
         Session session = getSession();
@@ -122,7 +155,8 @@ public class GenericDao<T> {
 
     /**
      * Insert new entity
-     * @param entity  Order to be inserted or updated
+     *
+     * @param entity Order to be inserted or updated
      * @return id of the inserted entity
      */
     public int insert(T entity) {
@@ -141,7 +175,9 @@ public class GenericDao<T> {
 
     /**
      * Gets a entity by id
-     * @param id entity id to search by
+     *
+     * @param <T> the type parameter
+     * @param id  entity id to search by
      * @return a entity
      */
     public <T>T getById(int id) {
@@ -157,7 +193,8 @@ public class GenericDao<T> {
 
     /**
      * update entity
-     * @param entity  the entity type to be inserted or updated
+     *
+     * @param entity the entity type to be inserted or updated
      */
     public void saveOrUpdate(T entity) {
 

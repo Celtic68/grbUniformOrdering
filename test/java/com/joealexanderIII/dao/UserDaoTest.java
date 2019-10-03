@@ -34,15 +34,14 @@ class UserDaoTest {
         assertEquals(2, allUsers.size());
     }
 
-    // TODO
-//    @Test
-//    void getUserByUserNameIDSuccess() {
-//
-//        User specificUser = (User)genericDao.getByPropertyUniqueEqual("userNameID", 1);
-//        assertEquals("Joseph", specificUser.getUserFirstName());
-//        assertEquals("Alexander", specificUser.getUserLastName());
-//
-//    }
+    @Test
+    void getUserByUserNameIDSuccess() {
+
+        User specificUser = (User)genericDao.getByPropertyWithNumberUniqueEqual("role", 1);
+        assertEquals("Joseph", specificUser.getUserFirstName());
+        assertEquals("Alexander", specificUser.getUserLastName());
+
+    }
 
     @Test
     void getUserByIdSuccess() {
@@ -96,18 +95,20 @@ class UserDaoTest {
     @Test
     void insert() {
 
-        Role newRole = new Role("bevans", "$2y$10$Z0k7T2ZWYJsI8z9WEzH5Bu5lOps/ph7MNNSwgeuJ8rilaTxxz6QBe","user");
-        int id = genericDao.insert(newRole);
-        assertNotEquals(0,id);
+        GenericDao genericRoleDao = new GenericDao(Role.class);
+
+        Role newRole = new Role("bevans", "user");
 
         LocalDateTime date = LocalDateTime.now();
-        User newUser = new User(newRole,"Bob","Evans","1234 Main St","","Beloit","WI","53590",6087720366L,"bevans@gmail.com", date);
+        User newUser = new User("bevans", "$2y$10$Z0k7T2ZWYJsI8z9WEzH5Bu5lOps/ph7MNNSwgeuJ8rilaTxxz6QBe","Bob","Evans","1234 Main St","","Beloit","WI","53590",6087720366L,"bevans@gmail.com", date, newRole);
 
-        int userId = genericDao.insert(newUser);
+        newRole.setUser(newUser);
+        int id = genericDao.insert(newUser);
 
-        assertNotEquals(0,userId);
-        User insertedUser = (User)genericDao.getById(userId);
-
+        assertNotEquals(0,id);
+        User insertedUser = (User)genericDao.getById(id);
+        Role insertedRole = (Role)genericRoleDao.getById(id);
+        assertEquals(newRole, insertedRole);
         assertEquals(newUser, insertedUser);
 
     }

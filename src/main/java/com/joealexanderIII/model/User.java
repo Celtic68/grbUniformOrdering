@@ -20,9 +20,11 @@ public class User {
     @GenericGenerator(name="native", strategy = "native")
     private int id;
 
-    @OneToOne
-    @JoinColumn(name = "USER_NAME_ID")
-    private Role role;
+    @Column(name = "USER_NAME")
+    private String userName;
+
+    @Column(name = "USER_PASSWORD")
+    private String userPassword;
 
     @Column(name = "USER_FIRST_NAME")
     private String userFirstName;
@@ -57,6 +59,10 @@ public class User {
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private Set<Player> players = new HashSet<>();
 
+    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
+    private Role role;
+
+
     /**
      * Instantiates a new User.
      */
@@ -66,8 +72,8 @@ public class User {
     /**
      * Instantiates a new User.
      *
-     * @param id            the id
-     * @param role          the user role data
+     * @param userName      the user name
+     * @param userPassword  the user password
      * @param userFirstName the user first name
      * @param userLastName  the user last name
      * @param userAddress1  the user address 1
@@ -78,12 +84,11 @@ public class User {
      * @param userPhone     the user phone
      * @param userEmail     the user email
      * @param dateCreated   the date created
+     * @param role          the role
      */
-    public User(int id, Role role, String userFirstName, String userLastName,
-                String userAddress1, String userAddress2, String userCity, String userState,
-                String userZip, long userPhone, String userEmail, LocalDateTime dateCreated) {
-        this.id = id;
-        this.role = role;
+    public User(String userName, String userPassword, String userFirstName, String userLastName, String userAddress1, String userAddress2, String userCity, String userState, String userZip, long userPhone, String userEmail, LocalDateTime dateCreated, Role role) {
+        this.userName = userName;
+        this.userPassword = userPassword;
         this.userFirstName = userFirstName;
         this.userLastName = userLastName;
         this.userAddress1 = userAddress1;
@@ -94,37 +99,7 @@ public class User {
         this.userPhone = userPhone;
         this.userEmail = userEmail;
         this.dateCreated = dateCreated;
-    }
-
-    /**
-     * Instantiates a new User.
-     *
-     * @param role          the user role data
-     * @param userFirstName the user first name
-     * @param userLastName  the user last name
-     * @param userAddress1  the user address 1
-     * @param userAddress2  the user address 2
-     * @param userCity      the user city
-     * @param userState     the user state
-     * @param userZip       the user zip
-     * @param userPhone     the user phone
-     * @param userEmail     the user email
-     * @param dateCreated   the date created
-     */
-    public User(Role role, String userFirstName, String userLastName,
-                String userAddress1, String userAddress2, String userCity, String userState,
-                String userZip, long userPhone, String userEmail, LocalDateTime dateCreated) {
         this.role = role;
-        this.userFirstName = userFirstName;
-        this.userLastName = userLastName;
-        this.userAddress1 = userAddress1;
-        this.userAddress2 = userAddress2;
-        this.userCity = userCity;
-        this.userState = userState;
-        this.userZip = userZip;
-        this.userPhone = userPhone;
-        this.userEmail = userEmail;
-        this.dateCreated = dateCreated;
     }
 
     /**
@@ -143,6 +118,42 @@ public class User {
      */
     public void setId(int id) {
         this.id = id;
+    }
+
+    /**
+     * Gets user name.
+     *
+     * @return the user name
+     */
+    public String getUserName() {
+        return userName;
+    }
+
+    /**
+     * Sets user name.
+     *
+     * @param userName the user name
+     */
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    /**
+     * Gets user password.
+     *
+     * @return the user password
+     */
+    public String getUserPassword() {
+        return userPassword;
+    }
+
+    /**
+     * Sets user password.
+     *
+     * @param userPassword the user password
+     */
+    public void setUserPassword(String userPassword) {
+        this.userPassword = userPassword;
     }
 
     /**
@@ -365,7 +376,8 @@ public class User {
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", role='" + role + '\'' +
+                ", userName='" + userName + '\'' +
+                ", userPassword='" + userPassword + '\'' +
                 ", userFirstName='" + userFirstName + '\'' +
                 ", userLastName='" + userLastName + '\'' +
                 ", userAddress1='" + userAddress1 + '\'' +
@@ -387,6 +399,8 @@ public class User {
         User user = (User) o;
         return id == user.id &&
                 userPhone == user.userPhone &&
+                Objects.equals(userName, user.userName) &&
+                Objects.equals(userPassword, user.userPassword) &&
                 Objects.equals(userFirstName, user.userFirstName) &&
                 Objects.equals(userLastName, user.userLastName) &&
                 Objects.equals(userAddress1, user.userAddress1) &&
@@ -399,6 +413,6 @@ public class User {
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, userFirstName, userLastName, userAddress1, userAddress2, userCity, userState, userZip, userPhone, userEmail, dateCreated);
+        return Objects.hash(id, userName, userPassword, userFirstName, userLastName, userAddress1, userAddress2, userCity, userState, userZip, userPhone, userEmail);
     }
 }

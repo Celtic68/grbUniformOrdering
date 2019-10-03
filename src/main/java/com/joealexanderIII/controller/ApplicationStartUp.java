@@ -34,18 +34,6 @@ public class ApplicationStartUp extends HttpServlet {
      */
     public void init() throws ServletException {
 
-        try {
-            // Instantiate a SessionFactory object
-            SessionFactory sessionFactory = SessionFactoryProvider.getSessionFactory();
-
-            // Set the EmployeeDirectory object to the application context
-            this.getServletConfig().getServletContext()
-                    .setAttribute("sessionFactory", sessionFactory);
-
-        } catch (Exception exception) {
-            logger.error("There was a problem. " + exception);
-        }
-
     }
 
 }

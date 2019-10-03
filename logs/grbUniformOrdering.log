@@ -161,3 +161,47 @@
 [DEBUG] 2019-10-02 17:06:11.840 [main] GenericDao - Searching for entity with userName = almfamily
 [DEBUG] 2019-10-02 17:06:12.219 [main] GenericDao - Searching for entity with userName = almfamily
 [DEBUG] 2019-10-02 17:06:12.233 [main] GenericDao - Searching for entity with userName = scoobyDoo
+[DEBUG] 2019-10-02 19:26:17.319 [main] GenericDao - Searching for entity with userNameID = 1
+[DEBUG] 2019-10-02 19:29:09.188 [main] GenericDao - Searching for entity with userNameID = 1
+[DEBUG] 2019-10-02 19:30:11.107 [main] GenericDao - Searching for entity with role = 1
+[DEBUG] 2019-10-02 19:31:19.878 [main] GenericDao - Searching for entity with role = 1
+[DEBUG] 2019-10-03 10:31:17.205 [main] GenericDao - Searching for entity with userName = almfamily
+[DEBUG] 2019-10-03 10:31:32.179 [main] GenericDao - Searching for entity with userName = jleitl
+[DEBUG] 2019-10-03 10:31:42.996 [main] GenericDao - Searching for entity with userName = almfamily
+[DEBUG] 2019-10-03 10:31:43.223 [main] GenericDao - Searching for entity with userName = scoobyDoo
+[DEBUG] 2019-10-03 10:38:18.483 [main] GenericDao - Searching for entity with userName = bevans
+[DEBUG] 2019-10-03 10:59:23.127 [main] GenericDao - Searching for entity with userName = almfamily
+[DEBUG] 2019-10-03 10:59:23.362 [main] GenericDao - Searching for entity with userName = scoobyDoo
+[INFO ] 2019-10-03 11:10:12.707 [main] GenericDao - EntityUser{id=0, userName='bevans', userPassword='$2y$10$Z0k7T2ZWYJsI8z9WEzH5Bu5lOps/ph7MNNSwgeuJ8rilaTxxz6QBe', userFirstName='Bob', userLastName='Evans', userAddress1='1234 Main St', userAddress2='', userCity='Beloit', userState='WI', userZip='53590', userPhone=6087720366, userEmail='bevans@gmail.com', dateCreated=2019-10-03T11:10:10.735978800, players=[]}
+[INFO ] 2019-10-03 11:13:00.943 [main] GenericDao - Entitycom.joealexanderIII.model.Role@f3601e17
+[DEBUG] 2019-10-03 11:18:17.667 [main] GenericDao - Searching for entity with userName = almfamily
+[DEBUG] 2019-10-03 11:18:26.447 [main] GenericDao - Searching for entity with userName = jleitl
+[DEBUG] 2019-10-03 11:18:36.710 [main] GenericDao - Searching for entity with userName = almfamily
+[DEBUG] 2019-10-03 11:18:36.949 [main] GenericDao - Searching for entity with userName = scoobyDoo
+[INFO ] 2019-10-03 11:18:46.473 [main] GenericDao - EntityUser{id=0, userName='bevans', userPassword='$2y$10$Z0k7T2ZWYJsI8z9WEzH5Bu5lOps/ph7MNNSwgeuJ8rilaTxxz6QBe', userFirstName='Bob', userLastName='Evans', userAddress1='1234 Main St', userAddress2='', userCity='Beloit', userState='WI', userZip='53590', userPhone=6087720366, userEmail='bevans@gmail.com', dateCreated=2019-10-03T11:18:44.529020200, players=[]}
+[INFO ] 2019-10-03 11:28:42.493 [main] GenericDao - EntityUser{id=0, userName='bevans', userPassword='$2y$10$Z0k7T2ZWYJsI8z9WEzH5Bu5lOps/ph7MNNSwgeuJ8rilaTxxz6QBe', userFirstName='Bob', userLastName='Evans', userAddress1='1234 Main St', userAddress2='', userCity='Beloit', userState='WI', userZip='53590', userPhone=6087720366, userEmail='bevans@gmail.com', dateCreated=2019-10-03T11:28:40.533080900, players=[]}
+[INFO ] 2019-10-03 11:37:34.884 [main] GenericDao - EntityUser{id=0, userName='bevans', userPassword='$2y$10$Z0k7T2ZWYJsI8z9WEzH5Bu5lOps/ph7MNNSwgeuJ8rilaTxxz6QBe', userFirstName='Bob', userLastName='Evans', userAddress1='1234 Main St', userAddress2='', userCity='Beloit', userState='WI', userZip='53590', userPhone=6087720366, userEmail='bevans@gmail.com', dateCreated=2019-10-03T11:37:32.953909, players=[]}
+[INFO ] 2019-10-03 11:45:17.103 [main] GenericDao - EntityUser{id=0, userName='bevans', userPassword='$2y$10$Z0k7T2ZWYJsI8z9WEzH5Bu5lOps/ph7MNNSwgeuJ8rilaTxxz6QBe', userFirstName='Bob', userLastName='Evans', userAddress1='1234 Main St', userAddress2='', userCity='Beloit', userState='WI', userZip='53590', userPhone=6087720366, userEmail='bevans@gmail.com', dateCreated=2019-10-03T11:45:15.133500300, players=[]}
+[INFO ] 2019-10-03 12:05:28.408 [main] GenericDao - EntityUser{id=0, userName='bevans', userPassword='$2y$10$Z0k7T2ZWYJsI8z9WEzH5Bu5lOps/ph7MNNSwgeuJ8rilaTxxz6QBe', userFirstName='Bob', userLastName='Evans', userAddress1='1234 Main St', userAddress2='', userCity='Beloit', userState='WI', userZip='53590', userPhone=6087720366, userEmail='bevans@gmail.com', dateCreated=2019-10-03T12:05:26.358348900, players=[]}
+[INFO ] 2019-10-03 12:07:03.969 [main] GenericDao - EntityUser{id=0, userName='bevans', userPassword='$2y$10$Z0k7T2ZWYJsI8z9WEzH5Bu5lOps/ph7MNNSwgeuJ8rilaTxxz6QBe', userFirstName='Bob', userLastName='Evans', userAddress1='1234 Main St', userAddress2='', userCity='Beloit', userState='WI', userZip='53590', userPhone=6087720366, userEmail='bevans@gmail.com', dateCreated=2019-10-03T12:07:02.029162400, players=[]}
+[INFO ] 2019-10-03 12:07:56.602 [main] GenericDao - Entitycom.joealexanderIII.model.Role@f3601e17
+[INFO ] 2019-10-03 12:17:53.646 [main] GenericDao - EntityUser{id=0, userName='bevans', userPassword='$2y$10$Z0k7T2ZWYJsI8z9WEzH5Bu5lOps/ph7MNNSwgeuJ8rilaTxxz6QBe', userFirstName='Bob', userLastName='Evans', userAddress1='1234 Main St', userAddress2='', userCity='Beloit', userState='WI', userZip='53590', userPhone=6087720366, userEmail='bevans@gmail.com', dateCreated=2019-10-03T12:17:51.646804800, players=[]}
+[DEBUG] 2019-10-03 12:17:53.734 [main] GenericDao - Searching for entity with userName = bevans
+[INFO ] 2019-10-03 12:29:33.712 [main] GenericDao - EntityUser{id=0, userName='bevans', userPassword='$2y$10$Z0k7T2ZWYJsI8z9WEzH5Bu5lOps/ph7MNNSwgeuJ8rilaTxxz6QBe', userFirstName='Bob', userLastName='Evans', userAddress1='1234 Main St', userAddress2='', userCity='Beloit', userState='WI', userZip='53590', userPhone=6087720366, userEmail='bevans@gmail.com', dateCreated=2019-10-03T12:29:31.789048300, players=[]}
+[DEBUG] 2019-10-03 12:29:33.802 [main] GenericDao - Searching for entity with userName = bevans
+[INFO ] 2019-10-03 12:29:57.726 [main] GenericDao - EntityUser{id=0, userName='bevans', userPassword='$2y$10$Z0k7T2ZWYJsI8z9WEzH5Bu5lOps/ph7MNNSwgeuJ8rilaTxxz6QBe', userFirstName='Bob', userLastName='Evans', userAddress1='1234 Main St', userAddress2='', userCity='Beloit', userState='WI', userZip='53590', userPhone=6087720366, userEmail='bevans@gmail.com', dateCreated=2019-10-03T12:29:55.678315700, players=[]}
+[INFO ] 2019-10-03 12:37:33.602 [main] GenericDao - EntityUser{id=0, userName='bevans', userPassword='$2y$10$Z0k7T2ZWYJsI8z9WEzH5Bu5lOps/ph7MNNSwgeuJ8rilaTxxz6QBe', userFirstName='Bob', userLastName='Evans', userAddress1='1234 Main St', userAddress2='', userCity='Beloit', userState='WI', userZip='53590', userPhone=6087720366, userEmail='bevans@gmail.com', dateCreated=2019-10-03T12:37:31.510892800, players=[]}
+[INFO ] 2019-10-03 12:39:31.382 [main] GenericDao - EntityUser{id=0, userName='bevans', userPassword='$2y$10$Z0k7T2ZWYJsI8z9WEzH5Bu5lOps/ph7MNNSwgeuJ8rilaTxxz6QBe', userFirstName='Bob', userLastName='Evans', userAddress1='1234 Main St', userAddress2='', userCity='Beloit', userState='WI', userZip='53590', userPhone=6087720366, userEmail='bevans@gmail.com', dateCreated=2019-10-03T12:39:29.485394200, players=[]}
+[DEBUG] 2019-10-03 12:39:31.481 [main] GenericDao - Searching for entity with userName = bevans
+[INFO ] 2019-10-03 12:41:44.866 [main] GenericDao - EntityUser{id=0, userName='bevans', userPassword='$2y$10$Z0k7T2ZWYJsI8z9WEzH5Bu5lOps/ph7MNNSwgeuJ8rilaTxxz6QBe', userFirstName='Bob', userLastName='Evans', userAddress1='1234 Main St', userAddress2='', userCity='Beloit', userState='WI', userZip='53590', userPhone=6087720366, userEmail='bevans@gmail.com', dateCreated=2019-10-03T12:41:42.921709400, players=[]}
+[DEBUG] 2019-10-03 12:43:19.059 [main] GenericDao - Searching for entity with userName = jleitl
+[INFO ] 2019-10-03 12:43:19.426 [main] GenericDao - EntityUser{id=0, userName='bevans', userPassword='$2y$10$Z0k7T2ZWYJsI8z9WEzH5Bu5lOps/ph7MNNSwgeuJ8rilaTxxz6QBe', userFirstName='Bob', userLastName='Evans', userAddress1='1234 Main St', userAddress2='', userCity='Beloit', userState='WI', userZip='53590', userPhone=6087720366, userEmail='bevans@gmail.com', dateCreated=2019-10-03T12:43:19.403647200, players=[]}
+[DEBUG] 2019-10-03 12:43:19.629 [main] GenericDao - Searching for entity with userName = almfamily
+[DEBUG] 2019-10-03 12:43:19.759 [main] GenericDao - Searching for entity with userName = almfamily
+[DEBUG] 2019-10-03 12:43:19.778 [main] GenericDao - Searching for entity with userName = scoobyDoo
+[DEBUG] 2019-10-03 12:44:33.677 [main] GenericDao - Searching for entity with role = 1
+[DEBUG] 2019-10-03 12:48:44.253 [main] GenericDao - Searching for entity with role = 1
+[DEBUG] 2019-10-03 12:48:44.998 [main] GenericDao - Searching for entity with userEmail = cambo7131@gmail.com
+[DEBUG] 2019-10-03 12:48:45.143 [main] GenericDao - Searching for entity with userFirstName = i
+[DEBUG] 2019-10-03 12:48:45.261 [main] GenericDao - Searching for entity with userLastName = l
+[INFO ] 2019-10-03 12:48:45.541 [main] GenericDao - All entities retrieved

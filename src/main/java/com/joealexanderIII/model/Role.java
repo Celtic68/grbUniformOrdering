@@ -1,6 +1,7 @@
 package com.joealexanderIII.model;
 
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.Parameter;
 
 import javax.persistence.*;
 import java.util.Objects;
@@ -13,20 +14,19 @@ import java.util.Objects;
 public class Role {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
-    @GenericGenerator(name="native", strategy = "native")
+    @GeneratedValue(generator = "foreigngen")
+    @GenericGenerator(name="foreigngen", strategy = "foreign",
+            parameters = @Parameter(name = "property", value="user"))
     private int id;
 
     @Column(name = "USER_NAME")
     private String userName;
 
-    @Column(name = "USER_PASSWORD")
-    private String userPassword;
-
     @Column(name = "USER_ROLE")
     private String userRole;
 
-    @OneToOne(mappedBy="role")
+    @OneToOne(cascade = CascadeType.ALL)
+    @PrimaryKeyJoinColumn
     private User user;
 
     /**
@@ -38,13 +38,11 @@ public class Role {
     /**
      * Instantiates a new Role.
      *
-     * @param userName     the user name
-     * @param userPassword the user password
-     * @param userRole     the user role
+     * @param userName the user name
+     * @param userRole the user role
      */
-    public Role(String userName, String userPassword, String userRole) {
+    public Role(String userName, String userRole) {
         this.userName = userName;
-        this.userPassword = userPassword;
         this.userRole = userRole;
     }
 
@@ -82,24 +80,6 @@ public class Role {
      */
     public void setUserName(String userName) {
         this.userName = userName;
-    }
-
-    /**
-     * Gets user password.
-     *
-     * @return the user password
-     */
-    public String getUserPassword() {
-        return userPassword;
-    }
-
-    /**
-     * Sets user password.
-     *
-     * @param userPassword the user password
-     */
-    public void setUserPassword(String userPassword) {
-        this.userPassword = userPassword;
     }
 
     /**
@@ -145,12 +125,11 @@ public class Role {
         Role role = (Role) o;
         return id == role.id &&
                 Objects.equals(userName, role.userName) &&
-                Objects.equals(userPassword, role.userPassword) &&
                 Objects.equals(userRole, role.userRole);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, userName, userPassword, userRole);
+        return Objects.hash(id, userName, userRole);
     }
 }

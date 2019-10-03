@@ -45,5 +45,7 @@
 | 9/30/19 | Completed week 5 reading and completed week 5 videos and demo through video 2 | 3.5 hours |
 | 10/1/19 | Finished week 5 videos and demo, and added the generic Dao functionality to the demo | 2.5 hours |
 | 10/2/19 | Changed my individual project to use a generic Dao and re did all the unit tests for User and Role to use it | 2 hours |
-| 10/2/19 | Restructured the database tables for user and roles, reworked the models for user and role, added the one to one annotations for Role and User | 1.5 hours | 
-| | Total Hours | 73.7  |
+| 10/2/19 | Restructured the database tables for user and roles, reworked the models for user and role, added the one to one annotations for Role and User | 1.5 hours |
+| 10/2/19 | Gave Professional presentation, discussed Project flow and structure with Paula, and started restructuring tables and models | 2 hours |
+| 10/3/19 | Finished restructuring the database tables for user and roles and reworked the models for user and role to accommodate the changes suggested by Paula, and passed all tests | 2.5 hours | 
+| | Total Hours | 78.2  |
