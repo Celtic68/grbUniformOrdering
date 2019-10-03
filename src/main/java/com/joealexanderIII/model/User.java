@@ -20,8 +20,9 @@ public class User {
     @GenericGenerator(name="native", strategy = "native")
     private int id;
 
-    @Column(name = "USER_NAME_ID")
-    private int userNameID;
+    @OneToOne
+    @JoinColumn(name = "USER_NAME_ID")
+    private Role role;
 
     @Column(name = "USER_FIRST_NAME")
     private String userFirstName;
@@ -66,7 +67,7 @@ public class User {
      * Instantiates a new User.
      *
      * @param id            the id
-     * @param userNameID    the user name ID
+     * @param role          the user role data
      * @param userFirstName the user first name
      * @param userLastName  the user last name
      * @param userAddress1  the user address 1
@@ -78,11 +79,11 @@ public class User {
      * @param userEmail     the user email
      * @param dateCreated   the date created
      */
-    public User(int id, int userNameID, String userFirstName, String userLastName,
+    public User(int id, Role role, String userFirstName, String userLastName,
                 String userAddress1, String userAddress2, String userCity, String userState,
                 String userZip, long userPhone, String userEmail, LocalDateTime dateCreated) {
         this.id = id;
-        this.userNameID = userNameID;
+        this.role = role;
         this.userFirstName = userFirstName;
         this.userLastName = userLastName;
         this.userAddress1 = userAddress1;
@@ -98,7 +99,7 @@ public class User {
     /**
      * Instantiates a new User.
      *
-     * @param userNameID    the user name ID
+     * @param role          the user role data
      * @param userFirstName the user first name
      * @param userLastName  the user last name
      * @param userAddress1  the user address 1
@@ -110,10 +111,10 @@ public class User {
      * @param userEmail     the user email
      * @param dateCreated   the date created
      */
-    public User(int userNameID, String userFirstName, String userLastName,
+    public User(Role role, String userFirstName, String userLastName,
                 String userAddress1, String userAddress2, String userCity, String userState,
                 String userZip, long userPhone, String userEmail, LocalDateTime dateCreated) {
-        this.userNameID = userNameID;
+        this.role = role;
         this.userFirstName = userFirstName;
         this.userLastName = userLastName;
         this.userAddress1 = userAddress1;
@@ -142,24 +143,6 @@ public class User {
      */
     public void setId(int id) {
         this.id = id;
-    }
-
-    /**
-     * Gets user name.
-     *
-     * @return the user name
-     */
-    public int getUserNameID() {
-        return userNameID;
-    }
-
-    /**
-     * Sets user name.
-     *
-     * @param userNameID the user name ID
-     */
-    public void setUserNameID(int userNameID) {
-        this.userNameID = userNameID;
     }
 
     /**
@@ -360,11 +343,29 @@ public class User {
         this.players = players;
     }
 
+    /**
+     * Gets role.
+     *
+     * @return the role
+     */
+    public Role getRole() {
+        return role;
+    }
+
+    /**
+     * Sets role.
+     *
+     * @param role the role
+     */
+    public void setRole(Role role) {
+        this.role = role;
+    }
+
     @Override
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", userName='" + userNameID + '\'' +
+                ", role='" + role + '\'' +
                 ", userFirstName='" + userFirstName + '\'' +
                 ", userLastName='" + userLastName + '\'' +
                 ", userAddress1='" + userAddress1 + '\'' +
@@ -386,7 +387,6 @@ public class User {
         User user = (User) o;
         return id == user.id &&
                 userPhone == user.userPhone &&
-                Objects.equals(userNameID, user.userNameID) &&
                 Objects.equals(userFirstName, user.userFirstName) &&
                 Objects.equals(userLastName, user.userLastName) &&
                 Objects.equals(userAddress1, user.userAddress1) &&
@@ -399,6 +399,6 @@ public class User {
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, userNameID, userFirstName, userLastName, userAddress1, userAddress2, userCity, userState, userZip, userPhone, userEmail, dateCreated);
+        return Objects.hash(id, userFirstName, userLastName, userAddress1, userAddress2, userCity, userState, userZip, userPhone, userEmail, dateCreated);
     }
 }

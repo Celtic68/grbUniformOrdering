@@ -101,7 +101,7 @@ class UserDaoTest {
         assertNotEquals(0,id);
 
         LocalDateTime date = LocalDateTime.now();
-        User newUser = new User(id,"Bob","Evans","1234 Main St","","Beloit","WI","53590",6087720366L,"bevans@gmail.com", date);
+        User newUser = new User(newRole,"Bob","Evans","1234 Main St","","Beloit","WI","53590",6087720366L,"bevans@gmail.com", date);
 
         int userId = genericDao.insert(newUser);
 

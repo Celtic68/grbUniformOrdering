@@ -4,6 +4,7 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 /**
@@ -207,5 +208,37 @@ public class Player {
      */
     public void setOrders(Set<UniformOrder> orders) {
         this.orders = orders;
+    }
+
+    @Override
+    public String toString() {
+        return "Player{" +
+                "id=" + id +
+                ", userId=" + userId +
+                ", playerFirstName='" + playerFirstName + '\'' +
+                ", playerLastName='" + playerLastName + '\'' +
+                ", playerSiteLocation=" + playerSiteLocation +
+                ", playerAgeGroup='" + playerAgeGroup + '\'' +
+                ", user=" + user +
+                ", orders=" + orders +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Player player = (Player) o;
+        return id == player.id &&
+                userId == player.userId &&
+                playerSiteLocation == player.playerSiteLocation &&
+                Objects.equals(playerFirstName, player.playerFirstName) &&
+                Objects.equals(playerLastName, player.playerLastName) &&
+                Objects.equals(playerAgeGroup, player.playerAgeGroup);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, userId, playerFirstName, playerLastName, playerSiteLocation, playerAgeGroup);
     }
 }

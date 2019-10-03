@@ -39,6 +39,7 @@ public class RoleDaoTest {
 
         Role userRole = (Role)genericDao.getByPropertyUniqueEqual("userName","almfamily");
         assertEquals("admin", userRole.getUserRole());
+        assertEquals("Joseph", userRole.getUser().getUserFirstName());
     }
 
     /**
@@ -49,6 +50,7 @@ public class RoleDaoTest {
 
         Role userRole = (Role)genericDao.getByPropertyUniqueEqual("userName","jleitl");
         assertEquals("user", userRole.getUserRole());
+        assertEquals("Leitl", userRole.getUser().getUserLastName());
     }
 
     @Test

@@ -106,6 +106,7 @@ doing this upcoming week in class.
 
 * Added Hibernate one to many and many to one annotations to models
 * Created a generic DAO and removed the usage of the User and Role Daos
+* Added the one to one annotations for User / Role
 
 On 9/30, I used the week 1 example to add the annotations for one to many and many to one to the User, Player, and 
 UniformOrder models. I still need to add the one to one annotations for User to Role, but I need to research more to see 
@@ -113,4 +114,7 @@ how to do that for fields that are not the key.
 
 On 10/2, I created a generic Dao and remove the User and Role daos. All of the unit tests for User and Role have been 
 changed to use the generic Dao and were all re-ran to success. Next up - get the unit tests created for the Player and
-UniformOrder models.
+UniformOrder models. Before I got into creating those unit tests, I restructured the User and Role tables / models to
+implement the one to one annotations for Hibernate. I took the user name and password from the User table and moved
+them to the Role table and replaced them with a foreign key id. I then created two test cases in the RoleDaoTest class
+to test that relationship.

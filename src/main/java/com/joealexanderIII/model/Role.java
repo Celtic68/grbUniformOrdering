@@ -26,12 +26,22 @@ public class Role {
     @Column(name = "USER_ROLE")
     private String userRole;
 
+    @OneToOne(mappedBy="role")
+    private User user;
+
     /**
      * Instantiates a new Role.
      */
     public Role() {
     }
 
+    /**
+     * Instantiates a new Role.
+     *
+     * @param userName     the user name
+     * @param userPassword the user password
+     * @param userRole     the user role
+     */
     public Role(String userName, String userPassword, String userRole) {
         this.userName = userName;
         this.userPassword = userPassword;
@@ -108,6 +118,24 @@ public class Role {
      */
     public void setUserRole(String userRole) {
         this.userRole = userRole;
+    }
+
+    /**
+     * Gets user.
+     *
+     * @return the user
+     */
+    public User getUser() {
+        return user;
+    }
+
+    /**
+     * Sets user.
+     *
+     * @param user the user
+     */
+    public void setUser(User user) {
+        this.user = user;
     }
 
     @Override
