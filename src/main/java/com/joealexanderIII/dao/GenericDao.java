@@ -57,34 +57,10 @@ public class GenericDao<T> {
      * Get entity by property (exact match) and only one matches
      *
      * @param propertyName entity property to search by
-     * @param value        numeric value of the property to search for
+     * @param value        object value of the property to search for
      * @return list of entities meeting the criteria search
      */
-    public T getByPropertyWithNumberUniqueEqual(String propertyName, int value) {
-
-        Session session = getSession();
-
-        logger.debug("Searching for entity with " + propertyName + " = " + value);
-
-        CriteriaBuilder builder = session.getCriteriaBuilder();
-        CriteriaQuery<T> query = builder.createQuery( type );
-        Root<T> root = query.from(type );
-        query.select(root).where(builder.equal(root.get(propertyName), value));
-        T entity = session.createQuery( query ).getSingleResult();
-
-        session.close();
-        return entity;
-
-    }
-
-    /**
-     * Get entity by property (exact match) and only one matches
-     *
-     * @param propertyName entity property to search by
-     * @param value        string value of the property to search for
-     * @return list of entities meeting the criteria search
-     */
-    public T getByPropertyWithStringUniqueEqual(String propertyName, String value) {
+    public T getByPropertyUniqueEqual(String propertyName, Object value) {
 
         Session session = getSession();
 

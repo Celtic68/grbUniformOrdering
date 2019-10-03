@@ -47,5 +47,6 @@
 | 10/2/19 | Changed my individual project to use a generic Dao and re did all the unit tests for User and Role to use it | 2 hours |
 | 10/2/19 | Restructured the database tables for user and roles, reworked the models for user and role, added the one to one annotations for Role and User | 1.5 hours |
 | 10/2/19 | Gave Professional presentation, discussed Project flow and structure with Paula, and started restructuring tables and models | 2 hours |
-| 10/3/19 | Finished restructuring the database tables for user and roles and reworked the models for user and role to accommodate the changes suggested by Paula, and passed all tests | 2.5 hours | 
-| | Total Hours | 78.2  |
+| 10/3/19 | Finished restructuring the database tables for user and roles and reworked the models for user and role to accommodate the changes suggested by Paula, and passed all tests | 2.5 hours |
+| 10/3/19 | Made suggested changes from Instructor feedback for week 5 to the Generic dao and the UserDaoTest delete case | 20 minutes | 
+| | Total Hours | 78.5  |

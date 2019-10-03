@@ -108,6 +108,7 @@ doing this upcoming week in class.
 * Created a generic DAO and removed the usage of the User and Role Daos
 * Added the one to one annotations for User / Role
 * Reworked and performed all unit tests for the User and Role models including the one to one testing.
+* Updated GenericDao to accept an Object when doing an unique search to remove redundant code
 
 On 9/30, I used the week 1 example to add the annotations for one to many and many to one to the User, Player, and 
 UniformOrder models. I still need to add the one to one annotations for User to Role, but I need to research more to see 
@@ -121,4 +122,6 @@ them to the Role table and replaced them with a foreign key id. I then created t
 to test that relationship.
 
 After discussion with Paula, I need to rework the one to one since user name has to be on both tables. I was able to
-get this done and tested on 10/3.
+get this done and tested on 10/3. There was some feedback from Paula with an issue created for it - I need to make sure
+that when a delete of a user happens, the role is deleted as well. Also, I can change the Generic Dao when doing a
+getPropertyEqual to accept an object so that a string or number can be passed. These changes were implemented on 10/3.

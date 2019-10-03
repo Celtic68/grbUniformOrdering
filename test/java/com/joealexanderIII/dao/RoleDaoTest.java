@@ -39,7 +39,7 @@ public class RoleDaoTest {
     @Test
     void getAdminRoleForUserSuccess() {
 
-        Role userRole = (Role)genericDao.getByPropertyWithStringUniqueEqual("userName","almfamily");
+        Role userRole = (Role)genericDao.getByPropertyUniqueEqual("userName","almfamily");
         assertEquals("admin", userRole.getUserRole());
         assertEquals("Joseph", userRole.getUser().getUserFirstName());
     }
@@ -50,7 +50,7 @@ public class RoleDaoTest {
     @Test
     void getUserRoleForUserSuccess() {
 
-        Role userRole = (Role)genericDao.getByPropertyWithStringUniqueEqual("userName","jleitl");
+        Role userRole = (Role)genericDao.getByPropertyUniqueEqual("userName","jleitl");
         assertEquals("user", userRole.getUserRole());
         assertEquals("Leitl", userRole.getUser().getUserLastName());
     }
@@ -81,12 +81,12 @@ public class RoleDaoTest {
 
         String newUserName = "scoobyDoo";
 
-        Role userToUpdate = (Role)genericDao.getByPropertyWithStringUniqueEqual("userName","almfamily");
+        Role userToUpdate = (Role)genericDao.getByPropertyUniqueEqual("userName","almfamily");
         userToUpdate.setUserName(newUserName);
 
         genericDao.saveOrUpdate(userToUpdate);
 
-        Role retrieveUpdatedUser = (Role)genericDao.getByPropertyWithStringUniqueEqual("userName", "scoobyDoo");
+        Role retrieveUpdatedUser = (Role)genericDao.getByPropertyUniqueEqual("userName", "scoobyDoo");
         assertEquals(userToUpdate, retrieveUpdatedUser);
 
     }

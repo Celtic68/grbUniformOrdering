@@ -37,7 +37,7 @@ class UserDaoTest {
     @Test
     void getUserByUserNameIDSuccess() {
 
-        User specificUser = (User)genericDao.getByPropertyWithNumberUniqueEqual("role", 1);
+        User specificUser = (User)genericDao.getByPropertyUniqueEqual("role", 1);
         assertEquals("Joseph", specificUser.getUserFirstName());
         assertEquals("Alexander", specificUser.getUserLastName());
 
@@ -116,8 +116,12 @@ class UserDaoTest {
     @Test
     void delete() {
 
+        GenericDao genericRoleDao = new GenericDao(Role.class);
+
         genericDao.delete(genericDao.getById(2));
         assertNull(genericDao.getById(2));
+
+        assertNull(genericRoleDao.getById(2));
 
     }
 }
