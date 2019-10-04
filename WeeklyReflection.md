@@ -125,3 +125,9 @@ After discussion with Paula, I need to rework the one to one since user name has
 get this done and tested on 10/3. There was some feedback from Paula with an issue created for it - I need to make sure
 that when a delete of a user happens, the role is deleted as well. Also, I can change the Generic Dao when doing a
 getPropertyEqual to accept an object so that a string or number can be passed. These changes were implemented on 10/3.
+
+I then moved on to creating unit tests for the Player model. I ran into an issue when trying to do a save / update where
+the user id column was listed twice in the SQL. After not having much luck via searching, I touched base with Paula and
+she pointed out that I was defining the user ID in my model and it should not be. I made the suggested change and the 
+test ran to completion. I then recreated the error and posted it to Slack to help someone else running into that issue.
+I should finish the Player and UniformOrder unit tests this weekend.

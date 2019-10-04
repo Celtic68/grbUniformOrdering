@@ -19,9 +19,6 @@ public class Player {
     @GenericGenerator(name="native", strategy = "native")
     private int id;
 
-    @Column(name = "USER_ID")
-    private int userId;
-
     @Column(name = "PLAYER_FIRST_NAME")
     private String playerFirstName;
 
@@ -49,17 +46,13 @@ public class Player {
     /**
      * Instantiates a new Player.
      *
-     * @param id                 the id
-     * @param userId             the user id
      * @param playerFirstName    the player first name
      * @param playerLastName     the player last name
      * @param playerSiteLocation the player site location
      * @param playerAgeGroup     the player age group
      */
-    public Player(int id, int userId, String playerFirstName, String playerLastName,
+    public Player(String playerFirstName, String playerLastName,
                   int playerSiteLocation, String playerAgeGroup) {
-        this.id = id;
-        this.userId = userId;
         this.playerFirstName = playerFirstName;
         this.playerLastName = playerLastName;
         this.playerSiteLocation = playerSiteLocation;
@@ -82,24 +75,6 @@ public class Player {
      */
     public void setId(int id) {
         this.id = id;
-    }
-
-    /**
-     * Gets user id.
-     *
-     * @return the user id
-     */
-    public int getUserId() {
-        return userId;
-    }
-
-    /**
-     * Sets user id.
-     *
-     * @param userId the user id
-     */
-    public void setUserId(int userId) {
-        this.userId = userId;
     }
 
     /**
@@ -214,7 +189,6 @@ public class Player {
     public String toString() {
         return "Player{" +
                 "id=" + id +
-                ", userId=" + userId +
                 ", playerFirstName='" + playerFirstName + '\'' +
                 ", playerLastName='" + playerLastName + '\'' +
                 ", playerSiteLocation=" + playerSiteLocation +
@@ -230,7 +204,6 @@ public class Player {
         if (o == null || getClass() != o.getClass()) return false;
         Player player = (Player) o;
         return id == player.id &&
-                userId == player.userId &&
                 playerSiteLocation == player.playerSiteLocation &&
                 Objects.equals(playerFirstName, player.playerFirstName) &&
                 Objects.equals(playerLastName, player.playerLastName) &&
@@ -239,6 +212,6 @@ public class Player {
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, userId, playerFirstName, playerLastName, playerSiteLocation, playerAgeGroup);
+        return Objects.hash(id, playerFirstName, playerLastName, playerSiteLocation, playerAgeGroup);
     }
 }

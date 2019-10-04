@@ -389,6 +389,7 @@ public class User {
                 ", userEmail='" + userEmail + '\'' +
                 ", dateCreated=" + dateCreated +
                 ", players=" + players +
+                ", role=" + role +
                 '}';
     }
 
