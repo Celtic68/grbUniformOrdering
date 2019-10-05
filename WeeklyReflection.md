@@ -131,3 +131,6 @@ the user id column was listed twice in the SQL. After not having much luck via s
 she pointed out that I was defining the user ID in my model and it should not be. I made the suggested change and the 
 test ran to completion. I then recreated the error and posted it to Slack to help someone else running into that issue.
 I should finish the Player and UniformOrder unit tests this weekend.
+
+On 10/4, I finished creating all the unit tests for the Player model and then re-ran all the tests and all the tests
+with coverage - everything passed and coverage was 100%. I pushed the changes and moved on to the UniformOrder model.
