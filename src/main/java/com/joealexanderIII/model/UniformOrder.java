@@ -4,6 +4,7 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.Objects;
 
 /**
  * A class to represent a Uniform Order.
@@ -17,9 +18,6 @@ public class UniformOrder {
     @GenericGenerator(name="native", strategy = "native")
     @Column(name = "ORDER_ID")
     private int orderId;
-
-    @Column(name = "PLAYER_ID")
-    private int playerId;
 
     @Column(name = "JERSEY_SIZE")
     private Integer jerseySize;
@@ -63,8 +61,6 @@ public class UniformOrder {
     /**
      * Instantiates a new Uniform order.
      *
-     * @param orderId      the order id
-     * @param playerId     the player id
      * @param jerseySize   the jersey size
      * @param jerseyNumber the jersey number
      * @param pantsSize    the pants size
@@ -76,11 +72,9 @@ public class UniformOrder {
      * @param season       the season
      * @param dateCreated  the date created
      */
-    public UniformOrder(int orderId, int playerId, Integer jerseySize, Integer jerseyNumber,
+    public UniformOrder(Integer jerseySize, Integer jerseyNumber,
                         Integer pantsSize, Integer pantsStyle, Integer hatSize, Integer shoeSize, Integer tShirtSize,
                         Integer shortsSize, Integer season, LocalDateTime dateCreated) {
-        this.orderId = orderId;
-        this.playerId = playerId;
         this.jerseySize = jerseySize;
         this.jerseyNumber = jerseyNumber;
         this.pantsSize = pantsSize;
@@ -109,24 +103,6 @@ public class UniformOrder {
      */
     public void setOrderId(int orderId) {
         this.orderId = orderId;
-    }
-
-    /**
-     * Gets player id.
-     *
-     * @return the player id
-     */
-    public int getPlayerId() {
-        return playerId;
-    }
-
-    /**
-     * Sets player id.
-     *
-     * @param playerId the player id
-     */
-    public void setPlayerId(int playerId) {
-        this.playerId = playerId;
     }
 
     /**
@@ -325,5 +301,45 @@ public class UniformOrder {
      */
     public void setPlayer(Player player) {
         this.player = player;
+    }
+
+    @Override
+    public String toString() {
+        return "UniformOrder{" +
+                "orderId=" + orderId +
+                ", jerseySize=" + jerseySize +
+                ", jerseyNumber=" + jerseyNumber +
+                ", pantsSize=" + pantsSize +
+                ", pantsStyle=" + pantsStyle +
+                ", hatSize=" + hatSize +
+                ", shoeSize=" + shoeSize +
+                ", tShirtSize=" + tShirtSize +
+                ", shortsSize=" + shortsSize +
+                ", season=" + season +
+                ", dateCreated=" + dateCreated +
+                ", player=" + player +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        UniformOrder that = (UniformOrder) o;
+        return orderId == that.orderId &&
+                Objects.equals(jerseySize, that.jerseySize) &&
+                Objects.equals(jerseyNumber, that.jerseyNumber) &&
+                Objects.equals(pantsSize, that.pantsSize) &&
+                Objects.equals(pantsStyle, that.pantsStyle) &&
+                Objects.equals(hatSize, that.hatSize) &&
+                Objects.equals(shoeSize, that.shoeSize) &&
+                Objects.equals(tShirtSize, that.tShirtSize) &&
+                Objects.equals(shortsSize, that.shortsSize) &&
+                Objects.equals(season, that.season);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(orderId, jerseySize, jerseyNumber, pantsSize, pantsStyle, hatSize, shoeSize, tShirtSize, shortsSize, season);
     }
 }
