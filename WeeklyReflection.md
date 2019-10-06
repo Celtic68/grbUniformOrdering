@@ -134,3 +134,5 @@ I should finish the Player and UniformOrder unit tests this weekend.
 
 On 10/4, I finished creating all the unit tests for the Player model and then re-ran all the tests and all the tests
 with coverage - everything passed and coverage was 100%. I pushed the changes and moved on to the UniformOrder model.
+On 10/5 and 10/6, I created and finalized all of the unit tests for the UniformOrder model and ran all unit tests to 
+success. At this point, I believe all the unit tests are created and have all run to success with 100% coverage.

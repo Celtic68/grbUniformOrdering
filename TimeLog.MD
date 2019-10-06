@@ -51,5 +51,6 @@
 | 10/3/19 | Made suggested changes from Instructor feedback for week 5 to the Generic dao and the UserDaoTest delete case | 20 minutes |
 | 10/3/19 | Began unit tests for Player model and solved an issue with generated SQL | 1.5 hours |
 | 10/4/19 | Posted issue resolution to Slack and worked on Player model test | 30 minutes |
-| 10/5/19 | Finished the unit tests for the Player model | 45 minutes | 
-| | Total Hours | 81.2  |
+| 10/5/19 | Finished the unit tests for the Player model | 45 minutes |
+| 10/6/19 | Created all the unit tests for the UniformOrder model and ran them all to success. Also reran all unit tests to success | 3 hours | 
+| | Total Hours | 84.2  |

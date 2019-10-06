@@ -269,3 +269,21 @@
 [DEBUG] 2019-10-05 11:21:17.765 [main] GenericDao - Searching for entity with userName = almfamily
 [DEBUG] 2019-10-05 11:21:17.863 [main] GenericDao - Searching for entity with userName = almfamily
 [DEBUG] 2019-10-05 11:21:17.880 [main] GenericDao - Searching for entity with userName = scoobyDoo
+[DEBUG] 2019-10-06 16:31:08.421 [main] GenericDao - Searching for entity with playerAgeGroup = 12u
+[DEBUG] 2019-10-06 16:45:56.879 [main] GenericDao - Searching for entity with playerAgeGroup = 12u
+[DEBUG] 2019-10-06 16:48:32.842 [main] GenericDao - Searching for entity with playerAgeGroup = 12u
+[DEBUG] 2019-10-06 16:49:12.626 [main] GenericDao - Searching for entity with playerSiteLocation = 1
+[DEBUG] 2019-10-06 16:49:12.960 [main] GenericDao - Searching for entity with playerAgeGroup = 15u
+[DEBUG] 2019-10-06 16:49:13.398 [main] GenericDao - Searching for entity with playerSiteLocation = 3
+[DEBUG] 2019-10-06 16:49:13.829 [main] GenericDao - Searching for entity with playerFirstName = Jenk
+[DEBUG] 2019-10-06 16:49:14.042 [main] GenericDao - Searching for entity with playerLastName = lex
+[DEBUG] 2019-10-06 16:49:14.157 [main] GenericDao - Searching for entity with role = 1
+[DEBUG] 2019-10-06 16:49:14.591 [main] GenericDao - Searching for entity with userEmail = cambo7131@gmail.com
+[DEBUG] 2019-10-06 16:49:14.701 [main] GenericDao - Searching for entity with userFirstName = i
+[DEBUG] 2019-10-06 16:49:14.803 [main] GenericDao - Searching for entity with userLastName = l
+[INFO ] 2019-10-06 16:49:15.012 [main] GenericDao - All entities retrieved
+[DEBUG] 2019-10-06 16:49:15.112 [main] GenericDao - Searching for entity with userName = jleitl
+[DEBUG] 2019-10-06 16:49:15.304 [main] GenericDao - Searching for entity with userName = almfamily
+[DEBUG] 2019-10-06 16:49:15.412 [main] GenericDao - Searching for entity with userName = almfamily
+[DEBUG] 2019-10-06 16:49:15.427 [main] GenericDao - Searching for entity with userName = scoobyDoo
+[DEBUG] 2019-10-06 16:49:15.570 [main] GenericDao - Searching for entity with playerAgeGroup = 12u

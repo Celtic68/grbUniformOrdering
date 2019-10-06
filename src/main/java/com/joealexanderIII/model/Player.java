@@ -3,9 +3,7 @@ package com.joealexanderIII.model;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.util.HashSet;
-import java.util.Objects;
-import java.util.Set;
+import java.util.*;
 
 /**
  * A class to represent a Player.
@@ -35,7 +33,7 @@ public class Player {
     private User user;
 
     @OneToMany(mappedBy = "player", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
-    private Set<UniformOrder> orders = new HashSet<>();
+    private List<UniformOrder> orders = new ArrayList<>();
 
     /**
      * Instantiates a new Player.
@@ -172,7 +170,7 @@ public class Player {
      *
      * @return the orders
      */
-    public Set<UniformOrder> getOrders() {
+    public List<UniformOrder> getOrders() {
         return orders;
     }
 
@@ -181,7 +179,7 @@ public class Player {
      *
      * @param orders the orders
      */
-    public void setOrders(Set<UniformOrder> orders) {
+    public void setOrders(List<UniformOrder> orders) {
         this.orders = orders;
     }
 
