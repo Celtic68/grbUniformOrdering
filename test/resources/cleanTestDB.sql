@@ -46,7 +46,7 @@ LOCK TABLES grb_locations WRITE;
 INSERT INTO grb_locations VALUES (1,'Madison'),(2,'Milwaukee'),(3,'Eau Claire');
 UNLOCK TABLES;
 LOCK TABLES grb_uniform_order WRITE;
-INSERT INTO grb_uniform_order VALUES (1,1,7,NULL,6,2,3,13,9,9,2,'2018-12-10 15:54:39'),(2,2,3,34,3,1,1,6,NULL,NULL,3,'2018-12-10 15:56:04'),(3,2,3,34,3,1,1,6,NULL,NULL,1,'2018-12-10 15:56:04');
+INSERT INTO grb_uniform_order VALUES (1,1,7,NULL,6,2,3,13,9,9,2,'2018-12-10 15:54:39'),(2,2,3,34,3,1,1,6,NULL,NULL,3,'2018-11-10 15:56:04'),(3,2,3,34,3,1,1,6,NULL,NULL,1,'2019-08-10 15:56:04');
 UNLOCK TABLES;
 LOCK TABLES grb_user_roles WRITE;
 INSERT INTO grb_user_roles VALUES (1,'almfamily','admin'),(2,'jleitl','user');
