@@ -136,3 +136,14 @@ On 10/4, I finished creating all the unit tests for the Player model and then re
 with coverage - everything passed and coverage was 100%. I pushed the changes and moved on to the UniformOrder model.
 On 10/5 and 10/6, I created and finalized all of the unit tests for the UniformOrder model and ran all unit tests to 
 success. At this point, I believe all the unit tests are created and have all run to success with 100% coverage.
+
+### Week 6 – 10/7/19 through 10/13/19
+#### Tasks Completed:
+
+* Week 1 exercise pushed to AWS
+* User Sign Up jsp created
+
+A suggestion made for my project - instead of asking the user what jersey number they want, show a list of available
+jersey numbers to pick from. APIs I will use are the email API and the weather API (Geonames).
+
+The User Sign Up jsp is created - just need a little tweaking with adding the legend instead of using a header.
