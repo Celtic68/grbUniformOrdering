@@ -41,4 +41,15 @@ footer p {
     padding: 0;
 }
 
+fieldset {
+    padding: 0 10px 10px 10px;
+    border: 1px solid palegoldenrod;
+}
+
+legend {
+    width: auto;
+    font-size: 18px;
+    color: white;
+}
+
 

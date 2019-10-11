@@ -55,4 +55,5 @@
 | 10/6/19 | Created all the unit tests for the UniformOrder model and ran them all to success. Also reran all unit tests to success | 3 hours |
 | 10/8/19 | Finished all week 6 activities to get the week 1 exercise deployed to AWS, watched all the videos and did all the reading | 2.5 hours | 
 | 10/9/19 | Created the user sign in jsp and removed all system.out.println references from the database class | 1 hour |
-| | Total Hours | 90.7  |
+| 10/11/19 | Finished the user sign up jsp and created the user edit jsp | 1.5 hours |
+| | Total Hours | 92.2  |

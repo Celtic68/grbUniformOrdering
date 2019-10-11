@@ -141,9 +141,13 @@ success. At this point, I believe all the unit tests are created and have all ru
 #### Tasks Completed:
 
 * Week 1 exercise pushed to AWS
-* User Sign Up jsp created
+* User Sign Up jsp created and finished
+* User Edit jsp created
 
 A suggestion made for my project - instead of asking the user what jersey number they want, show a list of available
 jersey numbers to pick from. APIs I will use are the email API and the weather API (Geonames).
 
-The User Sign Up jsp is created - just need a little tweaking with adding the legend instead of using a header.
+The User Sign Up jsp is created - just need a little tweaking with adding the legend instead of using a header. The
+changes were made and the sign up page is set to go - on to the user edit screen. The user edit screen went pretty
+quick as I was able to use the sign up page as a model - it just needs the user data now to pre-populate the fields
+which will be sent by a servlet. Next up is the Add player jsp...
