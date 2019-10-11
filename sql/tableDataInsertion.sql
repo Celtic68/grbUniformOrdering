@@ -145,6 +145,21 @@ INSERT INTO grb_locations VALUES (1,'Madison')
 
 UNLOCK TABLES;
 
+LOCK TABLES grb_age_groups WRITE;
+
+INSERT INTO grb_age_groups VALUES (1,'9U')
+                               ,(2,'10U')
+                               ,(3,'11U')
+                               ,(4,'12U')
+                               ,(5,'13U')
+                               ,(6,'14U')
+                               ,(7,'15U')
+                               ,(8,'16U')
+                               ,(9,'17U')
+;
+
+UNLOCK TABLES;
+
 LOCK TABLES grb_uniform_order WRITE;
 
 INSERT INTO grb_uniform_order VALUES (1,1,7,NULL,6,2,3,13,9,9,2,'2018-12-10 15:54:39')

@@ -137,6 +137,12 @@ CREATE TABLE grb_locations (
     PRIMARY KEY (LOCATION_ID)
 );
 
+CREATE TABLE grb_age_groups (
+    AGE_GROUP_ID int(11) NOT NULL AUTO_INCREMENT,
+    AGE_GROUP_DESCRIPTION varchar(20) NOT NULL,
+    PRIMARY KEY (AGE_GROUP_ID)
+);
+
 CREATE TABLE grb_user_roles (
     ID int(11) NOT NULL,
     USER_NAME varchar(50) NOT NULL,
