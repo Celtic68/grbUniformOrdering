@@ -56,4 +56,5 @@
 | 10/8/19 | Finished all week 6 activities to get the week 1 exercise deployed to AWS, watched all the videos and did all the reading | 2.5 hours | 
 | 10/9/19 | Created the user sign in jsp and removed all system.out.println references from the database class | 1 hour |
 | 10/11/19 | Finished the user sign up jsp and created the user edit jsp | 1.5 hours |
-| | Total Hours | 92.2  |
+| 10/11/19 | Created the add player jsp and updated the sql generation files to add the age group table | 1 hours |
+| | Total Hours | 93.2  |
