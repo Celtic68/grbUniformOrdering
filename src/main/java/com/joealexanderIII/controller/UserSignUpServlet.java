@@ -34,14 +34,8 @@ import java.security.NoSuchAlgorithmException;
 
 public class UserSignUpServlet extends HttpServlet {
 
-    /**
-     * The User.
-     */
-// Define Instance variables
+    // Define Instance variables
     User user;
-    /**
-     * The User role.
-     */
     Role userRole;
     private final Logger logger = LogManager.getLogger(this.getClass());
 
@@ -61,6 +55,7 @@ public class UserSignUpServlet extends HttpServlet {
         int insertedId;
         GenericDao genericDao;
 
+        logger.debug("Started user sign up");
         // Get a session
         HttpSession session = request.getSession();
 

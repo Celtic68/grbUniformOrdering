@@ -154,3 +154,10 @@ changes were made and the sign up page is set to go - on to the user edit screen
 quick as I was able to use the sign up page as a model - it just needs the user data now to pre-populate the fields
 which will be sent by a servlet. Next up is the Add player jsp... and it is now set to go, too. I also updated the sql 
 generation files to create the age group table.
+
+### Week 7 – 10/14/19 through 10/20/19
+#### Tasks Completed:
+
+I started a new internship this week, so my work on the project took a hit for the first part of this week. I still need
+to get the user signup servlet working. After that, the focus will be on getting the login functionality up and running
+and get the project pushed to AWS for the first time.

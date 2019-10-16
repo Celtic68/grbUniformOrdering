@@ -30,7 +30,7 @@
 
         <c:remove var="userSignUpMessage" />
 
-        <form action="/com.joealexanderIII/userSignUp-servlet" method="POST">
+        <form action="com.joealexanderIII/userSignUp-servlet" method="POST">
             <fieldset>
                 <legend>User Sign Up Information</legend>
                 <div class="form-group">
