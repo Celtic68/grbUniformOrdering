@@ -287,3 +287,36 @@
 [DEBUG] 2019-10-06 16:49:15.412 [main] GenericDao - Searching for entity with userName = almfamily
 [DEBUG] 2019-10-06 16:49:15.427 [main] GenericDao - Searching for entity with userName = scoobyDoo
 [DEBUG] 2019-10-06 16:49:15.570 [main] GenericDao - Searching for entity with playerAgeGroup = 12u
+[DEBUG] 2019-10-16 17:07:11.677 [http-nio-8080-exec-2] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-16 17:15:21.856 [http-nio-8080-exec-4] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-16 17:17:11.386 [http-nio-8080-exec-3] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-16 17:20:28.416 [http-nio-8080-exec-3] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-16 17:23:58.531 [http-nio-8080-exec-8] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-16 17:28:36.344 [http-nio-8080-exec-2] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-16 17:28:36.372 [http-nio-8080-exec-2] UserSignUpServlet - Validating the zip code
+[DEBUG] 2019-10-16 17:28:36.671 [http-nio-8080-exec-2] UserSignUpServlet - 200
+[DEBUG] 2019-10-16 17:28:36.671 [http-nio-8080-exec-2] UserSignUpServlet - OK
+[DEBUG] 2019-10-16 17:29:01.918 [http-nio-8080-exec-6] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-16 17:29:01.920 [http-nio-8080-exec-6] UserSignUpServlet - Validating the zip code
+[DEBUG] 2019-10-16 17:29:02.157 [http-nio-8080-exec-6] UserSignUpServlet - 200
+[DEBUG] 2019-10-16 17:29:02.157 [http-nio-8080-exec-6] UserSignUpServlet - OK
+[DEBUG] 2019-10-16 19:32:53.781 [http-nio-8080-exec-4] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-16 19:32:54.485 [http-nio-8080-exec-4] UserSignUpServlet - {"postalCodes":[]}
+[DEBUG] 2019-10-16 19:50:00.175 [http-nio-8080-exec-2] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-16 19:50:00.844 [http-nio-8080-exec-2] UserSignUpServlet - {"postalCodes":[]}
+[DEBUG] 2019-10-16 19:51:51.206 [http-nio-8080-exec-4] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-16 19:51:52.737 [http-nio-8080-exec-4] UserSignUpServlet - {"postalCodes":[]}
+[DEBUG] 2019-10-16 19:51:52.755 [http-nio-8080-exec-4] UserSignUpServlet - {"postalCodes":[]}
+[DEBUG] 2019-10-16 19:55:04.031 [http-nio-8080-exec-4] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-16 19:55:04.807 [http-nio-8080-exec-4] UserSignUpServlet - {"postalCodes":[]}
+[DEBUG] 2019-10-16 19:57:57.146 [http-nio-8080-exec-2] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-16 19:57:57.698 [http-nio-8080-exec-2] UserSignUpServlet - {"postalCodes":[{"adminCode2":"025","adminCode1":"WI","adminName2":"Dane","lng":-89.222662,"countryCode":"US","postalCode":"53590","adminName1":"Wisconsin","ISO3166-2":"WI","placeName":"Sun Prairie","lat":43.186901}]}
+[DEBUG] 2019-10-16 19:57:57.700 [http-nio-8080-exec-2] UserSignUpServlet - 1
+[DEBUG] 2019-10-16 19:58:25.259 [http-nio-8080-exec-6] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-16 19:58:25.741 [http-nio-8080-exec-6] UserSignUpServlet - {"postalCodes":[]}
+[DEBUG] 2019-10-16 19:58:25.741 [http-nio-8080-exec-6] UserSignUpServlet - 1
+[DEBUG] 2019-10-16 20:04:14.617 [http-nio-8080-exec-3] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-16 20:04:15.321 [http-nio-8080-exec-3] UserSignUpServlet - []
+[DEBUG] 2019-10-16 20:06:06.291 [http-nio-8080-exec-3] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-16 20:06:25.151 [http-nio-8080-exec-6] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-16 20:07:51.385 [http-nio-8080-exec-2] UserSignUpServlet - Started user sign up

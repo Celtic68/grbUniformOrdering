@@ -5,7 +5,12 @@ import com.joealexanderIII.model.Role;
 import com.joealexanderIII.model.User;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 
+import javax.json.stream.JsonParser;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -18,6 +23,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.Scanner;
 
 /**
  * The UserSignUp servlet will get the post data from the User Sign Up JSP
@@ -84,7 +90,7 @@ public class UserSignUpServlet extends HttpServlet {
         }
 
         //Create the url
-        String url = "/com.joealexanderIII/userSignUp.jsp";
+        String url = "userSignUp.jsp";
 
         // Redirect to JSP page
         response.sendRedirect(url);
@@ -233,13 +239,31 @@ public class UserSignUpServlet extends HttpServlet {
             conn.setRequestProperty("Accept", "application/json");
 
             if (conn.getResponseCode() != 200) {
-                validationMessage = "The zip code is not a valid US zip code";
+                throw new RuntimeException("HttpResponseCode: " + conn.getResponseCode());
+            } else {
+                String inline = "";
+                Scanner sc = new Scanner(fullUrl.openStream());
+                while(sc.hasNext())
+                {
+                    inline += sc.nextLine();
+                }
+                sc.close();
+                JSONParser parser = new JSONParser();
+                JSONObject json = (JSONObject) parser.parse(inline);
+                JSONArray jsonArray = (JSONArray) json.get("postalCodes");
+                if (jsonArray.isEmpty()) {
+                    validationMessage = "You have entered an invalid US zip code<br >";
+                }
             }
             conn.disconnect();
         } catch (MalformedURLException e) {
             logger.error("The URL to validate the zip code is not formatted correctly" + e);
         } catch (IOException e) {
             logger.error("An IO error occurred while validating the zip code" + e);
+        } catch (RuntimeException e) {
+            logger.error("A Run Time Error occurred while validating the zip code" + e);
+        } catch (ParseException e) {
+            logger.error("A parsing error occurred while validating the zip code" + e);
         }
 
         return validationMessage;
