@@ -320,3 +320,16 @@
 [DEBUG] 2019-10-16 20:06:06.291 [http-nio-8080-exec-3] UserSignUpServlet - Started user sign up
 [DEBUG] 2019-10-16 20:06:25.151 [http-nio-8080-exec-6] UserSignUpServlet - Started user sign up
 [DEBUG] 2019-10-16 20:07:51.385 [http-nio-8080-exec-2] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-16 20:09:22.596 [http-nio-8080-exec-3] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-16 20:09:32.462 [http-nio-8080-exec-5] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-16 20:09:40.844 [http-nio-8080-exec-8] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-16 20:14:12.370 [http-nio-8080-exec-2] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-16 20:14:17.784 [http-nio-8080-exec-2] GenericDao - Searching for entity with userName = almfamily
+[DEBUG] 2019-10-16 20:16:58.948 [http-nio-8080-exec-3] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-16 20:17:04.379 [http-nio-8080-exec-3] GenericDao - Searching for entity with userName = almfamily
+[DEBUG] 2019-10-16 20:17:04.860 [http-nio-8080-exec-3] UserSignUpServlet - almfamily
+[DEBUG] 2019-10-16 20:17:04.861 [http-nio-8080-exec-3] UserSignUpServlet - almfamily user name
+[DEBUG] 2019-10-16 20:20:25.797 [http-nio-8080-exec-3] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-16 20:20:31.025 [http-nio-8080-exec-3] GenericDao - Searching for entity with userName = almfamily
+[DEBUG] 2019-10-16 20:20:31.483 [http-nio-8080-exec-3] UserSignUpServlet - almfamily
+[DEBUG] 2019-10-16 20:20:31.483 [http-nio-8080-exec-3] UserSignUpServlet - almfamily user name
