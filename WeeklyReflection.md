@@ -167,4 +167,6 @@ working as intended. I still need to finish up the encryption logic for the pass
 
 On 10/19, I got the login functionality going by creating the login and login error jsps and the logout servlet. I also
 updated the web xml file for security and added the context xml file. Next up is to watch the video created to walk 
-through Paula's example for landing on the index page with no login.
+through Paula's example for landing on the index page with no login. Before I watched the video, I wanted to be sure the 
+login process was working as it should be and it is - YAY! I finished watching the video explaining the login button, so
+next up is getting the home page / login functionality up and running. Once this is set, I will deploy to AWS.
