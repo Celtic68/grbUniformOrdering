@@ -161,3 +161,10 @@ generation files to create the age group table.
 I started a new internship this week, so my work on the project took a hit for the first part of this week. I still need
 to get the user signup servlet working. After that, the focus will be on getting the login functionality up and running
 and get the project pushed to AWS for the first time.
+
+On 10/16, I finished up getting the user sign up jsp and servlet functional where validation and the API call are 
+working as intended. I still need to finish up the encryption logic for the password in that chain.
+
+On 10/19, I got the login functionality going by creating the login and login error jsps and the logout servlet. I also
+updated the web xml file for security and added the context xml file. Next up is to watch the video created to walk 
+through Paula's example for landing on the index page with no login.

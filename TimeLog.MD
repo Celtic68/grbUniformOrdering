@@ -60,4 +60,6 @@
 | 10/12/19 | Created the user sign up servlet - still working on getting it hooked up with the jsp | 2 hours |
 | 10/14/19 | Did the reading, watched the videos, and started the demo for week 7 | 4 hours |
 | 10/15/19 | Week 7 demo - got it working on the local environment, and now need to get it up to AWS | 2 hours |
-| | Total Hours | 105.2  |
+| 10/16/19 | Worked on the Geonames API call in class and got the validation and API call working in User Sign Up | 2 hours |
+| 10/19/19 | Created the user login and login error jsps, the logout servlet, updated the web xml, and created the context xml file | 1.5 hours |
+| | Total Hours | 108.7  |
