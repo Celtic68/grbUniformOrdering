@@ -333,3 +333,5 @@
 [DEBUG] 2019-10-16 20:20:31.025 [http-nio-8080-exec-3] GenericDao - Searching for entity with userName = almfamily
 [DEBUG] 2019-10-16 20:20:31.483 [http-nio-8080-exec-3] UserSignUpServlet - almfamily
 [DEBUG] 2019-10-16 20:20:31.483 [http-nio-8080-exec-3] UserSignUpServlet - almfamily user name
+[DEBUG] 2019-10-16 20:25:16.948 [http-nio-8080-exec-7] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-16 20:25:22.881 [http-nio-8080-exec-7] GenericDao - Searching for entity with userName = almfamily

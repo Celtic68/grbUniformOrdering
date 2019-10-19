@@ -285,8 +285,7 @@ public class UserSignUpServlet extends HttpServlet {
         // Check to see if the user name exists
         User user = (User)genericDao.getByPropertyUniqueEqual("userName", userName);
 
-        logger.debug(user.getUserName());
-        logger.debug(userName + " user name");
+        // If the user name exists, throw an error message
         if (user.getUserName().equals(userName)) {
             validationMessage = "That user name has already been selected - please choose another<br >";
         }
