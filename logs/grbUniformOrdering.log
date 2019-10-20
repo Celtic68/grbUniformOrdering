@@ -420,3 +420,9 @@
 [INFO ] 2019-10-20 12:26:41.740 [http-nio-8080-exec-3] UserSignUpServlet - made it!
 [INFO ] 2019-10-20 12:26:41.741 [http-nio-8080-exec-3] UserSignUpServlet - null
 [INFO ] 2019-10-20 12:26:41.741 [http-nio-8080-exec-3] UserSignUpServlet - Joseph
+[DEBUG] 2019-10-20 12:41:17.518 [http-nio-8080-exec-3] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-20 12:41:37.766 [http-nio-8080-exec-6] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-20 12:49:54.491 [http-nio-8080-exec-10] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-20 12:49:59.657 [http-nio-8080-exec-10] GenericDao - Searching for entity with userName = user1
+[DEBUG] 2019-10-20 12:50:32.314 [http-nio-8080-exec-4] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-20 12:50:32.912 [http-nio-8080-exec-4] GenericDao - Searching for entity with userName = user2

@@ -3,6 +3,7 @@ package com.joealexanderIII.controller;
 import com.joealexanderIII.dao.GenericDao;
 import com.joealexanderIII.model.Role;
 import com.joealexanderIII.model.User;
+import org.apache.catalina.realm.MessageDigestCredentialHandler;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.json.simple.JSONArray;
@@ -332,44 +333,24 @@ public class UserSignUpServlet extends HttpServlet {
     }
 
     /**
-     * Encrypt string string.
+     * Encrypt passed string.
      *
      * @param passedString the passed string
      * @return the encrypted string
      */
     public String encryptString(String passedString) {
 
-        String encryptedString = "";
+        MessageDigestCredentialHandler credentialHandler = new MessageDigestCredentialHandler();
 
         try {
-            // getInstance() method is called with algorithm SHA-1
-            MessageDigest md = MessageDigest.getInstance("SHA-1");
-
-            // digest() method is called
-            // to calculate message digest of the input string
-            // returned as array of byte
-            byte[] messageDigest = md.digest(passedString.getBytes());
-
-            // Convert byte array into signum representation
-            BigInteger no = new BigInteger(1, messageDigest);
-
-            // Convert message digest into hex value
-            String hashtext = no.toString(16);
-
-            // Add preceding 0s to make it 32 bit
-            while (hashtext.length() < 32) {
-                hashtext = "0" + hashtext;
-            }
-
-            // return the HashText
-            return hashtext;
+            credentialHandler.setAlgorithm("sha-256");
+        } catch (NoSuchAlgorithmException e) {
+            logger.error("Unable to encrypt password " + e);
         }
+        credentialHandler.setEncoding("UTF-8");
+        String hashedPassword = credentialHandler.mutate(passedString);
 
-        // For specifying wrong message digest algorithms
-        catch (NoSuchAlgorithmException e) {
-            logger.error("Wrong Message digest algorithm used - could not encrypt password" + e);
-            return encryptedString;
-        }
+        return hashedPassword;
 
     }
 

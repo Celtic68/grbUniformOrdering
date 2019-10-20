@@ -4,5 +4,9 @@
            connectionURL="jdbc:mysql://localhost:3306/grb_uniform_ordering?user=root&amp;password=Jenkin112003"
            userTable="grb_user" userNameCol="USER_NAME" userCredCol="USER_PASSWORD"
            userRoleTable="grb_user_roles" roleNameCol="USER_ROLE" >
+           <CredentialHandler
+                className="org.apache.catalina.realm.MessageDigestCredentialHandler"
+                algorithm="sha-256"
+                encoding="UTF-8" />
     </Realm>
 </Context>

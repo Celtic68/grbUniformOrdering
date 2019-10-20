@@ -87,6 +87,16 @@
       <version>RELEASE</version>
       <scope>test</scope>
     </dependency>
+    <!-- Add dependencies to allow for hashing -->
+    <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-servlet-api -->
+    <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-catalina -->
+    <dependency>
+      <groupId>org.apache.tomcat</groupId>
+      <artifactId>tomcat-catalina</artifactId>
+      <version>8.5.3</version>
+      <scope>provided</scope>
+    </dependency>
+
   </dependencies>
   <build>
     <finalName>grbUniformOrdering</finalName>
