@@ -29,23 +29,22 @@
 
     <div id="body">
 
-        <section id="content">
+        <section id="homePageContent">
 
             <article>
 
+                <img src="images/RaysPlayer1.jpg" id="homePagePlayer" alt="One of our hitters getting after it!">
 
-                <h2>Joe Alexander's Journey to Re-Entering IT</h2>
-                <div class="article-info">Posted on <time datetime="2019-03-03">March 3rd</time> by <a href="#" rel="author">Joe Alexander</a></div>
+                <h2>Welcome to the GRB Rays Uniform Ordering Site!</h2>
 
-                <p>I completed the Mainframe degree program at Madison College in December of 1997. At that point, I had been working for Great Lakes Higher
-                    Education for nine months as an Intern and Programmer Trainee. Over the course of the next seven years, I worked my way up to a Project
-                    Leader position and was part of several large intiatives. In 2004, I decided to resign and become a stay at home dad. For 15 years, I
-                    held down the fort at home while my wife worked her way to the position of COO at Great Lakes. During that time, I also built my own
-                    home theater room, home brewing area and coached several teams for my children.</p>
+                <p>In order to better serve our families, we have created this site to help our Winter Meeting go
+                    smoother. All you need to do is create an account and add your son as a player to allow you to
+                    order his uniform electronically!</p>
 
-                <p>In 2018, we decided the time was right for me to go back to work. I loved working in IT so it was an easy decision to go back to school
-                    to reinvent myself as a modern IT professional. To that end, I decided to pursue both the Web Development and Mobile App degree programs
-                    and I am set to graduate from both programs in December of 2019.</p>
+                <p>Once everyone has had a chance to order their uniforms, an email confirmation will be sent to all
+                   members. If you need to modify your order, just sign back in and make any changes necessary.</p>
+
+                <p>It's just that easy - sign up and order today!</p>
 
             </article>
 

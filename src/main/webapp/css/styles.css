@@ -52,4 +52,34 @@ legend {
     color: white;
 }
 
+#homePageContent {
+    margin-top: 10px;
+}
+
+#homePageContent article h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+
+#homePageContent article p {
+    font-size: 14px;
+}
+
+hr {
+    border-color: black;
+    height: 3px;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Images Formatting */
+#homePagePlayer {
+    float: right;
+    width: 500px;
+    padding-left: 10px;
+}
+
 

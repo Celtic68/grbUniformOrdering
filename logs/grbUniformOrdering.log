@@ -337,3 +337,13 @@
 [DEBUG] 2019-10-16 20:25:22.881 [http-nio-8080-exec-7] GenericDao - Searching for entity with userName = almfamily
 [INFO ] 2019-10-19 19:04:22.382 [http-nio-8080-exec-5] UserLoginAction - The logged in user is jleitl
 [INFO ] 2019-10-19 19:04:22.397 [http-nio-8080-exec-5] UserLoginAction - The logged in credential is a user
+[INFO ] 2019-10-19 20:35:48.185 [http-nio-8080-exec-7] UserLoginAction - The logged in user is jleitl
+[INFO ] 2019-10-19 20:35:48.202 [http-nio-8080-exec-7] UserLoginAction - The logged in credential is a user
+[INFO ] 2019-10-19 20:38:42.257 [http-nio-8080-exec-6] UserLoginAction - The logged in user is jleitl
+[INFO ] 2019-10-19 20:38:42.275 [http-nio-8080-exec-6] UserLoginAction - The logged in credential is a user
+[INFO ] 2019-10-19 20:41:45.512 [http-nio-8080-exec-5] UserLoginAction - The logged in user is jleitl
+[INFO ] 2019-10-19 20:41:45.537 [http-nio-8080-exec-5] UserLoginAction - The logged in credential is a user
+[INFO ] 2019-10-19 20:45:08.836 [http-nio-8080-exec-5] UserLoginAction - The logged in user is jleitl
+[INFO ] 2019-10-19 20:45:08.859 [http-nio-8080-exec-5] UserLoginAction - The logged in credential is a user
+[INFO ] 2019-10-19 20:46:32.829 [http-nio-8080-exec-5] UserLoginAction - The logged in user is jleitl
+[INFO ] 2019-10-19 20:46:32.854 [http-nio-8080-exec-5] UserLoginAction - The logged in credential is a user
