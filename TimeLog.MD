@@ -64,4 +64,5 @@
 | 10/19/19 | Created the user login and login error jsps, the logout servlet, updated the web xml, and created the context xml file | 1.5 hours |
 | 10/19/19 | Updated the context file for the database credentials and tested the login process | 1 hour |
 | 10/19/19 | Updated the home page for design, all the navigation menus are constructed, and the login and logout process is fully functional | 3.5 hours |
-| | Total Hours | 113.2  |
+| 10/20/19 | Added hashing functionality, cleaned up bugs in the user sign up process, enhanced sign up process for customer experience | 3 hours |
+| | Total Hours | 116.2  |

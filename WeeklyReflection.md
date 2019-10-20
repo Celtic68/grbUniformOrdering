@@ -162,7 +162,9 @@ generation files to create the age group table.
 * Login and Logout functionality through Tomcat are up and running locally
 * Navigation menus have been reworked to use Bootstrap 4 formatting
 * Index page has now implemented the proposed design
-
+* Hashing functionality now works for the password in the Login and Sign Up process
+* User (and their roles) are now being added to the database
+* Improved the customer experience on the Sign Up page by saving entered data when an error occurs
 
 I started a new internship this week, so my work on the project took a hit for the first part of this week. I still need
 to get the user signup servlet working. After that, the focus will be on getting the login functionality up and running
@@ -181,3 +183,9 @@ I now have the index page, login, and logout functionality all working. I also r
 advantage of Bootstrap 4 formatting and tested through the site for navigation. The next piece will be to get sha-1
 hashing set up for the passwords and then deploy the current state of the application to AWS. I also need to set up
 security on the user and admin pages to force the user to the login screen.
+
+On 10/20, I tested through the user sign up process and removed several bugs - this process now works as intended. I
+also got the hashing functionality added for the password for Login and User Sign up. To improve the customer experience,
+I implemented saving entered data when the sign up process encounters an error server side - if I can, I would like to
+implement front end validation as well as time allows. Next up is to get all the user and admin pages secured and then 
+deploy to AWS, but it is pumpkin carving time.  :)

@@ -426,3 +426,8 @@
 [DEBUG] 2019-10-20 12:49:59.657 [http-nio-8080-exec-10] GenericDao - Searching for entity with userName = user1
 [DEBUG] 2019-10-20 12:50:32.314 [http-nio-8080-exec-4] UserSignUpServlet - Started user sign up
 [DEBUG] 2019-10-20 12:50:32.912 [http-nio-8080-exec-4] GenericDao - Searching for entity with userName = user2
+[DEBUG] 2019-10-20 13:17:28.587 [http-nio-8080-exec-4] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-20 13:17:34.109 [http-nio-8080-exec-4] GenericDao - Searching for entity with userName = user3
+[INFO ] 2019-10-20 13:18:07.211 [http-nio-8080-exec-10] UserLoginAction - The logged in user is user3
+[INFO ] 2019-10-20 13:18:07.211 [http-nio-8080-exec-10] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-10-20 13:22:33.195 [http-nio-8080-exec-2] UserLogOut - User is signing off
