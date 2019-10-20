@@ -63,4 +63,5 @@
 | 10/16/19 | Worked on the Geonames API call in class and got the validation and API call working in User Sign Up | 2 hours |
 | 10/19/19 | Created the user login and login error jsps, the logout servlet, updated the web xml, and created the context xml file | 1.5 hours |
 | 10/19/19 | Updated the context file for the database credentials and tested the login process | 1 hour |
-| | Total Hours | 109.7  |
+| 10/19/19 | Updated the home page for design, all the navigation menus are constructed, and the login and logout process is fully functional | 3.5 hours |
+| | Total Hours | 113.2  |

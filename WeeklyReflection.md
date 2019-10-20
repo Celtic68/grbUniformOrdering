@@ -158,6 +158,12 @@ generation files to create the age group table.
 ### Week 7 – 10/14/19 through 10/20/19
 #### Tasks Completed:
 
+* User Sign up jsp and servlet are up and running - just need to hash the password and do some formatting
+* Login and Logout functionality through Tomcat are up and running locally
+* Navigation menus have been reworked to use Bootstrap 4 formatting
+* Index page has now implemented the proposed design
+
+
 I started a new internship this week, so my work on the project took a hit for the first part of this week. I still need
 to get the user signup servlet working. After that, the focus will be on getting the login functionality up and running
 and get the project pushed to AWS for the first time.
@@ -170,3 +176,7 @@ updated the web xml file for security and added the context xml file. Next up is
 through Paula's example for landing on the index page with no login. Before I watched the video, I wanted to be sure the 
 login process was working as it should be and it is - YAY! I finished watching the video explaining the login button, so
 next up is getting the home page / login functionality up and running. Once this is set, I will deploy to AWS.
+
+I now have the index page, login, and logout functionality all working. I also redid the navigation menus to take 
+advantage of Bootstrap 4 formatting and tested through the site for navigation. The next piece will be to get sha-1
+hashing set up for the passwords and then deploy the current state of the application to AWS.
