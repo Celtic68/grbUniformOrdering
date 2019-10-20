@@ -15,14 +15,14 @@
 <html>
 
 
-<c:import url="head-tag.jsp" />
+<c:import url="../head-tag.jsp" />
 
 <body>
 <div id="container">
 
-    <c:import url="header.jsp" />
+    <c:import url="../header.jsp" />
 
-    <c:import url="menu.jsp" />
+    <c:import url="../menu.jsp" />
 
     <div id="body">
 
@@ -66,7 +66,7 @@
 
     </div>
 
-    <c:import url="footer.jsp" />
+    <c:import url="../footer.jsp" />
 
 </div>
 </body>

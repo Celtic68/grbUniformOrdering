@@ -11,12 +11,23 @@
 
     <c:import url="header.jsp" />
 
-    <c:set var="userType" value="" scope="session"  />
-    <c:import url="menu.jsp" />
+    <c:choose>
+
+        <c:when test="${pageContext.request.isUserInRole('admin')}" >
+            <c:import url="/admin/adminMenu.jsp" />
+        </c:when>
+
+        <c:when test="${pageContext.request.isUserInRole('user')}" >
+            <c:import url="/user/userMenu.jsp" />
+        </c:when>
+
+        <c:otherwise>
+            <c:import url="menu.jsp" />
+        </c:otherwise>
+
+    </c:choose>
 
     <div id="body">
-
-
 
         <section id="content">
 
