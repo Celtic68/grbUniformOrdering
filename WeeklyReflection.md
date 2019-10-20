@@ -187,5 +187,6 @@ security on the user and admin pages to force the user to the login screen.
 On 10/20, I tested through the user sign up process and removed several bugs - this process now works as intended. I
 also got the hashing functionality added for the password for Login and User Sign up. To improve the customer experience,
 I implemented saving entered data when the sign up process encounters an error server side - if I can, I would like to
-implement front end validation as well as time allows. Next up is to get all the user and admin pages secured and then 
-deploy to AWS, but it is pumpkin carving time.  :)
+implement front end validation as well as time allows. I secured the Add Player and Edit User pages for users and admins
+ as those are the pages I have completed - I will add the pages as I create them from here on out. Next up will be to 
+deploy my indie project in its current state to AWS. 

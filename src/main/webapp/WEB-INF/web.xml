@@ -19,6 +19,14 @@
       <web-resource-name>login</web-resource-name>
       <url-pattern>/loginAction</url-pattern>
     </web-resource-collection>
+    <web-resource-collection>
+      <web-resource-name>addPlayer</web-resource-name>
+      <url-pattern>/addPlayer.jsp</url-pattern>
+    </web-resource-collection>
+      <web-resource-collection>
+          <web-resource-name>editUser</web-resource-name>
+          <url-pattern>/editUser.jsp</url-pattern>
+      </web-resource-collection>
     <auth-constraint>
       <role-name>user</role-name>
       <role-name>admin</role-name>
