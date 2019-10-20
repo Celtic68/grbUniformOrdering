@@ -21,8 +21,11 @@ import java.math.BigInteger;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.http.HttpRequest;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.time.LocalDateTime;
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -40,8 +43,14 @@ import java.util.Scanner;
 
 public class UserSignUpServlet extends HttpServlet {
 
-    // Define Instance variables
+    /**
+     * The User.
+     */
+// Define Instance variables
     User user;
+    /**
+     * The User role.
+     */
     Role userRole;
     private final Logger logger = LogManager.getLogger(this.getClass());
 
@@ -76,17 +85,23 @@ public class UserSignUpServlet extends HttpServlet {
             // Instantiate a generic DAO
             genericDao = new GenericDao(User.class);
 
+            // Set the date Created field to the current timestamp
+            user.setDateCreated(LocalDateTime.now());
+
             // Add the user to the database
             insertedId = genericDao.insert(user);
 
             // Set the validation message for adding a user to the session
             if (insertedId > 0) {
-                session.setAttribute("userSignUpMessage", "The user was added to the database");
+                session.setAttribute("userSignUpMessage",
+                        "The user was added to the database - click <a href='loginAction'>here</a> to log in");
+                session.setAttribute("userID", insertedId);
             } else {
                 session.setAttribute("userSignUpMessage", "The user was not added to the database");
             }
         } else {
             session.setAttribute("userSignUpMessage", validationMessage);
+            displayEnteredFormData(session, request);
         }
 
         //Create the url
@@ -94,6 +109,27 @@ public class UserSignUpServlet extends HttpServlet {
 
         // Redirect to JSP page
         response.sendRedirect(url);
+
+    }
+
+    /**
+     * Display entered form data when an error occurs.
+     *
+     * @param session the session
+     * @param request the request
+     */
+    public void displayEnteredFormData(HttpSession session, HttpServletRequest request) {
+
+        session.setAttribute("firstNameValue", request.getParameter("firstName"));
+        session.setAttribute("lastNameValue", request.getParameter("lastName"));
+        session.setAttribute("address1Value", request.getParameter("address1"));
+        session.setAttribute("address2Value", request.getParameter("address2"));
+        session.setAttribute("cityValue", request.getParameter("city"));
+        session.setAttribute("stateValue", request.getParameter("state"));
+        session.setAttribute("zipCodeValue", request.getParameter("zipCode"));
+        session.setAttribute("phoneValue", request.getParameter("phone"));
+        session.setAttribute("emailValue", request.getParameter("email"));
+        session.setAttribute("userNameValue", request.getParameter("userName"));
 
     }
 
@@ -117,6 +153,7 @@ public class UserSignUpServlet extends HttpServlet {
         if (request.getParameter("firstName") == null
                 || request.getParameter("firstName").trim() == "") {
             validationMessage += "The first name must be entered and not be all spaces<br />";
+
         } else {
             user.setUserFirstName(request.getParameter("firstName"));
         }
@@ -187,7 +224,8 @@ public class UserSignUpServlet extends HttpServlet {
             validationMessage += "The userName must be entered and not be all spaces<br />";
         } else {
             validationMessage += checkForUserName(request.getParameter("userName"));
-            if (validationMessage == "") {
+            if (validationMessage.equals("")) {
+                user.setUserName(request.getParameter("userName"));
                 userRole.setUserName(request.getParameter("userName"));
                 userRole.setUserRole("user");
                 user.setRole(userRole);
@@ -200,8 +238,8 @@ public class UserSignUpServlet extends HttpServlet {
                 || request.getParameter("userPassword") == ""
                 || request.getParameter("confirmUserPassword") == null
                 || request.getParameter("confirmUserPassword") == ""
-                || request.getParameter("userPassword") !=
-                   request.getParameter("confirmUserPassword")) {
+                || !request.getParameter("userPassword").equals(
+                   request.getParameter("confirmUserPassword"))) {
             validationMessage += "The password fields must be entered, not be all spaces, and must be equal<br />";
         } else {
             String encryptedPassword = encryptString(request.getParameter("userPassword"));
@@ -283,10 +321,10 @@ public class UserSignUpServlet extends HttpServlet {
         GenericDao genericDao = new GenericDao(User.class);
 
         // Check to see if the user name exists
-        User user = (User)genericDao.getByPropertyUniqueEqual("userName", userName);
+        List<User> users = genericDao.getByPropertyListEqual("userName", userName);
 
         // If the user name exists, throw an error message
-        if (user.getUserName().equals(userName)) {
+        if (!users.isEmpty()) {
             validationMessage = "That user name has already been selected - please choose another<br >";
         }
 

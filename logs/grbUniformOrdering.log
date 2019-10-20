@@ -358,3 +358,65 @@
 [INFO ] 2019-10-20 09:26:18.971 [http-nio-8080-exec-5] UserLoginAction - The logged in credential is a user
 [INFO ] 2019-10-20 09:28:06.986 [http-nio-8080-exec-3] UserLoginAction - The logged in user is jleitl
 [INFO ] 2019-10-20 09:28:07.005 [http-nio-8080-exec-3] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-10-20 09:46:06.587 [http-nio-8080-exec-5] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-20 09:46:12.013 [http-nio-8080-exec-5] GenericDao - Searching for entity with userName = user1
+[DEBUG] 2019-10-20 10:04:08.070 [http-nio-8080-exec-3] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-20 10:04:14.153 [http-nio-8080-exec-3] GenericDao - Searching for entity with userName = user1
+[INFO ] 2019-10-20 10:04:14.590 [http-nio-8080-exec-3] GenericDao - No userName found for user1
+[DEBUG] 2019-10-20 10:24:29.449 [http-nio-8080-exec-3] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-20 10:24:34.920 [http-nio-8080-exec-3] GenericDao - Searching for entity with userName = user1
+[DEBUG] 2019-10-20 10:25:14.381 [http-nio-8080-exec-7] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-20 10:25:14.999 [http-nio-8080-exec-7] GenericDao - Searching for entity with userName = user1
+[DEBUG] 2019-10-20 10:27:37.573 [http-nio-8080-exec-1] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-20 10:34:25.190 [http-nio-8080-exec-4] UserSignUpServlet - Started user sign up
+[INFO ] 2019-10-20 10:34:26.061 [http-nio-8080-exec-4] UserSignUpServlet - email: null
+[DEBUG] 2019-10-20 10:35:15.076 [http-nio-8080-exec-8] UserSignUpServlet - Started user sign up
+[INFO ] 2019-10-20 10:35:15.662 [http-nio-8080-exec-8] UserSignUpServlet - email: null
+[DEBUG] 2019-10-20 10:39:09.296 [http-nio-8080-exec-7] UserSignUpServlet - Started user sign up
+[INFO ] 2019-10-20 10:39:10.021 [http-nio-8080-exec-7] UserSignUpServlet - email: cambo7131@gmail.com
+[DEBUG] 2019-10-20 10:39:14.455 [http-nio-8080-exec-7] GenericDao - Searching for entity with userName = user1
+[DEBUG] 2019-10-20 10:44:03.434 [http-nio-8080-exec-3] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-20 10:44:09.746 [http-nio-8080-exec-3] GenericDao - Searching for entity with userName = user1
+[INFO ] 2019-10-20 10:44:10.127 [http-nio-8080-exec-3] UserSignUpServlet - p1: 07139355
+[INFO ] 2019-10-20 10:44:10.127 [http-nio-8080-exec-3] UserSignUpServlet - p2: 07139355
+[DEBUG] 2019-10-20 10:47:46.430 [http-nio-8080-exec-3] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-20 10:47:52.035 [http-nio-8080-exec-3] GenericDao - Searching for entity with userName = user1
+[DEBUG] 2019-10-20 10:55:16.540 [http-nio-8080-exec-6] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-20 10:55:21.790 [http-nio-8080-exec-6] GenericDao - Searching for entity with userName = user1
+[DEBUG] 2019-10-20 10:59:02.319 [http-nio-8080-exec-3] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-20 10:59:09.395 [http-nio-8080-exec-3] GenericDao - Searching for entity with userName = user1
+[DEBUG] 2019-10-20 11:03:36.657 [http-nio-8080-exec-3] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-20 11:03:41.957 [http-nio-8080-exec-3] GenericDao - Searching for entity with userName = user1
+[INFO ] 2019-10-20 11:03:42.335 [http-nio-8080-exec-3] UserSignUpServlet - User{id=0, userName='null', userPassword='5e5caf2c4d90c8a16c0b6b0c22c6d729ffa851e7', userFirstName='Joseph', userLastName='Alexander', userAddress1='2764 Olin Way', userAddress2='null', userCity='Sun Prairie', userState='WI', userZip='null', userPhone=6087720366, userEmail='cambo7131@gmail.com', dateCreated=2019-10-20T11:03:42.335997100, players=[], role=null}
+[INFO ] 2019-10-20 11:03:42.355 [http-nio-8080-exec-3] UserSignUpServlet - com.joealexanderIII.model.Role@745f
+[DEBUG] 2019-10-20 11:08:20.244 [http-nio-8080-exec-3] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-20 11:08:25.691 [http-nio-8080-exec-3] GenericDao - Searching for entity with userName = user1
+[INFO ] 2019-10-20 11:08:26.089 [http-nio-8080-exec-3] UserSignUpServlet - User{id=0, userName='null', userPassword='5e5caf2c4d90c8a16c0b6b0c22c6d729ffa851e7', userFirstName='Joseph', userLastName='Alexander', userAddress1='2764 Olin Way', userAddress2='null', userCity='Sun Prairie', userState='WI', userZip='null', userPhone=6087720366, userEmail='cambo7131@gmail.com', dateCreated=2019-10-20T11:08:26.089235500, players=[], role=null}
+[INFO ] 2019-10-20 11:08:26.110 [http-nio-8080-exec-3] UserSignUpServlet - com.joealexanderIII.model.Role@745f
+[DEBUG] 2019-10-20 11:11:18.294 [http-nio-8080-exec-3] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-20 11:11:23.863 [http-nio-8080-exec-3] GenericDao - Searching for entity with userName = user1
+[INFO ] 2019-10-20 11:11:24.266 [http-nio-8080-exec-3] UserSignUpServlet - Valid message : 
+[INFO ] 2019-10-20 11:11:24.266 [http-nio-8080-exec-3] UserSignUpServlet - User{id=0, userName='null', userPassword='5e5caf2c4d90c8a16c0b6b0c22c6d729ffa851e7', userFirstName='Joseph', userLastName='Alexander', userAddress1='2764 Olin Way', userAddress2='null', userCity='Sun Prairie', userState='WI', userZip='null', userPhone=6087720366, userEmail='cambo7131@gmail.com', dateCreated=2019-10-20T11:11:24.266988700, players=[], role=null}
+[INFO ] 2019-10-20 11:11:24.292 [http-nio-8080-exec-3] UserSignUpServlet - com.joealexanderIII.model.Role@745f
+[DEBUG] 2019-10-20 11:25:04.541 [http-nio-8080-exec-5] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-20 11:25:10.060 [http-nio-8080-exec-5] GenericDao - Searching for entity with userName = user1
+[INFO ] 2019-10-20 11:25:10.448 [http-nio-8080-exec-5] UserSignUpServlet - Valid message : 
+[INFO ] 2019-10-20 11:25:10.448 [http-nio-8080-exec-5] UserSignUpServlet - Setting the user data
+[INFO ] 2019-10-20 11:25:10.468 [http-nio-8080-exec-5] UserSignUpServlet - user valid: User{id=0, userName='user1', userPassword='null', userFirstName='Joseph', userLastName='Alexander', userAddress1='2764 Olin Way', userAddress2='null', userCity='Sun Prairie', userState='WI', userZip='null', userPhone=6087720366, userEmail='cambo7131@gmail.com', dateCreated=null, players=[], role=com.joealexanderIII.model.Role@ce628b24}
+[INFO ] 2019-10-20 11:25:10.468 [http-nio-8080-exec-5] UserSignUpServlet - user1
+[INFO ] 2019-10-20 11:25:10.468 [http-nio-8080-exec-5] UserSignUpServlet - User{id=0, userName='user1', userPassword='5e5caf2c4d90c8a16c0b6b0c22c6d729ffa851e7', userFirstName='Joseph', userLastName='Alexander', userAddress1='2764 Olin Way', userAddress2='null', userCity='Sun Prairie', userState='WI', userZip='null', userPhone=6087720366, userEmail='cambo7131@gmail.com', dateCreated=2019-10-20T11:25:10.468811500, players=[], role=com.joealexanderIII.model.Role@ce628b24}
+[INFO ] 2019-10-20 11:25:10.468 [http-nio-8080-exec-5] UserSignUpServlet - com.joealexanderIII.model.Role@ce628b24
+[DEBUG] 2019-10-20 11:32:05.399 [http-nio-8080-exec-3] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-20 11:32:10.861 [http-nio-8080-exec-3] GenericDao - Searching for entity with userName = user1
+[DEBUG] 2019-10-20 12:14:12.032 [http-nio-8080-exec-3] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-20 12:17:34.708 [http-nio-8080-exec-3] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-20 12:19:35.242 [http-nio-8080-exec-2] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-20 12:19:58.556 [http-nio-8080-exec-8] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-10-20 12:24:07.135 [http-nio-8080-exec-1] UserSignUpServlet - Started user sign up
+[INFO ] 2019-10-20 12:24:07.814 [http-nio-8080-exec-1] UserSignUpServlet - made it!
+[INFO ] 2019-10-20 12:24:07.815 [http-nio-8080-exec-1] UserSignUpServlet - null
+[INFO ] 2019-10-20 12:24:07.816 [http-nio-8080-exec-1] UserSignUpServlet - null
+[DEBUG] 2019-10-20 12:26:40.825 [http-nio-8080-exec-3] UserSignUpServlet - Started user sign up
+[INFO ] 2019-10-20 12:26:41.740 [http-nio-8080-exec-3] UserSignUpServlet - made it!
+[INFO ] 2019-10-20 12:26:41.741 [http-nio-8080-exec-3] UserSignUpServlet - null
+[INFO ] 2019-10-20 12:26:41.741 [http-nio-8080-exec-3] UserSignUpServlet - Joseph
