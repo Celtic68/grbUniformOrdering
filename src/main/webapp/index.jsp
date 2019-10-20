@@ -14,11 +14,11 @@
     <c:choose>
 
         <c:when test="${pageContext.request.isUserInRole('admin')}" >
-            <c:import url="/admin/adminMenu.jsp" />
+            <c:import url="/adminMenu.jsp" />
         </c:when>
 
         <c:when test="${pageContext.request.isUserInRole('user')}" >
-            <c:import url="/user/userMenu.jsp" />
+            <c:import url="/userMenu.jsp" />
         </c:when>
 
         <c:otherwise>

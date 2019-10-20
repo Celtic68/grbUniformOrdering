@@ -347,3 +347,14 @@
 [INFO ] 2019-10-19 20:45:08.859 [http-nio-8080-exec-5] UserLoginAction - The logged in credential is a user
 [INFO ] 2019-10-19 20:46:32.829 [http-nio-8080-exec-5] UserLoginAction - The logged in user is jleitl
 [INFO ] 2019-10-19 20:46:32.854 [http-nio-8080-exec-5] UserLoginAction - The logged in credential is a user
+[INFO ] 2019-10-19 20:49:50.820 [http-nio-8080-exec-5] UserLoginAction - The logged in user is jleitl
+[INFO ] 2019-10-19 20:49:50.839 [http-nio-8080-exec-5] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-10-19 20:49:52.981 [http-nio-8080-exec-8] UserLogOut - User is signing off
+[INFO ] 2019-10-19 20:50:04.272 [http-nio-8080-exec-1] UserLoginAction - The logged in user is jleitl
+[INFO ] 2019-10-19 20:50:04.273 [http-nio-8080-exec-1] UserLoginAction - The logged in credential is a user
+[INFO ] 2019-10-20 09:20:23.135 [http-nio-8080-exec-5] UserLoginAction - The logged in user is jleitl
+[INFO ] 2019-10-20 09:20:23.152 [http-nio-8080-exec-5] UserLoginAction - The logged in credential is a user
+[INFO ] 2019-10-20 09:26:18.954 [http-nio-8080-exec-5] UserLoginAction - The logged in user is jleitl
+[INFO ] 2019-10-20 09:26:18.971 [http-nio-8080-exec-5] UserLoginAction - The logged in credential is a user
+[INFO ] 2019-10-20 09:28:06.986 [http-nio-8080-exec-3] UserLoginAction - The logged in user is jleitl
+[INFO ] 2019-10-20 09:28:07.005 [http-nio-8080-exec-3] UserLoginAction - The logged in credential is a user

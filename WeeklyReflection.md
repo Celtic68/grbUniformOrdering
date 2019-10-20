@@ -179,4 +179,5 @@ next up is getting the home page / login functionality up and running. Once this
 
 I now have the index page, login, and logout functionality all working. I also redid the navigation menus to take 
 advantage of Bootstrap 4 formatting and tested through the site for navigation. The next piece will be to get sha-1
-hashing set up for the passwords and then deploy the current state of the application to AWS.
+hashing set up for the passwords and then deploy the current state of the application to AWS. I also need to set up
+security on the user and admin pages to force the user to the login screen.

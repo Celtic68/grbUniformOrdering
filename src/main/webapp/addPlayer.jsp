@@ -15,14 +15,28 @@
 <html>
 
 
-<c:import url="../head-tag.jsp" />
+<c:import url="head-tag.jsp" />
 
 <body>
 <div id="container">
 
-    <c:import url="../header.jsp" />
+    <c:import url="header.jsp" />
 
-    <c:import url="../menu.jsp" />
+    <c:choose>
+
+        <c:when test="${pageContext.request.isUserInRole('admin')}" >
+            <c:import url="/adminMenu.jsp" />
+        </c:when>
+
+        <c:when test="${pageContext.request.isUserInRole('user')}" >
+            <c:import url="/userMenu.jsp" />
+        </c:when>
+
+        <c:otherwise>
+            <c:import url="menu.jsp" />
+        </c:otherwise>
+
+    </c:choose>
 
     <div id="body">
 
@@ -66,7 +80,7 @@
 
     </div>
 
-    <c:import url="../footer.jsp" />
+    <c:import url="footer.jsp" />
 
 </div>
 </body>

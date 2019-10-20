@@ -9,10 +9,10 @@
                 <a class="nav-link" href="index.jsp">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="user/editUser.jsp">Add Admin</a>
+                <a class="nav-link" href="editUser.jsp">Add Admin</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="user/addPlayer.jsp">Edit User</a>
+                <a class="nav-link" href="addPlayer.jsp">Edit User</a>
             </li>
         </ul>
 
