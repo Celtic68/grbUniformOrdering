@@ -66,4 +66,7 @@
 | 10/19/19 | Updated the home page for design, all the navigation menus are constructed, and the login and logout process is fully functional | 3.5 hours |
 | 10/20/19 | Added hashing functionality, cleaned up bugs in the user sign up process, enhanced sign up process for customer experience | 3 hours |
 | 10/20/19 | Secured the edit user and add player pages for users and admins | 10 minutes |
-| | Total Hours | 116.3  |
+| 10/21/19 | Did the reading and videos for week 8 SOAP - finished all but activity 2  | 4 hours |
+| 10/22/19 | Finished activity 2 for week 8 SOAP, created the database/tables on AWS for the indie project, deployed the project to AWS| 2 hours |
+| 10/22/19 | Tested through sign up, login and authentication and navigation - everything appears to be functioning as expected | 1 hour |
+| | Total Hours | 123.3  |
