@@ -6,7 +6,10 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
+import com.joealexanderIII.dao.GenericDao;
+import com.joealexanderIII.model.User;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -29,13 +32,25 @@ public class UserLoginAction extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        logger.info("The logged in user is " + req.getRemoteUser());
+        // Get a session
+        HttpSession session = req.getSession();
 
+        // Log a user message for the user name and role
+        logger.info("The logged in user is " + req.getRemoteUser());
         if (req.isUserInRole("admin")) {
             logger.info("The logged in credential is an admin");
         } else {
             logger.info("The logged in credential is a user");
         }
+
+        // Instantiate a generic DAO
+        GenericDao genericDao = new GenericDao(User.class);
+
+        // Get the user data
+        User loggedInUser = (User)genericDao.getByPropertyUniqueEqual("userName", req.getRemoteUser());
+
+        // Set the user ID in session
+        session.setAttribute("userID", loggedInUser.getId());
 
         RequestDispatcher dispatcher = req.getRequestDispatcher("/index.jsp");
         dispatcher.forward(req, resp);
