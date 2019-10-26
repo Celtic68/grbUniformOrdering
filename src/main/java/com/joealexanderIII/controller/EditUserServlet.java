@@ -117,6 +117,9 @@ public class EditUserServlet extends HttpServlet {
             // Add the user to the database
             genericDao.saveOrUpdate(user);
 
+            // Update the user data to the jsp
+            displayUserData(session);
+
             // Set the validation message for adding a user to the session
             session.setAttribute("userEditMessage", "The user was updated");
 

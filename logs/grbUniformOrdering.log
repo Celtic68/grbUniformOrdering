@@ -473,3 +473,9 @@
 [INFO ] 2019-10-26 14:13:46.374 [http-nio-8080-exec-5] UserLoginAction - The logged in user is user5
 [INFO ] 2019-10-26 14:13:46.389 [http-nio-8080-exec-5] UserLoginAction - The logged in credential is a user
 [DEBUG] 2019-10-26 14:13:50.953 [http-nio-8080-exec-5] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-10-26 14:43:26.452 [http-nio-8080-exec-5] UserLoginAction - The logged in user is user5
+[INFO ] 2019-10-26 14:43:26.465 [http-nio-8080-exec-5] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-10-26 14:43:31.217 [http-nio-8080-exec-5] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-10-26 14:46:36.285 [http-nio-8080-exec-4] UserLoginAction - The logged in user is user5
+[INFO ] 2019-10-26 14:46:36.302 [http-nio-8080-exec-4] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-10-26 14:46:40.909 [http-nio-8080-exec-4] GenericDao - Searching for entity with userName = user5
