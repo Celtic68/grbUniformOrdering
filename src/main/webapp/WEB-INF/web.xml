@@ -28,6 +28,10 @@
       <url-pattern>/addPlayer.jsp</url-pattern>
     </web-resource-collection>
     <web-resource-collection>
+      <web-resource-name>addEditPlayer</web-resource-name>
+      <url-pattern>/addEditPlayer.jsp</url-pattern>
+    </web-resource-collection>
+    <web-resource-collection>
         <web-resource-name>editUser</web-resource-name>
         <url-pattern>/editUser.jsp</url-pattern>
     </web-resource-collection>

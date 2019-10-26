@@ -44,7 +44,7 @@
 
         <c:remove var="addPlayerMessage" />
 
-        <form action="/com.joealexanderIII/addEditPlayer-servlet" method="POST">
+        <form action="/addEditPlayer-servlet" method="POST">
             <fieldset>
                 <legend>New Player Information</legend>
                 <div class="form-group">

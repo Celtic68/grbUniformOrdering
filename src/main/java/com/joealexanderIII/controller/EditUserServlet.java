@@ -1,9 +1,7 @@
 package com.joealexanderIII.controller;
 
 import com.joealexanderIII.dao.GenericDao;
-import com.joealexanderIII.model.Role;
 import com.joealexanderIII.model.User;
-import org.apache.catalina.realm.MessageDigestCredentialHandler;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.json.simple.JSONArray;
@@ -22,10 +20,6 @@ import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.net.http.HttpRequest;
-import java.security.NoSuchAlgorithmException;
-import java.time.LocalDateTime;
-import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -73,9 +67,15 @@ public class EditUserServlet extends HttpServlet {
         // Display the user data to the page
         displayUserData(session);
 
-        // Forward to the Edit User jsp
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/editUser.jsp");
-        dispatcher.forward(req, resp);
+        //Create the url
+        String url = "editUser.jsp";
+
+        // Redirect to JSP page
+        resp.sendRedirect(url);
+
+//        // Forward to the Edit User jsp
+//        RequestDispatcher dispatcher = req.getRequestDispatcher("/editUser.jsp");
+//        dispatcher.forward(req, resp);
 
     }
 

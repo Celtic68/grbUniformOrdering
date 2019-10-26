@@ -317,7 +317,6 @@ public class UniformOrder {
                 ", shortsSize=" + shortsSize +
                 ", season=" + season +
                 ", dateCreated=" + dateCreated +
-                ", player=" + player +
                 '}';
     }
 

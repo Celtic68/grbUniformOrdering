@@ -12,7 +12,7 @@
                 <a class="nav-link" href="editUser-servlet">Edit User</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="addPlayer.jsp">Add Player</a>
+                <a class="nav-link" href="addEditPlayer-servlet">Add / Edit Player</a>
             </li>
         </ul>
 

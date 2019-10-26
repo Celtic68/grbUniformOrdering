@@ -191,8 +191,6 @@ public class Player {
                 ", playerLastName='" + playerLastName + '\'' +
                 ", playerSiteLocation=" + playerSiteLocation +
                 ", playerAgeGroup='" + playerAgeGroup + '\'' +
-                ", user=" + user +
-                ", orders=" + orders +
                 '}';
     }
 

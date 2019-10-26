@@ -388,8 +388,6 @@ public class User {
                 ", userPhone=" + userPhone +
                 ", userEmail='" + userEmail + '\'' +
                 ", dateCreated=" + dateCreated +
-                ", players=" + players +
-                ", role=" + role +
                 '}';
     }
 

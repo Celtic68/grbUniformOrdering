@@ -479,3 +479,83 @@
 [INFO ] 2019-10-26 14:46:36.285 [http-nio-8080-exec-4] UserLoginAction - The logged in user is user5
 [INFO ] 2019-10-26 14:46:36.302 [http-nio-8080-exec-4] UserLoginAction - The logged in credential is a user
 [DEBUG] 2019-10-26 14:46:40.909 [http-nio-8080-exec-4] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-10-26 16:03:52.170 [http-nio-8080-exec-1] UserLoginAction - The logged in user is user5
+[INFO ] 2019-10-26 16:03:52.184 [http-nio-8080-exec-1] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-10-26 16:03:56.909 [http-nio-8080-exec-1] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-10-26 16:05:30.783 [http-nio-8080-exec-3] UserLoginAction - The logged in user is user5
+[INFO ] 2019-10-26 16:05:30.797 [http-nio-8080-exec-3] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-10-26 16:05:35.489 [http-nio-8080-exec-3] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-10-26 16:07:43.090 [http-nio-8080-exec-4] UserLoginAction - The logged in user is user5
+[INFO ] 2019-10-26 16:07:43.105 [http-nio-8080-exec-4] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-10-26 16:07:47.912 [http-nio-8080-exec-4] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-10-26 16:12:27.768 [http-nio-8080-exec-4] UserLoginAction - The logged in user is user5
+[INFO ] 2019-10-26 16:12:27.781 [http-nio-8080-exec-4] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-10-26 16:12:32.562 [http-nio-8080-exec-4] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-10-26 16:15:16.697 [http-nio-8080-exec-4] UserLoginAction - The logged in user is user5
+[INFO ] 2019-10-26 16:15:16.709 [http-nio-8080-exec-4] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-10-26 16:15:21.455 [http-nio-8080-exec-4] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-10-26 16:26:50.735 [http-nio-8080-exec-5] UserLoginAction - The logged in user is user5
+[INFO ] 2019-10-26 16:26:50.746 [http-nio-8080-exec-5] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-10-26 16:26:55.376 [http-nio-8080-exec-5] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-10-26 16:30:47.091 [http-nio-8080-exec-6] UserLoginAction - The logged in user is user5
+[INFO ] 2019-10-26 16:30:47.104 [http-nio-8080-exec-6] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-10-26 16:30:51.821 [http-nio-8080-exec-6] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-10-26 16:37:46.925 [http-nio-8080-exec-7] UserLoginAction - The logged in user is user5
+[INFO ] 2019-10-26 16:37:46.938 [http-nio-8080-exec-7] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-10-26 16:37:51.711 [http-nio-8080-exec-7] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-10-26 16:44:55.152 [http-nio-8080-exec-6] UserLoginAction - The logged in user is user5
+[INFO ] 2019-10-26 16:44:55.168 [http-nio-8080-exec-6] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-10-26 16:45:00.099 [http-nio-8080-exec-6] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-10-26 16:50:32.485 [http-nio-8080-exec-7] UserLoginAction - The logged in user is user5
+[INFO ] 2019-10-26 16:50:32.500 [http-nio-8080-exec-7] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-10-26 16:50:37.158 [http-nio-8080-exec-7] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-10-26 16:53:14.077 [http-nio-8080-exec-5] UserLoginAction - The logged in user is user5
+[INFO ] 2019-10-26 16:53:14.090 [http-nio-8080-exec-5] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-10-26 16:53:18.861 [http-nio-8080-exec-5] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-10-26 16:53:21.991 [http-nio-8080-exec-6] AddEditPlayer - [Player{id=1, playerFirstName='Jenkin', playerLastName='Alexander', playerSiteLocation=1, playerAgeGroup='15u'}, Player{id=2, playerFirstName='Jordan', playerLastName='Alexander', playerSiteLocation=1, playerAgeGroup='12u'}]
+[INFO ] 2019-10-26 16:58:51.757 [http-nio-8080-exec-5] UserLoginAction - The logged in user is user5
+[INFO ] 2019-10-26 16:58:51.770 [http-nio-8080-exec-5] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-10-26 16:58:56.457 [http-nio-8080-exec-5] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-10-26 16:58:59.216 [http-nio-8080-exec-7] AddEditPlayer - [Player{id=1, playerFirstName='Jenkin', playerLastName='Alexander', playerSiteLocation=1, playerAgeGroup='15u'}, Player{id=2, playerFirstName='Jordan', playerLastName='Alexander', playerSiteLocation=1, playerAgeGroup='12u'}]
+[INFO ] 2019-10-26 17:02:44.197 [http-nio-8080-exec-5] UserLoginAction - The logged in user is user5
+[INFO ] 2019-10-26 17:02:44.211 [http-nio-8080-exec-5] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-10-26 17:02:48.969 [http-nio-8080-exec-5] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-10-26 17:02:52.845 [http-nio-8080-exec-6] AddEditPlayer - [Player{id=1, playerFirstName='Jenkin', playerLastName='Alexander', playerSiteLocation=1, playerAgeGroup='15u'}, Player{id=2, playerFirstName='Jordan', playerLastName='Alexander', playerSiteLocation=1, playerAgeGroup='12u'}]
+[INFO ] 2019-10-26 17:04:26.389 [http-nio-8080-exec-4] UserLoginAction - The logged in user is user5
+[INFO ] 2019-10-26 17:04:26.404 [http-nio-8080-exec-4] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-10-26 17:04:31.029 [http-nio-8080-exec-4] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-10-26 17:04:34.819 [http-nio-8080-exec-6] AddEditPlayer - [Player{id=1, playerFirstName='Jenkin', playerLastName='Alexander', playerSiteLocation=1, playerAgeGroup='15u'}, Player{id=2, playerFirstName='Jordan', playerLastName='Alexander', playerSiteLocation=1, playerAgeGroup='12u'}]
+[INFO ] 2019-10-26 17:16:32.606 [http-nio-8080-exec-8] UserLoginAction - The logged in user is user5
+[INFO ] 2019-10-26 17:16:32.619 [http-nio-8080-exec-8] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-10-26 17:16:37.488 [http-nio-8080-exec-8] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-10-26 17:16:40.293 [http-nio-8080-exec-10] AddEditPlayer - [Player{id=1, playerFirstName='Jenkin', playerLastName='Alexander', playerSiteLocation=1, playerAgeGroup='15u'}, Player{id=2, playerFirstName='Jordan', playerLastName='Alexander', playerSiteLocation=1, playerAgeGroup='12u'}]
+[INFO ] 2019-10-26 17:23:50.283 [http-nio-8080-exec-5] UserLoginAction - The logged in user is user5
+[INFO ] 2019-10-26 17:23:50.295 [http-nio-8080-exec-5] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-10-26 17:23:54.948 [http-nio-8080-exec-5] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-10-26 17:23:57.623 [http-nio-8080-exec-6] AddEditPlayer - [Player{id=1, playerFirstName='Jenkin', playerLastName='Alexander', playerSiteLocation=1, playerAgeGroup='15u'}, Player{id=2, playerFirstName='Jordan', playerLastName='Alexander', playerSiteLocation=1, playerAgeGroup='12u'}]
+[INFO ] 2019-10-26 17:27:18.785 [http-nio-8080-exec-5] UserLoginAction - The logged in user is user5
+[INFO ] 2019-10-26 17:27:18.798 [http-nio-8080-exec-5] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-10-26 17:27:23.576 [http-nio-8080-exec-5] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-10-26 17:27:26.291 [http-nio-8080-exec-7] AddEditPlayer - [Player{id=1, playerFirstName='Jenkin', playerLastName='Alexander', playerSiteLocation=1, playerAgeGroup='15u'}, Player{id=2, playerFirstName='Jordan', playerLastName='Alexander', playerSiteLocation=1, playerAgeGroup='12u'}]
+[INFO ] 2019-10-26 17:29:44.716 [http-nio-8080-exec-5] UserLoginAction - The logged in user is user5
+[INFO ] 2019-10-26 17:29:44.728 [http-nio-8080-exec-5] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-10-26 17:29:49.429 [http-nio-8080-exec-5] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-10-26 17:29:52.305 [http-nio-8080-exec-6] AddEditPlayer - [Player{id=1, playerFirstName='Jenkin', playerLastName='Alexander', playerSiteLocation=1, playerAgeGroup='15u'}, Player{id=2, playerFirstName='Jordan', playerLastName='Alexander', playerSiteLocation=1, playerAgeGroup='12u'}]
+[INFO ] 2019-10-26 17:37:24.975 [http-nio-8080-exec-5] UserLoginAction - The logged in user is user5
+[INFO ] 2019-10-26 17:37:24.987 [http-nio-8080-exec-5] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-10-26 17:37:29.701 [http-nio-8080-exec-5] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-10-26 17:37:32.599 [http-nio-8080-exec-7] AddEditPlayer - [Player{id=1, playerFirstName='Jenkin', playerLastName='Alexander', playerSiteLocation=1, playerAgeGroup='15u'}, Player{id=2, playerFirstName='Jordan', playerLastName='Alexander', playerSiteLocation=1, playerAgeGroup='12u'}]
+[INFO ] 2019-10-26 17:40:44.334 [http-nio-8080-exec-6] UserLoginAction - The logged in user is user5
+[INFO ] 2019-10-26 17:40:44.348 [http-nio-8080-exec-6] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-10-26 17:40:49.206 [http-nio-8080-exec-6] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-10-26 17:40:51.593 [http-nio-8080-exec-8] AddEditPlayer - [Player{id=1, playerFirstName='Jenkin', playerLastName='Alexander', playerSiteLocation=1, playerAgeGroup='15u'}, Player{id=2, playerFirstName='Jordan', playerLastName='Alexander', playerSiteLocation=1, playerAgeGroup='12u'}]
+[INFO ] 2019-10-26 17:42:24.064 [http-nio-8080-exec-6] UserLoginAction - The logged in user is user5
+[INFO ] 2019-10-26 17:42:24.077 [http-nio-8080-exec-6] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-10-26 17:42:29.036 [http-nio-8080-exec-6] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-10-26 17:42:38.712 [http-nio-8080-exec-1] AddEditPlayer - [Player{id=1, playerFirstName='Jenkin', playerLastName='Alexander', playerSiteLocation=1, playerAgeGroup='15u'}, Player{id=2, playerFirstName='Jordan', playerLastName='Alexander', playerSiteLocation=1, playerAgeGroup='12u'}]
+[INFO ] 2019-10-26 17:47:17.648 [http-nio-8080-exec-6] UserLoginAction - The logged in user is user5
+[INFO ] 2019-10-26 17:47:17.659 [http-nio-8080-exec-6] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-10-26 17:47:22.407 [http-nio-8080-exec-6] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-10-26 18:12:49.412 [http-nio-8080-exec-5] UserLoginAction - The logged in user is user5
+[INFO ] 2019-10-26 18:12:49.437 [http-nio-8080-exec-5] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-10-26 18:12:54.241 [http-nio-8080-exec-5] GenericDao - Searching for entity with userName = user5
