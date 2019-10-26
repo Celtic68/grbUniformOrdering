@@ -44,7 +44,7 @@
 
         <c:remove var="userEditMessage" />
 
-        <form action="/com.joealexanderIII/userEdit-servlet" method="POST">
+        <form action="editUser-servlet" method="POST">
             <fieldset>
                 <legend>Edit User Information</legend>
                 <div class="form-group">
@@ -84,22 +84,14 @@
                 </div>
                 <div class="form-group">
                     <label for="phone">User Phone Number:</label>
-                    <input type="text" name="phone" id="phone" class="form-control"
+                    <input type="number" name="phone" id="phone" class="form-control"
                     value="${userData.userPhone}"/>
                 </div>
                 <div class="form-group">
                     <label for="email">User Email address</label>
-                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                    <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp"
                     value="${userData.userEmail}">
                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                </div>
-                <div class="form-group">
-                    <label for="userPassword">User Password:</label>
-                    <input type="password" name="userPassword" id="UserPassword" class="form-control" />
-                </div>
-                <div class="form-group">
-                    <label for="confirmUserPassword">Confirm User Password:</label>
-                    <input type="password" name="confirmUserPassword" id="confirmUserPassword" class="form-control" />
                 </div>
                 <div class="form-group">
                     <input type="submit" class="btn btn-primary" name="submitButton" value="Update User" />

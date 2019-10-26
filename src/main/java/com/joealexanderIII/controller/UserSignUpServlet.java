@@ -204,8 +204,8 @@ public class UserSignUpServlet extends HttpServlet {
         // Validate the phone number
         if (request.getParameter("phone") == null
                 || request.getParameter("phone") == ""
-                || request.getParameter("phone").length() > 10) {
-            validationMessage += "The phone number must be entered , not be all spaces, and is 10 characters or less<br />";
+                || request.getParameter("phone").length() != 10) {
+            validationMessage += "The phone number must be entered , not be all spaces, and is 10 digits long<br />";
         } else {
             user.setUserPhone(Long.parseLong(request.getParameter("phone")));
         }

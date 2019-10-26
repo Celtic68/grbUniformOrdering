@@ -18,9 +18,9 @@ import java.io.IOException;
 /**
  * A simple servlet whose purpose is to redirect to the home page
  * after a log in attempt
+ *
  * @author pwaite
  */
-
 @WebServlet(
         urlPatterns = {"/loginAction"}
 )
@@ -29,6 +29,14 @@ public class UserLoginAction extends HttpServlet {
 
     private final Logger logger = LogManager.getLogger(this.getClass());
 
+    /**
+     *  Handles HTTP GET requests.
+     *
+     *@param  req                   Description of the Parameter
+     *@param  resp                  Description of the Parameter
+     *@exception ServletException   if there is an Servlet failure
+     *@exception IOException        if there is an IO failure
+     */
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 

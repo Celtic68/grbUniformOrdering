@@ -452,3 +452,24 @@
 [INFO ] 2019-10-26 11:59:09.238 [http-nio-8080-exec-10] UserLoginAction - The logged in user is user5
 [INFO ] 2019-10-26 11:59:09.239 [http-nio-8080-exec-10] UserLoginAction - The logged in credential is a user
 [DEBUG] 2019-10-26 11:59:09.239 [http-nio-8080-exec-10] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-10-26 12:36:38.663 [http-nio-8080-exec-4] UserLoginAction - The logged in user is user5
+[INFO ] 2019-10-26 12:36:38.684 [http-nio-8080-exec-4] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-10-26 12:36:43.387 [http-nio-8080-exec-4] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-10-26 12:42:14.300 [http-nio-8080-exec-5] UserLoginAction - The logged in user is user5
+[INFO ] 2019-10-26 12:42:14.326 [http-nio-8080-exec-5] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-10-26 12:42:18.881 [http-nio-8080-exec-5] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-10-26 12:45:59.921 [http-nio-8080-exec-5] UserLoginAction - The logged in user is user5
+[INFO ] 2019-10-26 12:45:59.942 [http-nio-8080-exec-5] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-10-26 12:46:04.415 [http-nio-8080-exec-5] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-10-26 13:07:02.578 [http-nio-8080-exec-4] UserLoginAction - The logged in user is user5
+[INFO ] 2019-10-26 13:07:02.600 [http-nio-8080-exec-4] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-10-26 13:07:07.278 [http-nio-8080-exec-4] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-10-26 13:13:51.323 [http-nio-8080-exec-5] UserLoginAction - The logged in user is user5
+[INFO ] 2019-10-26 13:13:51.337 [http-nio-8080-exec-5] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-10-26 13:13:55.962 [http-nio-8080-exec-5] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-10-26 13:44:58.801 [http-nio-8080-exec-5] UserLoginAction - The logged in user is user5
+[INFO ] 2019-10-26 13:44:58.817 [http-nio-8080-exec-5] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-10-26 13:45:03.334 [http-nio-8080-exec-5] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-10-26 14:13:46.374 [http-nio-8080-exec-5] UserLoginAction - The logged in user is user5
+[INFO ] 2019-10-26 14:13:46.389 [http-nio-8080-exec-5] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-10-26 14:13:50.953 [http-nio-8080-exec-5] GenericDao - Searching for entity with userName = user5

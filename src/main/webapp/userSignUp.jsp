@@ -64,7 +64,7 @@
                 </div>
                 <div class="form-group">
                     <label for="phone">User Phone Number:</label>
-                    <input type="text" name="phone" id="phone" class="form-control" value="${phoneValue}" />
+                    <input type="number" name="phone" id="phone" class="form-control" value="${phoneValue}" />
                 </div>
                 <div class="form-group">
                     <label for="email">User Email address</label>
