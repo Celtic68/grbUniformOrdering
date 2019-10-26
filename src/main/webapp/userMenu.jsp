@@ -9,7 +9,7 @@
                 <a class="nav-link" href="index.jsp">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="editUser.jsp">Edit User</a>
+                <a class="nav-link" href="editUser-servlet">Edit User</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="addPlayer.jsp">Add Player</a>

@@ -50,47 +50,47 @@
                 <div class="form-group">
                     <label for="firstName">User First Name:</label>
                     <input type="text" class="form-control" name="firstName" id="firstName"
-                    value="${userData.firstName}"/>
+                    value="${userData.userFirstName}"/>
                 </div>
                 <div class="form-group">
                     <label for="lastName">User Last Name:</label>
                     <input type="text" class="form-control" name="lastName" id="lastName"
-                    value="${userData.lastName}"/>
+                    value="${userData.userLastName}"/>
                 </div>
                 <div class="form-group">
                     <label for="address1">User Address 1:</label>
                     <input type="text" name="address1" class="form-control" id="address1"
-                    value="${userData.address1}"/>
+                    value="${userData.userAddress1}"/>
                 </div>
                 <div class="form-group">
                     <label for="address2">User Address 2:</label>
                     <input type="text" name="address2" class="form-control" id="address2"
-                    value="${userData.address2}"/>
+                    value="${userData.userAddress2}"/>
                 </div>
                 <div class="form-group">
                     <label for="city">User City:</label>
                     <input type="text" name="city" id="city" class="form-control"
-                    value="${userData.city}"/>
+                    value="${userData.userCity}"/>
                 </div>
                 <div class="form-group">
                     <label for="state">User State:</label>
                     <input type="text" name="state" id="state" class="form-control"
-                    value="${userData.state}"/>
+                    value="${userData.userState}"/>
                 </div>
                 <div class="form-group">
                     <label for="zipCode">User Zip Code:</label>
                     <input type="text" name="zipCode" id="zipCode" class="form-control"
-                    value="${userData.zipCode}"/>
+                    value="${userData.userZip}"/>
                 </div>
                 <div class="form-group">
                     <label for="phone">User Phone Number:</label>
                     <input type="text" name="phone" id="phone" class="form-control"
-                    value="${userData.phone}"/>
+                    value="${userData.userPhone}"/>
                 </div>
                 <div class="form-group">
                     <label for="email">User Email address</label>
                     <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
-                    value="${userData.email}">
+                    value="${userData.userEmail}">
                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
                 <div class="form-group">

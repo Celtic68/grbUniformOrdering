@@ -188,13 +188,16 @@ public class UserSignUpServlet extends HttpServlet {
         }
 
         // Validate the zip code
+        String zipCodeValidationMessage = "";
         if (request.getParameter("zipCode") == null
                 || request.getParameter("zipCode") == "") {
             validationMessage += "The zip code must be entered and not be all spaces<br />";
         } else {
-            validationMessage += validateZipCode(request.getParameter("zipCode"));
-            if (validationMessage == "") {
+            zipCodeValidationMessage += validateZipCode(request.getParameter("zipCode"));
+            if (zipCodeValidationMessage.equals("")) {
                 user.setUserZip(request.getParameter("zipCode"));
+            } else {
+                validationMessage += zipCodeValidationMessage;
             }
         }
 
