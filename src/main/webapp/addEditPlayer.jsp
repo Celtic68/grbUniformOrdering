@@ -66,7 +66,8 @@
                         <td>${player.playerFirstName} ${player.playerLastName}</td>
                         <td>${player.playerAgeGroup}</td>
                         <td>${player.playerSiteLocation}</td>
-                        <td><a href="editPlayer-servlet?player=${player}"><span class="fas fa-edit"></span></a></td>
+                        <td><a href="editPlayer-servlet?id=${player.id}&firstName='${player.playerFirstName}'&lastName='${player.playerLastName}'&age='${player.playerAgeGroup}'&location='${player.playerSiteLocation}'">
+                            <span class="fas fa-edit"></span></a></td>
                     </tr>
                 </c:forEach>
 
@@ -81,7 +82,7 @@
         <c:remove var="addEditPlayerMessage" />
 
         <div>
-            <form action="addPlayer.jsp">
+            <form action="addPlayer-servlet" method="GET">
                 <div class="form-group">
                     <button type="submit" id="newPlayerAddButton" class="btn btn-primary">Add a New Player</button>
                 </div>

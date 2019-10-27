@@ -21,6 +21,8 @@
         <mapping class="com.joealexanderIII.model.Role"/>
         <mapping class="com.joealexanderIII.model.Player"/>
         <mapping class="com.joealexanderIII.model.UniformOrder"/>
+        <mapping class="com.joealexanderIII.model.Location"/>
+        <mapping class="com.joealexanderIII.model.AgeGroup"/>
 
     </session-factory>
 

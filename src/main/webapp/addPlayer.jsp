@@ -59,7 +59,7 @@
                     <label for="siteLocation">Player Site Location:</label>
                     <select class="form-control" name="siteLocation" id="siteLocation" >
                         <c:forEach items="${locationCategory}" var="location">
-                            <option value="${location.id}">${location.description}</option>
+                            <option value="${location.id}">${location.locationDescription}</option>
                         </c:forEach>
                     </select>
                 </div>
@@ -67,7 +67,7 @@
                     <label for="ageGroup">Player Age Group:</label>
                     <select class="form-control" name="ageGroup" id="ageGroup" >
                         <c:forEach items="${ageGroup}" var="age">
-                            <option value="${age.description}">${age.description}</option>
+                            <option value="${age.ageGroupDescription}">${age.ageGroupDescription}</option>
                         </c:forEach>
                     </select>
                 </div>
