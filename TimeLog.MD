@@ -69,4 +69,5 @@
 | 10/21/19 | Did the reading and videos for week 8 SOAP - finished all but activity 2  | 4 hours |
 | 10/22/19 | Finished activity 2 for week 8 SOAP, created the database/tables on AWS for the indie project, deployed the project to AWS| 2 hours |
 | 10/22/19 | Tested through sign up, login and authentication and navigation - everything appears to be functioning as expected | 1 hour |
-| | Total Hours | 123.3  |
+| 10/26/19 | Edit User process built and tested and bugs fixed. Also, add / edit player jsps and servlets started and initial data displayed | 8 hours |
+| | Total Hours | 131.3  |
