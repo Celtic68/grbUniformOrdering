@@ -61,7 +61,14 @@
                     <label for="siteLocation">Player Site Location:</label>
                     <select class="form-control" name="siteLocation" id="siteLocation" >
                         <c:forEach items="${locationCategory}" var="location">
-                            <option value="${location.id}">${location.locationDescription}</option>
+                            <c:choose>
+                                <c:when test = "${location.id == locationValue}">
+                                    <option selected="selected" value="${location.id}">${location.locationDescription}</option>
+                                </c:when>
+                                <c:otherwise>
+                                    <option value="${location.id}">${location.locationDescription}</option>
+                                </c:otherwise>
+                            </c:choose>
                         </c:forEach>
                     </select>
                 </div>
@@ -69,7 +76,14 @@
                     <label for="ageGroup">Player Age Group:</label>
                     <select class="form-control" name="ageGroup" id="ageGroup" >
                         <c:forEach items="${ageGroup}" var="age">
-                            <option value="${age.ageGroupDescription}">${age.ageGroupDescription}</option>
+                            <c:choose>
+                                <c:when test = "${age.ageGroupDescription == ageGroupValue}">
+                                    <option selected="selected" value="${age.ageGroupDescription}">${age.ageGroupDescription}</option>
+                                </c:when>
+                                <c:otherwise>
+                                    <option value="${age.ageGroupDescription}">${age.ageGroupDescription}</option>
+                                </c:otherwise>
+                            </c:choose>
                         </c:forEach>
                     </select>
                 </div>
@@ -82,6 +96,8 @@
 
         <c:remove var="firstNameValue" />
         <c:remove var="lastNameValue" />
+        <c:remove var="locationValue" />
+        <c:remove var="ageGroupValue" />
 
     </div>
 

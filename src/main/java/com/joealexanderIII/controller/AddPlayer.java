@@ -184,6 +184,8 @@ public class AddPlayer extends HttpServlet {
 
         session.setAttribute("firstNameValue", request.getParameter("firstName"));
         session.setAttribute("lastNameValue", request.getParameter("lastName"));
+        session.setAttribute("locationValue", request.getParameter("siteLocation"));
+        session.setAttribute("ageGroupValue", request.getParameter("ageGroup"));
 
     }
 
