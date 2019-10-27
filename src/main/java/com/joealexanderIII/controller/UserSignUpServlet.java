@@ -157,7 +157,7 @@ public class UserSignUpServlet extends HttpServlet {
 
         // Validate the last name
         if (request.getParameter("lastName") == null
-                || request.getParameter("lastName") == "") {
+                || request.getParameter("lastName").trim() == "") {
             validationMessage += "The last name must be entered and not be all spaces<br />";
         } else {
             user.setUserLastName(request.getParameter("lastName"));

@@ -580,3 +580,20 @@
 [DEBUG] 2019-10-27 10:57:01.074 [http-nio-8080-exec-4] GenericDao - Searching for entity with userName = user5
 [INFO ] 2019-10-27 10:57:06.843 [http-nio-8080-exec-8] GenericDao - All entities retrieved
 [INFO ] 2019-10-27 10:57:06.858 [http-nio-8080-exec-8] GenericDao - All entities retrieved
+[INFO ] 2019-10-27 11:49:53.519 [http-nio-8080-exec-2] UserLoginAction - The logged in user is user5
+[INFO ] 2019-10-27 11:49:53.531 [http-nio-8080-exec-2] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-10-27 11:49:58.354 [http-nio-8080-exec-2] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-10-27 11:50:04.875 [http-nio-8080-exec-7] GenericDao - All entities retrieved
+[INFO ] 2019-10-27 11:50:04.889 [http-nio-8080-exec-7] GenericDao - All entities retrieved
+[INFO ] 2019-10-27 11:51:40.977 [http-nio-8080-exec-3] UserLoginAction - The logged in user is user5
+[INFO ] 2019-10-27 11:51:40.993 [http-nio-8080-exec-3] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-10-27 11:51:45.736 [http-nio-8080-exec-3] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-10-27 11:51:52.451 [http-nio-8080-exec-7] GenericDao - All entities retrieved
+[INFO ] 2019-10-27 11:51:52.466 [http-nio-8080-exec-7] GenericDao - All entities retrieved
+[INFO ] 2019-10-27 11:55:33.576 [http-nio-8080-exec-4] GenericDao - All entities retrieved
+[INFO ] 2019-10-27 11:55:33.590 [http-nio-8080-exec-4] GenericDao - All entities retrieved
+[INFO ] 2019-10-27 11:57:36.774 [http-nio-8080-exec-4] UserLoginAction - The logged in user is user5
+[INFO ] 2019-10-27 11:57:36.789 [http-nio-8080-exec-4] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-10-27 11:57:41.464 [http-nio-8080-exec-4] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-10-27 11:58:17.121 [http-nio-8080-exec-9] GenericDao - All entities retrieved
+[INFO ] 2019-10-27 11:58:17.136 [http-nio-8080-exec-9] GenericDao - All entities retrieved

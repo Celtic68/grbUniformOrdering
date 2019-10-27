@@ -44,16 +44,18 @@
 
         <c:remove var="addPlayerMessage" />
 
-        <form action="/addEditPlayer-servlet" method="POST">
+        <form action="addPlayer-servlet" method="POST">
             <fieldset>
                 <legend>New Player Information</legend>
                 <div class="form-group">
                     <label for="firstName">Player First Name:</label>
-                    <input type="text" class="form-control" name="firstName" id="firstName" />
+                    <input type="text" class="form-control" name="firstName" id="firstName"
+                       value="${firstNameValue}" />
                 </div>
                 <div class="form-group">
                     <label for="lastName">Player Last Name:</label>
-                    <input type="text" class="form-control" name="lastName" id="lastName" />
+                    <input type="text" class="form-control" name="lastName" id="lastName"
+                        value="${lastNameValue}" />
                 </div>
                 <div class="form-group">
                     <label for="siteLocation">Player Site Location:</label>
@@ -77,6 +79,9 @@
                 </div>
             </fieldset>
         </form>
+
+        <c:remove var="firstNameValue" />
+        <c:remove var="lastNameValue" />
 
     </div>
 

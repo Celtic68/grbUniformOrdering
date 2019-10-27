@@ -23,6 +23,15 @@
         <mapping class="com.joealexanderIII.model.UniformOrder"/>
         <mapping class="com.joealexanderIII.model.Location"/>
         <mapping class="com.joealexanderIII.model.AgeGroup"/>
+        <mapping class="com.joealexanderIII.model.HatSize"/>
+        <mapping class="com.joealexanderIII.model.JerseySize"/>
+        <mapping class="com.joealexanderIII.model.PantsSize"/>
+        <mapping class="com.joealexanderIII.model.PantsStyle"/>
+        <mapping class="com.joealexanderIII.model.Season"/>
+        <mapping class="com.joealexanderIII.model.ShoeSize"/>
+        <mapping class="com.joealexanderIII.model.ShortsSize"/>
+        <mapping class="com.joealexanderIII.model.TShirtSize"/>
+
 
     </session-factory>
 

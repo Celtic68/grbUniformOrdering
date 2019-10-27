@@ -39,6 +39,10 @@
 
     <div id="body">
 
+        <h4>${addEditPlayerMessage}</h4>
+
+        <c:remove var="addEditPlayerMessage" />
+
         <h3 id="playersHeader">Players</h3>
 
         <table class="table table-dark" id="playerTable">

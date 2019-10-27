@@ -5,7 +5,7 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 
 /**
- * A class to represent a Location.
+ * A class to represent an Age Group.
  */
 @Entity(name = "AgeGroup")
 @Table(name = "grb_age_groups")
