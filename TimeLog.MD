@@ -71,4 +71,5 @@
 | 10/22/19 | Tested through sign up, login and authentication and navigation - everything appears to be functioning as expected | 1 hour |
 | 10/26/19 | Edit User process built and tested and bugs fixed. Also, add / edit player jsps and servlets started and initial data displayed | 8 hours |
 | 10/27/19 | Entire Add / Edit Player flow built and tested locally | 6 hours |
-| | Total Hours | 137.3  |
+| 10/27/19 | Did reading for week 9 | 1 hour |
+| | Total Hours | 138.3  |

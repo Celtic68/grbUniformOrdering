@@ -220,3 +220,6 @@ tested locally. There will be some refactoring needed - I will be looking hard a
 add / edit jsps and servlets once the first version of the project is built and running. That said, this is the first
 time I have felt like I was in a good position for getting the project done for the end of the semester. I also got the
 package deployed to AWS and tested to make sure it worked there as well.
+
+### Week 9 – 10/28/19 through 11/3/19
+#### Tasks Completed:
