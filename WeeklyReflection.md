@@ -200,6 +200,8 @@ deploy my indie project in its current state to AWS.
 * Created the Edit User flow, tested it locally, and pushed it to AWS
 * Created the Add / Edit Player jsp and got player data showing as expected
 * Fixed bugs found in the User Sign Up and Edit User flows
+* Entire Add / Edit Player flow built and tested locally
+* Project built and deployed to AWS in preparation for checkpoint 3
 
 On 10/22, I got my database and tables for the indie project created on my AWS instance. At the same time, I inserted
 the data into the tables that support sizes, etc. Once that was done, I plunged ahead and set up the instance for my
@@ -211,4 +213,10 @@ OK, it's 10/26 and I spent a good chunk of the day working on some servlet and j
 day. The Edit User flow is now built. I tested it locally and then pushed it up to AWS. After continuing to do some
 testing, I noticed a couple bugs in it as well as the User Sign Up flow so I fixed those and re-deployed. I also got
 the Add / Edit Player jsp and servlet started - the jsp is handling both the no player found and players found
-correctly. Next up is to work on the Add Player and Edit Player pages. 
+correctly. Next up is to work on the Add Player and Edit Player pages.
+ 
+I was back at it early on 10/27 and had another productive day. The entire Add / Edit Player flow is built and has been 
+tested locally. There will be some refactoring needed - I will be looking hard at the form field validation and the 
+add / edit jsps and servlets once the first version of the project is built and running. That said, this is the first
+time I have felt like I was in a good position for getting the project done for the end of the semester. I also got the
+package deployed to AWS and tested to make sure it worked there as well.

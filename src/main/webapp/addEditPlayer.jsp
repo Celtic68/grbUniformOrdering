@@ -70,7 +70,7 @@
                         <td>${player.playerFirstName} ${player.playerLastName}</td>
                         <td>${player.playerAgeGroup}</td>
                         <td>${player.playerSiteLocation}</td>
-                        <td><a href="editPlayer-servlet?id=${player.id}&firstName='${player.playerFirstName}'&lastName='${player.playerLastName}'&age='${player.playerAgeGroup}'&location='${player.playerSiteLocation}'">
+                        <td><a href="editPlayer-servlet?id=${player.id}&firstName=${player.playerFirstName}&lastName=${player.playerLastName}&age=${player.playerAgeGroup}&location=${player.playerSiteLocation}">
                             <span class="fas fa-edit"></span></a></td>
                     </tr>
                 </c:forEach>

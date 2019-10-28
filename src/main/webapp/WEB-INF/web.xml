@@ -28,6 +28,18 @@
       <url-pattern>/addPlayer.jsp</url-pattern>
     </web-resource-collection>
     <web-resource-collection>
+      <web-resource-name>addPlayerServlet</web-resource-name>
+      <url-pattern>/addPlayer-servlet</url-pattern>
+    </web-resource-collection>
+    <web-resource-collection>
+      <web-resource-name>editPlayer</web-resource-name>
+      <url-pattern>/editPlayer.jsp</url-pattern>
+    </web-resource-collection>
+    <web-resource-collection>
+      <web-resource-name>editPlayerServlet</web-resource-name>
+      <url-pattern>/editPlayer-servlet</url-pattern>
+    </web-resource-collection>
+    <web-resource-collection>
       <web-resource-name>addEditPlayer</web-resource-name>
       <url-pattern>/addEditPlayer.jsp</url-pattern>
     </web-resource-collection>

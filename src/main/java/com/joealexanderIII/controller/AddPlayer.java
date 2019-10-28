@@ -15,9 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.time.LocalDateTime;
 import java.util.List;
-import java.util.Set;
 
 /**
  * The AddPlayer servlet will get the data used to build the select boxes on the Add Player form and
@@ -119,7 +117,7 @@ public class AddPlayer extends HttpServlet {
             player.setPlayerSiteLocation((Integer.parseInt(request.getParameter("siteLocation"))));
             player.setPlayerAgeGroup(request.getParameter("ageGroup"));
 
-            // Add the user to the database
+            // Add the player to the database
             insertedId = playerDao.insert(player);
 
             // Set the validation message for adding a user to the session
