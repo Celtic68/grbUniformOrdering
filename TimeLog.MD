@@ -72,4 +72,6 @@
 | 10/26/19 | Edit User process built and tested and bugs fixed. Also, add / edit player jsps and servlets started and initial data displayed | 8 hours |
 | 10/27/19 | Entire Add / Edit Player flow built and tested locally | 6 hours |
 | 10/27/19 | Did reading for week 9 | 1 hour |
-| | Total Hours | 138.3  |
+| 11/01/19 | Watched videos and started the activities for week 9 | 3 hours |
+| 11/02/19 | Finished watching video and completed activities for week 9 as well as creating my part of the team project | 6 hours |
+| | Total Hours | 147.3  |

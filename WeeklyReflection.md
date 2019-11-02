@@ -223,3 +223,17 @@ package deployed to AWS and tested to make sure it worked there as well.
 
 ### Week 9 – 10/28/19 through 11/3/19
 #### Tasks Completed:
+
+* Joined a team - Team ThinkingOfSkywalker - for the team project
+* Met and discussed concept and got approval from instructor
+* Created the service and tested the components to ensure they are returning the correct responses based on the passed criteria
+
+This week has been all about the team project. We decided to create a service that could be used by other classmates as 
+part of their individual projects. Our service performs two different functions - it will accept an email and return a 
+true or false response denoting if the email is valid and it will also accept a table name, column name, and value and 
+return a response denoting if the value exists in that table or not. We created our problem statement, proposed solution
+and created a repository. We then divided up the work - I was responsible for created the read me file as well as the 
+application and service classes. I completed all those classes and tested the service locally (as well as running the 
+unit tests created by my teammates for their classes) to ensure the proper responses are being received. Next up, we 
+will be determining how to package up a jar file and deploying it to one of our AWS instances and implementing it to
+show it working.
