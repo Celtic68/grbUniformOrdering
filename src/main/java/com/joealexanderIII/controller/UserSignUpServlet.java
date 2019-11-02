@@ -10,6 +10,8 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
+import javax.ws.rs.client.*;
+import javax.ws.rs.core.MediaType;
 
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -211,11 +213,17 @@ public class UserSignUpServlet extends HttpServlet {
         }
 
         // Validate the email
+        String emailValidationMessage = "";
         if (request.getParameter("email") == null
                 || request.getParameter("email") == "") {
             validationMessage += "The email must be entered and not be all spaces<br />";
         } else {
-            user.setUserEmail(request.getParameter("email"));
+            emailValidationMessage = validateEmail(request.getParameter("email"));
+            if (emailValidationMessage.equals("")) {
+                user.setUserEmail(request.getParameter("email"));
+            } else {
+                validationMessage += emailValidationMessage;
+            }
         }
 
         // Validate the user name
@@ -248,6 +256,33 @@ public class UserSignUpServlet extends HttpServlet {
             } else {
                 validationMessage += "The password field could not be encrypted - please try again later<br />";
             }
+        }
+
+        return validationMessage;
+
+    }
+
+    /**
+     * Validate email string.
+     *
+     * @param email the email
+     * @return the string
+     */
+    public String validateEmail(String email) {
+
+        String validationMessage = "";
+
+        // TODO Move the URIs to a properties file and redo the code for zip code validation
+        try {
+            Client client = ClientBuilder.newClient();
+            WebTarget target =
+                    client.target("http://3.132.40.97:8080/GroupProject/thinkingOfSkywalker/validateEmails/" + email);
+            String response = target.request(MediaType.TEXT_PLAIN).get(String.class);
+            if (response.equals("false")) {
+                validationMessage = "You have entered an invalid email address<br >";
+            }
+        } catch (Exception exception) {
+            logger.error("An error occurred while attempting to validate the email - " + exception);
         }
 
         return validationMessage;
