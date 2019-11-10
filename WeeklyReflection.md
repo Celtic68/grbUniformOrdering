@@ -237,3 +237,15 @@ application and service classes. I completed all those classes and tested the se
 unit tests created by my teammates for their classes) to ensure the proper responses are being received. Next up, we 
 will be determining how to package up a jar file and deploying it to one of our AWS instances and implementing it to
 show it working.
+
+### Week 10 – 11/04/19 through 11/10/19
+#### Tasks Completed
+
+* Team Project completed and ready for presentation
+* Week 10 Git Branching activity done
+
+Again, this week was about the team project. We all completed our individual pieces and then met in class on Wednesday 
+and cleaned up the code, finalized the documentation, and talked about how we would break down the presentation in two 
+weeks.  It was also used to complete the week 9 activity for each of our team members. I also got the Git Branching
+activity done on Wednesday. However, the flu bug decided to make a visit Thursday, so here we are on Sunday trying to 
+get some more accomplished.  :(

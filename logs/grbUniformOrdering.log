@@ -689,3 +689,7 @@
 [ERROR] 2019-11-02 18:32:34.787 [http-nio-8080-exec-4] UserSignUpServlet - An error occurred while attempting to val8date the email - javax.ws.rs.ProcessingException: java.lang.IllegalArgumentException: URI is not absolute
 [DEBUG] 2019-11-02 18:36:35.773 [http-nio-8080-exec-2] UserSignUpServlet - Started user sign up
 [DEBUG] 2019-11-02 18:37:01.163 [http-nio-8080-exec-6] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-11-06 20:12:48.941 [http-nio-8080-exec-6] UserSignUpServlet - Started user sign up
+[ERROR] 2019-11-06 20:12:49.842 [http-nio-8080-exec-6] UserSignUpServlet - An error occurred while attempting to validate the email - javax.ws.rs.ProcessingException: java.lang.IllegalArgumentException: URI is not absolute
+[DEBUG] 2019-11-06 20:13:03.648 [http-nio-8080-exec-9] UserSignUpServlet - Started user sign up
+[ERROR] 2019-11-06 20:13:05.218 [http-nio-8080-exec-9] UserSignUpServlet - An error occurred while attempting to validate the email - javax.ws.rs.ProcessingException: java.lang.IllegalArgumentException: URI is not absolute

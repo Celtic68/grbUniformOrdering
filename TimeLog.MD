@@ -74,4 +74,6 @@
 | 10/27/19 | Did reading for week 9 | 1 hour |
 | 11/01/19 | Watched videos and started the activities for week 9 | 3 hours |
 | 11/02/19 | Finished watching video and completed activities for week 9 as well as creating my part of the team project | 6 hours |
-| | Total Hours | 147.3  |
+| 11/03/19 | Finished cleaning my issues in the team project and deployed it to my AWS instance and implemented the email validation piece in my indie project| 2 hours |
+| 11/06/19 | Worked with my team in class to finalize the team project and did the week 10 activity | 4.5 hours |
+| | Total Hours | 153.7  |
