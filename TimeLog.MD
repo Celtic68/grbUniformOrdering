@@ -77,4 +77,5 @@
 | 11/03/19 | Finished cleaning my issues in the team project and deployed it to my AWS instance and implemented the email validation piece in my indie project| 2 hours |
 | 11/06/19 | Worked with my team in class to finalize the team project and did the week 10 activity | 4.5 hours |
 | 11/10/19 | Finished watching videos and did all readings / videos for week 11 multithreading | 2 hours |
-| | Total Hours | 155.7  |
+| 11/13/19 | Finished week 11 threading exercise | 2 hours |
+| | Total Hours | 157.7  |

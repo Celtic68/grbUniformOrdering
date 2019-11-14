@@ -249,3 +249,13 @@ and cleaned up the code, finalized the documentation, and talked about how we wo
 weeks.  It was also used to complete the week 9 activity for each of our team members. I also got the Git Branching
 activity done on Wednesday. However, the flu bug decided to make a visit Thursday, so here we are on Sunday trying to 
 get some more accomplished.  :(
+
+### Week 11 – 11/11/19 through 11/13/19
+#### Tasks Completed
+
+* Team Project refactored for suggested changes by instructor
+* Week 11 multithreading exercise completed
+
+I was able to get the multithreading exercise complete and ready to go and showed it to Paula for check-off. In class, 
+Alex and I refactored our team project code to implement the suggested changes from Paula. Next, I need to redo the API
+calls in my individual project to get them ready for presentation next week.
