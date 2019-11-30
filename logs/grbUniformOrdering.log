@@ -693,3 +693,9 @@
 [ERROR] 2019-11-06 20:12:49.842 [http-nio-8080-exec-6] UserSignUpServlet - An error occurred while attempting to validate the email - javax.ws.rs.ProcessingException: java.lang.IllegalArgumentException: URI is not absolute
 [DEBUG] 2019-11-06 20:13:03.648 [http-nio-8080-exec-9] UserSignUpServlet - Started user sign up
 [ERROR] 2019-11-06 20:13:05.218 [http-nio-8080-exec-9] UserSignUpServlet - An error occurred while attempting to validate the email - javax.ws.rs.ProcessingException: java.lang.IllegalArgumentException: URI is not absolute
+[DEBUG] 2019-11-18 19:01:12.974 [http-nio-8080-exec-4] UserSignUpServlet - Started user sign up
+[ERROR] 2019-11-18 19:01:15.709 [http-nio-8080-exec-4] UserSignUpServlet - An error occurred while attempting to validate the email - java.lang.Exception: Email Service is unavailable
+[DEBUG] 2019-11-18 19:05:48.485 [http-nio-8080-exec-4] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-11-18 19:05:48.485 [http-nio-8080-exec-3] UserSignUpServlet - Started user sign up
+[ERROR] 2019-11-18 19:05:50.789 [http-nio-8080-exec-3] UserSignUpServlet - An error occurred while attempting to validate the email - java.lang.Exception: Email Service is unavailable502
+[ERROR] 2019-11-18 19:05:50.789 [http-nio-8080-exec-4] UserSignUpServlet - An error occurred while attempting to validate the email - java.lang.Exception: Email Service is unavailable502

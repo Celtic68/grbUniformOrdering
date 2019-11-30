@@ -18,6 +18,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import javax.ws.rs.core.Response;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
@@ -277,8 +278,13 @@ public class UserSignUpServlet extends HttpServlet {
             Client client = ClientBuilder.newClient();
             WebTarget target =
                     client.target("http://3.132.40.97:8080/GroupProject/thinkingOfSkywalker/validateEmails/" + email);
-            String response = target.request(MediaType.TEXT_PLAIN).get(String.class);
-            if (response.equals("false")) {
+            Response response = target.request(MediaType.TEXT_PLAIN).get();
+            if (response.getStatus() != 200) {
+                throw new Exception("Email Service is unavailable " + response.getStatus());
+            }
+
+            Boolean emailValidity = Boolean.valueOf(response.readEntity(String.class));
+            if (!emailValidity) {
                 validationMessage = "You have entered an invalid email address<br >";
             }
         } catch (Exception exception) {

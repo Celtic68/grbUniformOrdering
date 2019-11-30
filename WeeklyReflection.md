@@ -250,7 +250,7 @@ weeks.  It was also used to complete the week 9 activity for each of our team me
 activity done on Wednesday. However, the flu bug decided to make a visit Thursday, so here we are on Sunday trying to 
 get some more accomplished.  :(
 
-### Week 11 – 11/11/19 through 11/13/19
+### Week 11 – 11/11/19 through 11/17/19
 #### Tasks Completed
 
 * Team Project refactored for suggested changes by instructor
@@ -259,3 +259,20 @@ get some more accomplished.  :(
 I was able to get the multithreading exercise complete and ready to go and showed it to Paula for check-off. In class, 
 Alex and I refactored our team project code to implement the suggested changes from Paula. Next, I need to redo the API
 calls in my individual project to get them ready for presentation next week.
+
+### Week 12– 11/18/19 through 11/25/19
+#### Tasks Completed
+
+* Team Project presentation completed
+
+We presented our team project to the class this week, and I decided to focus on one class at a time to get all the 
+necessary work done class by class which lead to no progress on my indie project this week.
+
+### Week 13 – 11/26/19 through 12/1/19
+#### Tasks Completed
+
+* All other classes project work is done
+* 
+
+It doesn't progress my indie project at all, but I completed all project work for all my other classes so the remaining
+three weeks will be solely focused on my indie project.

@@ -78,4 +78,8 @@
 | 11/06/19 | Worked with my team in class to finalize the team project and did the week 10 activity | 4.5 hours |
 | 11/10/19 | Finished watching videos and did all readings / videos for week 11 multithreading | 2 hours |
 | 11/13/19 | Finished week 11 threading exercise | 2 hours |
-| | Total Hours | 157.7  |
+| 11/13/19 | Reworked our team project based upon instructor feedback | 3.5 hours |
+| 11/18/19 | Reworked my individual project to account for the changes to our team project | 3 hours |
+| 11/20/19 | Gave our team project presentation | 40 minutes |
+| 11/27/19 | Watched professional presentations and performed reviews | 2.5 hours |
+| | Total Hours | 167.5  |
