@@ -82,4 +82,7 @@
 | 11/18/19 | Reworked my individual project to account for the changes to our team project | 3 hours |
 | 11/20/19 | Gave our team project presentation | 40 minutes |
 | 11/27/19 | Watched professional presentations and performed reviews | 2.5 hours |
-| | Total Hours | 167.5  |
+| 12/09/19 | Met with Alex to walk through his application and code | 1.5 hours |
+| 12/10/19 | Walked through Alex's repo and posted a peer review issue | 2 hours |
+| 12/11/19 | Got the Player Selection portion of the Uniform Ordering process working locally | 2 hours |
+| | Total Hours | 173  |

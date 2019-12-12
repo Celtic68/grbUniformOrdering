@@ -276,3 +276,22 @@ necessary work done class by class which lead to no progress on my indie project
 
 It doesn't progress my indie project at all, but I completed all project work for all my other classes so the remaining
 three weeks will be solely focused on my indie project.
+
+### Week 14 – 12/2/19 through 12/8/19
+#### Tasks Completed
+
+* Met with Alex and performed peer review
+* Added an issue to Alex's github
+
+I met with Alex to walk through his application and code - he has really done a very good job with his project. I also 
+got his peer review posted as an issue to his repo.
+
+### Week 15 – 12/9/19 through 12/15/19
+#### Tasks Completed
+
+* Player Selection for Uniform Ordering is running locally
+* 
+
+This is it - the last push. I will not get fully done as I had to prioritize work, but the goal is to try to get as much
+functionality as possible in this last week and do some clean up. First off, I now have the Player Selection piece of 
+Uniform Ordering up and running locally. I plan to get the update piece working before I deploy to AWS.
