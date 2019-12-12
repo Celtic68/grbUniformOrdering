@@ -699,3 +699,38 @@
 [DEBUG] 2019-11-18 19:05:48.485 [http-nio-8080-exec-3] UserSignUpServlet - Started user sign up
 [ERROR] 2019-11-18 19:05:50.789 [http-nio-8080-exec-3] UserSignUpServlet - An error occurred while attempting to validate the email - java.lang.Exception: Email Service is unavailable502
 [ERROR] 2019-11-18 19:05:50.789 [http-nio-8080-exec-4] UserSignUpServlet - An error occurred while attempting to validate the email - java.lang.Exception: Email Service is unavailable502
+[INFO ] 2019-11-30 12:58:27.703 [http-nio-8080-exec-7] UserLoginAction - The logged in user is user5
+[INFO ] 2019-11-30 12:58:27.716 [http-nio-8080-exec-7] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-11-30 12:58:33.249 [http-nio-8080-exec-7] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-11-30 12:58:51.246 [http-nio-8080-exec-4] GenericDao - All entities retrieved
+[INFO ] 2019-11-30 12:58:51.282 [http-nio-8080-exec-4] GenericDao - All entities retrieved
+[DEBUG] 2019-12-09 18:29:57.944 [http-nio-8080-exec-9] UserSignUpServlet - Started user sign up
+[ERROR] 2019-12-09 18:30:01.746 [http-nio-8080-exec-9] UserSignUpServlet - An error occurred while attempting to validate the email - javax.ws.rs.ProcessingException: java.net.ConnectException: ConnectException invoking http://3.132.40.97:8080/GroupProject/thinkingOfSkywalker/validateEmails/cambo7131@gmail.com: Connection refused: connect
+[INFO ] 2019-12-09 18:30:27.975 [http-nio-8080-exec-5] UserLoginAction - The logged in user is user5
+[INFO ] 2019-12-09 18:30:27.975 [http-nio-8080-exec-5] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-12-09 18:30:38.378 [http-nio-8080-exec-5] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-12-09 18:31:44.710 [http-nio-8080-exec-3] GenericDao - All entities retrieved
+[INFO ] 2019-12-09 18:31:44.723 [http-nio-8080-exec-3] GenericDao - All entities retrieved
+[INFO ] 2019-12-09 18:32:01.695 [http-nio-8080-exec-7] GenericDao - All entities retrieved
+[INFO ] 2019-12-09 18:32:01.709 [http-nio-8080-exec-7] GenericDao - All entities retrieved
+[INFO ] 2019-12-11 18:24:55.904 [http-nio-8080-exec-5] UserLoginAction - The logged in user is user5
+[INFO ] 2019-12-11 18:24:55.918 [http-nio-8080-exec-5] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-12-11 18:25:00.706 [http-nio-8080-exec-5] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-12-11 18:27:42.613 [http-nio-8080-exec-4] UserLoginAction - The logged in user is user5
+[INFO ] 2019-12-11 18:27:42.626 [http-nio-8080-exec-4] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-12-11 18:27:47.419 [http-nio-8080-exec-4] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-12-11 18:38:45.370 [http-nio-8080-exec-6] UserLoginAction - The logged in user is user5
+[INFO ] 2019-12-11 18:38:45.384 [http-nio-8080-exec-6] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-12-11 18:38:50.086 [http-nio-8080-exec-6] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-12-11 18:42:04.891 [http-nio-8080-exec-6] UserLoginAction - The logged in user is user5
+[INFO ] 2019-12-11 18:42:04.903 [http-nio-8080-exec-6] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-12-11 18:42:09.778 [http-nio-8080-exec-6] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-12-11 18:46:37.298 [http-nio-8080-exec-5] UserLoginAction - The logged in user is user5
+[INFO ] 2019-12-11 18:46:37.311 [http-nio-8080-exec-5] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-12-11 18:46:42.082 [http-nio-8080-exec-5] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-12-11 18:48:21.863 [http-nio-8080-exec-5] UserLoginAction - The logged in user is user5
+[INFO ] 2019-12-11 18:48:21.883 [http-nio-8080-exec-5] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-12-11 18:48:26.817 [http-nio-8080-exec-5] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-12-11 19:18:05.010 [http-nio-8080-exec-5] UserLoginAction - The logged in user is user5
+[INFO ] 2019-12-11 19:18:05.022 [http-nio-8080-exec-5] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-12-11 19:18:09.864 [http-nio-8080-exec-5] GenericDao - Searching for entity with userName = user5

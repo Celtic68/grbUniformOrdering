@@ -55,6 +55,22 @@
       <web-resource-name>editUserServlet</web-resource-name>
       <url-pattern>/editUser-servlet</url-pattern>
     </web-resource-collection>
+    <web-resource-collection>
+      <web-resource-name>uniformOrder</web-resource-name>
+      <url-pattern>/uniformOrder.jsp</url-pattern>
+    </web-resource-collection>
+    <web-resource-collection>
+      <web-resource-name>orderUniformServlet</web-resource-name>
+      <url-pattern>/orderUniform-servlet</url-pattern>
+    </web-resource-collection>
+    <web-resource-collection>
+      <web-resource-name>addEditUniformOrder</web-resource-name>
+      <url-pattern>/addEditUniformOrder.jsp</url-pattern>
+    </web-resource-collection>
+    <web-resource-collection>
+      <web-resource-name>placeUniformOrderServlet</web-resource-name>
+      <url-pattern>/placeUniformOrder-servlet</url-pattern>
+    </web-resource-collection>
     <auth-constraint>
       <role-name>user</role-name>
       <role-name>admin</role-name>

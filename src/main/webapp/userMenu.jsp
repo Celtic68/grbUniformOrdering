@@ -14,6 +14,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="addEditPlayer-servlet">Add / Edit Player</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="orderUniform-servlet">Order Uniform</a>
+            </li>
         </ul>
 
         <ul class="nav navbar-nav ml-auto">
