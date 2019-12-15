@@ -59,9 +59,9 @@ class PlayerDaoTest {
         User specificUser = (User)genericUserDao.getById(1);
         Set<Player> players = specificUser.getPlayers();
 
-        Player newPlayer1 = new Player("Rollie", "Fingers", 2, "13u");
+        Player newPlayer1 = new Player("Rollie", "Fingers", 1, "13u");
         players.add(newPlayer1);
-        Player newPlayer2 = new Player("Joel", "Haloer", 3, "16u");
+        Player newPlayer2 = new Player("Joel", "Haloer", 1, "16u");
         players.add(newPlayer2);
 
         newPlayer1.setUser(specificUser);
