@@ -85,4 +85,6 @@
 | 12/09/19 | Met with Alex to walk through his application and code | 1.5 hours |
 | 12/10/19 | Walked through Alex's repo and posted a peer review issue | 2 hours |
 | 12/11/19 | Got the Player Selection portion of the Uniform Ordering process working locally | 2 hours |
-| | Total Hours | 173  |
+| 12/12/19 | Started working on additional functionality for the Uniform Ordering page | 1.5 hours |
+| 12/14/19 | Got the video created to show the current functionality of the application | 45 minutes |
+| | Total Hours | 175.25  |

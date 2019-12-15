@@ -33,7 +33,6 @@ import java.util.List;
 
 public class AddPlayer extends HttpServlet {
 
-    private final Logger logger = LogManager.getLogger(this.getClass());
     Player player;
 
     /**

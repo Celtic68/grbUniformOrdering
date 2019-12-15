@@ -290,8 +290,12 @@ got his peer review posted as an issue to his repo.
 #### Tasks Completed
 
 * Player Selection for Uniform Ordering is running locally
-* 
+* Video  of application created
+* Link to video added to the read me page
 
 This is it - the last push. I will not get fully done as I had to prioritize work, but the goal is to try to get as much
 functionality as possible in this last week and do some clean up. First off, I now have the Player Selection piece of 
 Uniform Ordering up and running locally. I plan to get the update piece working before I deploy to AWS.
+
+On Saturday, I was able to get the video created of the current state of the application while providing some iOS 
+tutoring.

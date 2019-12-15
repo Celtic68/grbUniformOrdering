@@ -41,7 +41,7 @@
 
     <div id="body">
 
-        <form action="addEditUniformOrder-servlet" method="POST">
+        <form action="orderUniform-servlet" method="POST">
             <fieldset>
                 <legend>Choose the player for which to place an order</legend>
                 <div class="form-group">

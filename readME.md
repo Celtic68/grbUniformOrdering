@@ -20,3 +20,7 @@ Some initial screen designs:
 ![GRB Uniform Ordering Sign Up Page](src/main/webapp/images/signUp.png)
 
 ![GRB Uniform Ordering Login Page](src/main/webapp/images/loginPage.png)
+
+Here is a video of the current state of the application in action:
+
+![GRB Uniform Ordering Application Video](Videos/GRB_Uniform_Ordering.mov)
