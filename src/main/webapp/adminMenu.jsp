@@ -9,10 +9,13 @@
                 <a class="nav-link" href="index.jsp">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="editUser.jsp">Add Admin</a>
+                <a class="nav-link" href="retrieveAllUsers-servlet?callingAction=addAdminLink">Add Admin</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="addPlayer.jsp">Edit User</a>
+                <a class="nav-link" href="retrieveAllUsers-servlet?callingAction=editUserLink">Edit User</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="retrieveAllUsers-servlet?callingAction=addPlayerLink">Add/Edit Player</a>
             </li>
         </ul>
 
