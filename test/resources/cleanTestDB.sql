@@ -52,6 +52,6 @@ LOCK TABLES grb_seasons WRITE;
 INSERT INTO grb_seasons VALUES (1,'Spring'),(2,'Summer'),(3,'Fall');
 UNLOCK TABLES;
 LOCK TABLES grb_age_groups WRITE;
-INSERT INTO grb_age_groups VALUES VALUES (1,'9U'),(2,'10U'),(3,'11U'),(4,'12U'),(5,'13U'),(6,'14U'),(7,'15U'),(8,'16U'),(9,'17U');
+INSERT INTO grb_age_groups VALUES (1,'9U'),(2,'10U'),(3,'11U'),(4,'12U'),(5,'13U'),(6,'14U'),(7,'15U'),(8,'16U'),(9,'17U');
 UNLOCK TABLES;
 SET FOREIGN_KEY_CHECKS = 1;

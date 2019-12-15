@@ -1001,3 +1001,7 @@
 [ERROR] 2019-12-15 14:12:55.098 [main] Database - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'VALUES (1,'9U'),(2,'10U'),(3,'11U'),(4,'12U'),(5,'13U'),(6,'14U'),(7,'15U'),(8,'' at line 1
 [ERROR] 2019-12-15 14:12:55.240 [main] Database - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'VALUES (1,'9U'),(2,'10U'),(3,'11U'),(4,'12U'),(5,'13U'),(6,'14U'),(7,'15U'),(8,'' at line 1
 [ERROR] 2019-12-15 14:12:55.387 [main] Database - java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'VALUES (1,'9U'),(2,'10U'),(3,'11U'),(4,'12U'),(5,'13U'),(6,'14U'),(7,'15U'),(8,'' at line 1
+[ERROR] 2019-12-15 14:56:05.685 [main] Database - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+[DEBUG] 2019-12-15 14:56:07.703 [main] GenericDao - Searching for entity with playerAgeGroup = 12u
+[ERROR] 2019-12-15 15:00:22.683 [main] Database - java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+[DEBUG] 2019-12-15 15:00:24.656 [main] GenericDao - Searching for entity with playerAgeGroup = 12u

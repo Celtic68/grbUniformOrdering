@@ -3,8 +3,6 @@ package com.joealexanderIII.controller;
 import com.joealexanderIII.dao.GenericDao;
 import com.joealexanderIII.model.Player;
 import com.joealexanderIII.model.User;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -29,8 +27,6 @@ import java.util.Set;
 )
 
 public class AddEditPlayer extends HttpServlet {
-
-    private final Logger logger = LogManager.getLogger(this.getClass());
 
     /**
      *  Handles HTTP GET requests.

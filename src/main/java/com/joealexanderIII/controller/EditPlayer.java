@@ -5,8 +5,6 @@ import com.joealexanderIII.model.AgeGroup;
 import com.joealexanderIII.model.Location;
 import com.joealexanderIII.model.Player;
 import com.joealexanderIII.model.User;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -32,7 +30,6 @@ import java.util.List;
 
 public class EditPlayer extends HttpServlet {
 
-    private final Logger logger = LogManager.getLogger(this.getClass());
     Player player;
 
     /**
