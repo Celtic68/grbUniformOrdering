@@ -16,6 +16,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import javax.ws.rs.client.Client;
+import javax.ws.rs.client.ClientBuilder;
+import javax.ws.rs.client.WebTarget;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
@@ -46,6 +51,7 @@ public class EditUserServlet extends HttpServlet {
     // Define constants
     private static String zipCode = "zipCode";
     private static String phone = "phone";
+    private static String email = "email";
 
     private final Logger logger = LogManager.getLogger(this.getClass());
 
@@ -229,9 +235,17 @@ public class EditUserServlet extends HttpServlet {
         }
 
         // Validate the email
-        if (request.getParameter("email") == null
-                || request.getParameter("email") == "") {
+        String emailValidationMessage = "";
+        if (request.getParameter(email) == null
+                || request.getParameter(email) == "") {
             validationMessage += "The email must be entered and not be all spaces<br />";
+        } else {
+            emailValidationMessage = validateEmail(request.getParameter(email));
+            if (emailValidationMessage.equals("")) {
+                user.setUserEmail(request.getParameter(email));
+            } else {
+                validationMessage += emailValidationMessage;
+            }
         }
 
         return validationMessage;
@@ -286,6 +300,38 @@ public class EditUserServlet extends HttpServlet {
             logger.error("A Run Time Error occurred while validating the zip code" + e);
         } catch (ParseException e) {
             logger.error("A parsing error occurred while validating the zip code" + e);
+        }
+
+        return validationMessage;
+
+    }
+
+    /**
+     * Validate email string.
+     *
+     * @param email the email
+     * @return the string
+     */
+    public String validateEmail(String email) {
+
+        String validationMessage = "";
+
+        // TODO Move the URIs to a properties file and redo the code for zip code validation
+        try {
+            Client client = ClientBuilder.newClient();
+            WebTarget target =
+                    client.target("http://3.132.40.97:8080/GroupProject/thinkingOfSkywalker/validateEmails/" + email);
+            Response response = target.request(MediaType.TEXT_PLAIN).get();
+            if (response.getStatus() != 200) {
+                throw new Exception("Email Service is unavailable " + response.getStatus());
+            }
+
+            Boolean emailValidity = Boolean.valueOf(response.readEntity(String.class));
+            if (!emailValidity) {
+                validationMessage = "You have entered an invalid email address<br >";
+            }
+        } catch (Exception exception) {
+            logger.error("An error occurred while attempting to validate the email - " + exception);
         }
 
         return validationMessage;
