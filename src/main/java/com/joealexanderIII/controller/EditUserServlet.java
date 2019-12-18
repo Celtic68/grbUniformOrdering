@@ -40,8 +40,12 @@ public class EditUserServlet extends HttpServlet {
     /**
      * The User.
      */
-// Define instance variables
+    // Define instance variables
     User user;
+
+    // Define constants
+    private static String zipCode = "zipCode";
+    private static String phone = "phone";
 
     private final Logger logger = LogManager.getLogger(this.getClass());
 
@@ -207,20 +211,20 @@ public class EditUserServlet extends HttpServlet {
 
         // Validate the zip code
         String zipCodeValidationMessage = "";
-        if (request.getParameter("zipCode") == null
-                || request.getParameter("zipCode") == "") {
+        if (request.getParameter(zipCode) == null
+                || request.getParameter(zipCode) == "") {
             validationMessage += "The zip code must be entered and not be all spaces<br />";
         } else {
-            zipCodeValidationMessage += validateZipCode(request.getParameter("zipCode"));
+            zipCodeValidationMessage += validateZipCode(request.getParameter(zipCode));
             if (!zipCodeValidationMessage.equals("")) {
                 validationMessage += zipCodeValidationMessage;
             }
         }
 
         // Validate the phone number
-        if (request.getParameter("phone") == null
-                || request.getParameter("phone") == ""
-                || request.getParameter("phone").length() != 10) {
+        if (request.getParameter(phone) == null
+                || request.getParameter(phone) == ""
+                || request.getParameter(phone).length() != 10) {
             validationMessage += "The phone number must be entered , not be all spaces, and 10 digits long<br />";
         }
 
@@ -237,10 +241,10 @@ public class EditUserServlet extends HttpServlet {
     /**
      * Validate zip code string.
      *
-     * @param zipCode the zip code
+     * @param zipCodeValue the zip code
      * @return the validation message
      */
-    public String validateZipCode(String zipCode) {
+    public String validateZipCode(String zipCodeValue) {
 
         // Create local variables
         String validationMessage = "";
@@ -249,7 +253,7 @@ public class EditUserServlet extends HttpServlet {
 
             // Use GeoNames to validate the zip code
             String url = "http://api.geonames.org/postalCodeSearchJSON";
-            String parameters = "?maxRows=1&username=celtic68&country=US&postalcode=" + zipCode;
+            String parameters = "?maxRows=1&username=celtic68&country=US&postalcode=" + zipCodeValue;
             URL fullUrl = new URL(url + parameters);
 
             HttpURLConnection conn = (HttpURLConnection) fullUrl.openConnection();
@@ -300,14 +304,14 @@ public class EditUserServlet extends HttpServlet {
         user.setUserAddress1(request.getParameter("address1"));
         user.setUserCity(request.getParameter("city"));
         user.setUserState(request.getParameter("state"));
-        user.setUserZip(request.getParameter("zipCode"));
+        user.setUserZip(request.getParameter(zipCode));
 
-        if (request.getParameter("phone") == null
-                || request.getParameter("phone") == ""
-                || request.getParameter("phone").length() != 10) {
+        if (request.getParameter(phone) == null
+                || request.getParameter(phone) == ""
+                || request.getParameter(phone).length() != 10) {
             user.setUserPhone(0);
         } else {
-            user.setUserPhone(Long.parseLong(request.getParameter("phone")));
+            user.setUserPhone(Long.parseLong(request.getParameter(phone)));
         }
 
         user.setUserEmail(request.getParameter("email"));

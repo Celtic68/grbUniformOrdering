@@ -1052,3 +1052,35 @@
 [DEBUG] 2019-12-18 10:32:15.635 [http-nio-8080-exec-5] GenericDao - Searching for entity with userName = user1
 [INFO ] 2019-12-18 10:32:18.671 [http-nio-8080-exec-6] GenericDao - All entities retrieved
 [INFO ] 2019-12-18 10:32:24.334 [http-nio-8080-exec-9] GenericDao - All entities retrieved
+[INFO ] 2019-12-18 10:34:26.656 [http-nio-8080-exec-5] UserLoginAction - The logged in user is user1
+[INFO ] 2019-12-18 10:34:26.669 [http-nio-8080-exec-5] UserLoginAction - The logged in credential is an admin
+[DEBUG] 2019-12-18 10:34:31.571 [http-nio-8080-exec-5] GenericDao - Searching for entity with userName = user1
+[INFO ] 2019-12-18 10:34:35.576 [http-nio-8080-exec-6] GenericDao - All entities retrieved
+[INFO ] 2019-12-18 10:34:44.834 [http-nio-8080-exec-9] GenericDao - All entities retrieved
+[INFO ] 2019-12-18 10:34:54.124 [http-nio-8080-exec-1] GenericDao - All entities retrieved
+[INFO ] 2019-12-18 11:52:31.331 [http-nio-8080-exec-7] UserLoginAction - The logged in user is user5
+[INFO ] 2019-12-18 11:52:31.359 [http-nio-8080-exec-7] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-12-18 11:52:41.892 [http-nio-8080-exec-7] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-12-18 11:54:30.313 [http-nio-8080-exec-5] UserLoginAction - The logged in user is user5
+[INFO ] 2019-12-18 11:54:30.343 [http-nio-8080-exec-5] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-12-18 11:54:40.608 [http-nio-8080-exec-5] GenericDao - Searching for entity with userName = user5
+[INFO ] 2019-12-18 11:54:46.221 [http-nio-8080-exec-9] GenericDao - All entities retrieved
+[INFO ] 2019-12-18 11:54:46.248 [http-nio-8080-exec-9] GenericDao - All entities retrieved
+[DEBUG] 2019-12-18 11:59:10.736 [http-nio-8080-exec-5] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-12-18 11:59:23.738 [http-nio-8080-exec-5] GenericDao - Searching for entity with userName = aflaun
+[DEBUG] 2019-12-18 12:00:48.813 [http-nio-8080-exec-9] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-12-18 12:00:50.412 [http-nio-8080-exec-9] GenericDao - Searching for entity with userName = aflaun
+[INFO ] 2019-12-18 12:01:05.093 [http-nio-8080-exec-4] UserLoginAction - The logged in user is aflaun
+[INFO ] 2019-12-18 12:01:05.094 [http-nio-8080-exec-4] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-12-18 12:01:05.097 [http-nio-8080-exec-4] GenericDao - Searching for entity with userName = aflaun
+[INFO ] 2019-12-18 12:02:40.144 [http-nio-8080-exec-9] GenericDao - All entities retrieved
+[INFO ] 2019-12-18 12:02:40.155 [http-nio-8080-exec-9] GenericDao - All entities retrieved
+[DEBUG] 2019-12-18 12:31:03.300 [http-nio-8080-exec-5] UserSignUpServlet - Started user sign up
+[DEBUG] 2019-12-18 12:31:16.041 [http-nio-8080-exec-5] GenericDao - Searching for entity with userName = pwaite
+[INFO ] 2019-12-18 12:31:29.992 [http-nio-8080-exec-10] UserLoginAction - The logged in user is pwaite
+[INFO ] 2019-12-18 12:31:29.993 [http-nio-8080-exec-10] UserLoginAction - The logged in credential is a user
+[DEBUG] 2019-12-18 12:31:29.993 [http-nio-8080-exec-10] GenericDao - Searching for entity with userName = pwaite
+[INFO ] 2019-12-18 12:31:50.530 [http-nio-8080-exec-7] GenericDao - All entities retrieved
+[INFO ] 2019-12-18 12:31:50.550 [http-nio-8080-exec-7] GenericDao - All entities retrieved
+[INFO ] 2019-12-18 12:32:12.561 [http-nio-8080-exec-3] GenericDao - All entities retrieved
+[INFO ] 2019-12-18 12:32:12.573 [http-nio-8080-exec-3] GenericDao - All entities retrieved

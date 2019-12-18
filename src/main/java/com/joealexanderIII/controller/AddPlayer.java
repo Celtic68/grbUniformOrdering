@@ -33,6 +33,10 @@ public class AddPlayer extends HttpServlet {
 
     Player player;
 
+    // Define constants
+    private static String firstName = "firstName";
+    private static String lastName = "lastName";
+
     /**
      * Handles HTTP GET requests.
      *
@@ -149,20 +153,20 @@ public class AddPlayer extends HttpServlet {
         String validationMessage = "";
 
         // Validate the player first name
-        if (request.getParameter("firstName") == null
-                || request.getParameter("firstName").trim() == "") {
+        if (request.getParameter(firstName) == null
+                || request.getParameter(firstName).trim() == "") {
             validationMessage += "The first name must be entered and not be all spaces<br />";
 
         } else {
-            player.setPlayerFirstName(request.getParameter("firstName"));
+            player.setPlayerFirstName(request.getParameter(firstName));
         }
 
         // Validate the player last name
-        if (request.getParameter("lastName") == null
-                || request.getParameter("lastName").trim() == "") {
+        if (request.getParameter(lastName) == null
+                || request.getParameter(lastName).trim() == "") {
             validationMessage += "The last name must be entered and not be all spaces<br />";
         } else {
-            player.setPlayerLastName(request.getParameter("lastName"));
+            player.setPlayerLastName(request.getParameter(lastName));
         }
 
         return validationMessage;
@@ -177,8 +181,8 @@ public class AddPlayer extends HttpServlet {
      */
     public void displayEnteredFormData(HttpSession session, HttpServletRequest request) {
 
-        session.setAttribute("firstNameValue", request.getParameter("firstName"));
-        session.setAttribute("lastNameValue", request.getParameter("lastName"));
+        session.setAttribute("firstNameValue", request.getParameter(firstName));
+        session.setAttribute("lastNameValue", request.getParameter(lastName));
         session.setAttribute("locationValue", request.getParameter("siteLocation"));
         session.setAttribute("ageGroupValue", request.getParameter("ageGroup"));
 

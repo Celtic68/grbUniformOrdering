@@ -43,15 +43,28 @@ import java.util.Scanner;
 
 public class UserSignUpServlet extends HttpServlet {
 
+    // Define Instance variables
     /**
      * The User.
      */
-// Define Instance variables
     User user;
     /**
      * The User role.
      */
     Role userRole;
+
+    // Define constants
+    private static String firstName = "firstName";
+    private static String lastName = "lastName";
+    private static String address1 = "address1";
+    private static String city = "city";
+    private static String state = "state";
+    private static String zipCode = "zipCode";
+    private static String phone = "phone";
+    private static String email = "email";
+    private static String userName = "userName";
+    private static String userPassword = "userPassword";
+
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     /**
@@ -120,16 +133,16 @@ public class UserSignUpServlet extends HttpServlet {
      */
     public void displayEnteredFormData(HttpSession session, HttpServletRequest request) {
 
-        session.setAttribute("firstNameValue", request.getParameter("firstName"));
-        session.setAttribute("lastNameValue", request.getParameter("lastName"));
-        session.setAttribute("address1Value", request.getParameter("address1"));
+        session.setAttribute("firstNameValue", request.getParameter(firstName));
+        session.setAttribute("lastNameValue", request.getParameter(lastName));
+        session.setAttribute("address1Value", request.getParameter(address1));
         session.setAttribute("address2Value", request.getParameter("address2"));
-        session.setAttribute("cityValue", request.getParameter("city"));
-        session.setAttribute("stateValue", request.getParameter("state"));
-        session.setAttribute("zipCodeValue", request.getParameter("zipCode"));
-        session.setAttribute("phoneValue", request.getParameter("phone"));
-        session.setAttribute("emailValue", request.getParameter("email"));
-        session.setAttribute("userNameValue", request.getParameter("userName"));
+        session.setAttribute("cityValue", request.getParameter(city));
+        session.setAttribute("stateValue", request.getParameter(state));
+        session.setAttribute("zipCodeValue", request.getParameter(zipCode));
+        session.setAttribute("phoneValue", request.getParameter(phone));
+        session.setAttribute("emailValue", request.getParameter(email));
+        session.setAttribute("userNameValue", request.getParameter(userName));
 
     }
 
@@ -150,92 +163,92 @@ public class UserSignUpServlet extends HttpServlet {
         userRole = new Role();
 
         // Validate the first name
-        if (request.getParameter("firstName") == null
-                || request.getParameter("firstName").trim() == "") {
+        if (request.getParameter(firstName) == null
+                || request.getParameter(firstName).trim() == "") {
             validationMessage += "The first name must be entered and not be all spaces<br />";
 
         } else {
-            user.setUserFirstName(request.getParameter("firstName"));
+            user.setUserFirstName(request.getParameter(firstName));
         }
 
         // Validate the last name
-        if (request.getParameter("lastName") == null
-                || request.getParameter("lastName").trim() == "") {
+        if (request.getParameter(lastName) == null
+                || request.getParameter(lastName).trim() == "") {
             validationMessage += "The last name must be entered and not be all spaces<br />";
         } else {
-            user.setUserLastName(request.getParameter("lastName"));
+            user.setUserLastName(request.getParameter(lastName));
         }
 
         // Validate the address 1
-        if (request.getParameter("address1") == null
-                || request.getParameter("address1") == "") {
+        if (request.getParameter(address1) == null
+                || request.getParameter(address1) == "") {
             validationMessage += "The first address must be entered and not be all spaces<br />";
         } else {
-            user.setUserAddress1(request.getParameter("address1"));
+            user.setUserAddress1(request.getParameter(address1));
         }
 
         // Validate the city
-        if (request.getParameter("city") == null
-                || request.getParameter("city") == "") {
+        if (request.getParameter(city) == null
+                || request.getParameter(city) == "") {
             validationMessage += "The city must be entered and not be all spaces<br />";
         } else {
-            user.setUserCity(request.getParameter("city"));
+            user.setUserCity(request.getParameter(city));
         }
 
         // Validate the state
-        if (request.getParameter("state") == null
-                || request.getParameter("state") == "") {
+        if (request.getParameter(state) == null
+                || request.getParameter(state) == "") {
             validationMessage += "The state must be entered and not be all spaces<br />";
         } else {
-            user.setUserState(request.getParameter("state"));
+            user.setUserState(request.getParameter(state));
         }
 
         // Validate the zip code
         String zipCodeValidationMessage = "";
-        if (request.getParameter("zipCode") == null
-                || request.getParameter("zipCode") == "") {
+        if (request.getParameter(zipCode) == null
+                || request.getParameter(zipCode) == "") {
             validationMessage += "The zip code must be entered and not be all spaces<br />";
         } else {
-            zipCodeValidationMessage += validateZipCode(request.getParameter("zipCode"));
+            zipCodeValidationMessage += validateZipCode(request.getParameter(zipCode));
             if (zipCodeValidationMessage.equals("")) {
-                user.setUserZip(request.getParameter("zipCode"));
+                user.setUserZip(request.getParameter(zipCode));
             } else {
                 validationMessage += zipCodeValidationMessage;
             }
         }
 
         // Validate the phone number
-        if (request.getParameter("phone") == null
-                || request.getParameter("phone") == ""
-                || request.getParameter("phone").length() != 10) {
+        if (request.getParameter(phone) == null
+                || request.getParameter(phone) == ""
+                || request.getParameter(phone).length() != 10) {
             validationMessage += "The phone number must be entered , not be all spaces, and is 10 digits long<br />";
         } else {
-            user.setUserPhone(Long.parseLong(request.getParameter("phone")));
+            user.setUserPhone(Long.parseLong(request.getParameter(phone)));
         }
 
         // Validate the email
         String emailValidationMessage = "";
-        if (request.getParameter("email") == null
-                || request.getParameter("email") == "") {
+        if (request.getParameter(email) == null
+                || request.getParameter(email) == "") {
             validationMessage += "The email must be entered and not be all spaces<br />";
         } else {
-            emailValidationMessage = validateEmail(request.getParameter("email"));
+            emailValidationMessage = validateEmail(request.getParameter(email));
             if (emailValidationMessage.equals("")) {
-                user.setUserEmail(request.getParameter("email"));
+                user.setUserEmail(request.getParameter(email));
             } else {
                 validationMessage += emailValidationMessage;
             }
         }
 
         // Validate the user name
-        if (request.getParameter("userName") == null
-                || request.getParameter("userName") == "") {
+        if (request.getParameter(userName) == null
+                || request.getParameter(userName) == "") {
             validationMessage += "The userName must be entered and not be all spaces<br />";
         } else {
-            validationMessage += checkForUserName(request.getParameter("userName"));
+            validationMessage += checkForUserName(request.getParameter(userName));
             if (validationMessage.equals("")) {
-                user.setUserName(request.getParameter("userName"));
-                userRole.setUserName(request.getParameter("userName"));
+                user.setUserName(request.getParameter(userName));
+                userRole.setUserName(request.getParameter(userName));
                 userRole.setUserRole("user");
                 user.setRole(userRole);
                 userRole.setUser(user);
@@ -243,15 +256,15 @@ public class UserSignUpServlet extends HttpServlet {
         }
 
         // Validate the password
-        if (request.getParameter("userPassword") == null
-                || request.getParameter("userPassword") == ""
+        if (request.getParameter(userPassword) == null
+                || request.getParameter(userPassword) == ""
                 || request.getParameter("confirmUserPassword") == null
                 || request.getParameter("confirmUserPassword") == ""
-                || !request.getParameter("userPassword").equals(
+                || !request.getParameter(userPassword).equals(
                    request.getParameter("confirmUserPassword"))) {
             validationMessage += "The password fields must be entered, not be all spaces, and must be equal<br />";
         } else {
-            String encryptedPassword = encryptString(request.getParameter("userPassword"));
+            String encryptedPassword = encryptString(request.getParameter(userPassword));
             if (encryptedPassword != "") {
                 user.setUserPassword(encryptedPassword);
             } else {
@@ -388,9 +401,8 @@ public class UserSignUpServlet extends HttpServlet {
             logger.error("Unable to encrypt password " + e);
         }
         credentialHandler.setEncoding("UTF-8");
-        String hashedPassword = credentialHandler.mutate(passedString);
 
-        return hashedPassword;
+        return credentialHandler.mutate(passedString);
 
     }
 
