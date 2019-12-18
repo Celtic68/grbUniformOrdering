@@ -1,16 +1,16 @@
-<%-- The addAdminUser jsp will create a form allowing the user to select a user
-     that they wish to grant admin rights.
+<%-- The editUserAsAdmin jsp will create a form allowing the user to select a user
+     for which they wish to update information.
 
  Author - jalexander1
  Version - 1.0
- Since - 11/30/2019
+ Since - 12/16/2019
 
 --%>
 
 
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
-<c:set var="pageTitle" value="Add Admin User" scope="session" />
+<c:set var="pageTitle" value="Edit a User" scope="session" />
 
 <!doctype html>
 <html>
@@ -41,13 +41,9 @@
 
     <div id="body">
 
-        <h3>${addAdminMessage}</h3>
-
-        <c:remove var="addAdminMessage" />
-
-        <form action="addAdmin-servlet" method="POST">
+        <form action="editUser-servlet" method="POST">
             <fieldset>
-                <legend>Choose the user for which to give admin rights</legend>
+                <legend>Choose the user for which to update information</legend>
                 <div class="form-group">
                     <label for="user">User:</label>
                     <select class="form-control" name="user" id="user" >
@@ -57,7 +53,7 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <input type="submit" class="btn btn-primary" name="submitButton" value="Make Admin User" />
+                    <input type="submit" class="btn btn-primary" name="submitButton" value="Edit User Data" />
                 </div>
             </fieldset>
         </form>

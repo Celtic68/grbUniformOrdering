@@ -292,10 +292,27 @@ got his peer review posted as an issue to his repo.
 * Player Selection for Uniform Ordering is running locally
 * Video  of application created
 * Link to video added to the read me page
+* Admin side navigation is now active
 
 This is it - the last push. I will not get fully done as I had to prioritize work, but the goal is to try to get as much
 functionality as possible in this last week and do some clean up. First off, I now have the Player Selection piece of 
 Uniform Ordering up and running locally. I plan to get the update piece working before I deploy to AWS.
 
 On Saturday, I was able to get the video created of the current state of the application while providing some iOS 
-tutoring.
+tutoring. Sunday, I spent a fair bit of time getting a working navigation version for an admin user configured so that I
+could show both flows.
+
+### Week 16 – 12/16/19 through 12/22/19
+#### Tasks Completed
+
+* User selection up and working for Add Admin
+* Admin User can now grant admin rights to other users
+* All current navigation links are functional on the Admin page
+
+It's presentation week! I will be spending these last couple days getting everything together and perhaps adding a bit 
+more functionality. I grabbed screenshots for logging examples as well as testing coverage so those are set to go for 
+the presentation.
+
+An admin user is now able to grant admin rights to other users. They are presented with a list of users that do not have
+admin rights and then they can select a user. Once selected, a message will display showing they were granted rights, 
+and that user is then removed from the selection list. Also, all current links on the admin page are functional.

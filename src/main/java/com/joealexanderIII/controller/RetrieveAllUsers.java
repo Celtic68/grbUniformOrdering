@@ -15,6 +15,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -48,14 +50,28 @@ public class RetrieveAllUsers extends HttpServlet {
         // Get a session
         HttpSession session = req.getSession();
 
-        // Get all the location data
+        // Get all the users
         List<User> allUsers = (List<User>) userDao.getAll();
-
-        // Set up select box information
-        session.setAttribute("allUsers", allUsers);
 
         // Get the calling parameter to determine where this servlet was called from
         String callingLocation = req.getParameter("callingAction");
+
+        // Set up select box information
+        if (callingLocation.equals("addAdminLink")) {
+            // Only include users that are not currently admins in the list
+            List<User> toRemove = new ArrayList<User>();
+            for (Iterator<User> iter = allUsers.listIterator(); iter.hasNext(); ) {
+                User iterUser = iter.next();
+                if (iterUser.getRole().getUserRole().equals("admin")) {
+                    toRemove.add(iterUser);
+                }
+            }
+            allUsers.removeAll(toRemove);
+            session.setAttribute("allUsers", allUsers);
+        } else {
+            session.setAttribute("allUsers", allUsers);
+        }
+
 
         //Create the url
         String url = "";
@@ -64,7 +80,7 @@ public class RetrieveAllUsers extends HttpServlet {
         } else if (callingLocation.equals("editUserLink")) {
             url = "editUserAsAdmin.jsp";
         } else if (callingLocation.equals("addPlayerLink")) {
-            url = "addPlayerAsAdmin.jsp";
+            url = "editPlayerAsAdmin.jsp";
         }
 
         // Redirect to JSP page

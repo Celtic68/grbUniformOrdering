@@ -82,6 +82,10 @@
             <web-resource-name>addAdmin</web-resource-name>
             <url-pattern>/addAdminUser.jsp</url-pattern>
         </web-resource-collection>
+      <web-resource-collection>
+        <web-resource-name>addAdminServlet</web-resource-name>
+        <url-pattern>/addAdmin-servlet</url-pattern>
+      </web-resource-collection>
         <web-resource-collection>
             <web-resource-name>retrieveAllUsers</web-resource-name>
             <url-pattern>/retrieveAllUsers-servlet</url-pattern>

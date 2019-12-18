@@ -87,4 +87,7 @@
 | 12/11/19 | Got the Player Selection portion of the Uniform Ordering process working locally | 2 hours |
 | 12/12/19 | Started working on additional functionality for the Uniform Ordering page | 1.5 hours |
 | 12/14/19 | Got the video created to show the current functionality of the application | 45 minutes |
-| | Total Hours | 175.25  |
+| 12/15/19 | Created the documentation needed for the presentation | 30 minutes |
+| 12/15/19 | Got a working version of the admin navigation and the search for adding admin users set up on AWS | 5 hours |
+| 12/18/19 | Admin User can now give admin rights to other users and all admin navigation links are functional | 2 hours |
+| | Total Hours | 182.75  |
