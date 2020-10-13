@@ -15,7 +15,7 @@
 
   <properties>
     <maven.compiler.release>11</maven.compiler.release>
-    <junit.version>4.12</junit.version>
+    <junit.version>4.13.1</junit.version>
     <javax.version>7.0</javax.version>
     <!-- DONE - make sure your mysql driver version matches your mysql version -->
     <mysql-version>8.0.17</mysql-version>
